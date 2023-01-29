@@ -17,10 +17,10 @@ export default function Intro() {
         <button type='button' className='intro-header-btn'>Entre em contato</button>
       </header>
 
-      <section>
-        <div className='intro-title-quotation'>
-          <img src={Aspas} alt="aspas" className='intro-title-quotation'/>
-          <p>Medicina de futuro</p>
+      <section className='intro-main'>
+        <div>
+          <img src={Aspas} alt="aspas" className='intro-quotation-marks'/>
+          <p className='intro-title'>Medicina de futuro</p>
         </div>
         <div>
           <p>SERVIÇO DE MENTORIA EM HEALTH BUSINESS</p>

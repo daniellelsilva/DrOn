@@ -1,6 +1,8 @@
 @import '../../sass/variables.scss';
 
 .intro {
+  position: relative;
+  
   &-marcio-img {
     height: 78.2rem;
     width: 85.8rem;
@@ -44,4 +46,34 @@
       width: 30rem;
     }
   }
+
+  &-main {
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+
+  &-title {
+    background-color: $color-light-blue;
+    color: $color-white;
+    font-size: 6rem;
+    letter-spacing: $letter-spacing;
+    margin-right: 11.6rem;
+    margin-left: 54.8rem;
+    margin-top: 13%;
+    text-transform: uppercase;
+
+    height: 18.4rem;
+    width: 125.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-quotation-marks {
+    position: absolute;
+    top: -38%;
+    left: 27%;
+  }
+
 }
