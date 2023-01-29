@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import Agenda from './pages/agenda/Agenda';
 import AppView from './pages/app/AppView';
 import Carrer from './pages/career/Carrer';
