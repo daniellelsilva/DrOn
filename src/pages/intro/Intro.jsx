@@ -18,11 +18,11 @@ export default function Intro() {
       </header>
 
       <section className='intro-main'>
-        <div>
+        <div className='intro-main-title'>
           <img src={Aspas} alt="aspas" className='intro-quotation-marks'/>
           <p className='intro-title'>Medicina de futuro</p>
         </div>
-        <div>
+        <div className='intro-text'>
           <p>SERVIÇO DE MENTORIA EM HEALTH BUSINESS</p>
           <p>Mentoria exclusiva, customizada, baseada na realidade do médico e do mercado onde está inserido. Não é um curso, é um acompanhamento para uma transformação empreendedora para que o médico possa se posicionar da maneira correta no mercado e principalmente, manter sua  marca bem posicionada junto aos seus pacientes, buscando a rentabilidade do consultório, com menos quantidade e mais qualidade.</p>
           <p>Tanto profissional quanto pessoal.</p>

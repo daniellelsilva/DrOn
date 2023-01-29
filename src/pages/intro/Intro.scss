@@ -1,6 +1,7 @@
 @import '../../sass/variables.scss';
 
 .intro {
+  color: $color-white;
   position: relative;
   
   &-marcio-img {
@@ -47,7 +48,7 @@
     }
   }
 
-  &-main {
+  &-main-title {
     position: relative;
     height: 100%;
     width: 100%;
@@ -76,4 +77,31 @@
     left: 27%;
   }
 
+  &-text {
+    color: $color-white;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.8rem;
+    letter-spacing: $letter-spacing;
+    line-height: 2.3rem;
+    margin-top: 8.9rem;
+    margin-right: 37.5rem;
+    margin-left: 75.3rem;
+    text-align: right;
+    width: 79.2rem;
+
+    & p:first-child {
+      font-weight: 700;
+      margin-bottom: 2.3rem;
+    }
+
+    & p:nth-child(2) {
+      align-self: flex-end;
+      width: 80%;
+    }
+
+    & p:last-child {
+      margin-top: 2.3rem;
+    }
+  }
 }
