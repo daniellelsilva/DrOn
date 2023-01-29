@@ -84,9 +84,8 @@
     font-size: 1.8rem;
     letter-spacing: $letter-spacing;
     line-height: 2.3rem;
-    margin-top: 8.9rem;
-    margin-right: 37.5rem;
-    margin-left: 75.3rem;
+
+    margin: 8.9rem 37.5rem 0 75.3rem;
     text-align: right;
     width: 79.2rem;
 
@@ -102,6 +101,27 @@
 
     & p:last-child {
       margin-top: 2.3rem;
+    }
+  }
+
+  &-icons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6%;
+    margin-left: 71rem;
+    margin-right: 29.3rem;
+    &-icon {
+      background-color: $color-blue;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 11.8rem;
+      width: 11.8rem;
+
+      &:not(:last-child) {
+        margin-right: 8.1rem;
+      }
     }
   }
 }
