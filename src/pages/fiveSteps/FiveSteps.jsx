@@ -2,6 +2,8 @@ import React from 'react';
 import { Icon } from '@iconify/react';
 
 import './FiveSteps.scss';
+import WhatsAppBtn from '../../components/WhatsAppBtn';
+import EmailBtn from '../../components/EmailBtn';
 
 export default function FiveSteps() {
   return (
@@ -50,9 +52,11 @@ export default function FiveSteps() {
         <div className='steps-info-text'>
           <p>Converse com a gente!</p>
           <p>Saiba mais sobre nossa mentoria, projetos complementares, convites para eventos, dúvidas gerais e tudo mais que você precisar! Basta escolher o meio de contato!</p>
-
-          <div>botão whats</div>
-          <div>botão email</div>
+        </div>
+        
+        <div className='steps-info-btns'>
+          <WhatsAppBtn/>
+          <EmailBtn/>
         </div>
       </section>
     </main>

@@ -70,4 +70,45 @@
       background-image: url('../../images/Rectangle5.svg');
     }
   }
+
+  &-info {
+    margin-top: 5%;
+    width: 166.2rem;
+    height: 16.4rem;
+
+    border: 1px solid $color-light-blue;
+    // filter: drop-shadow(0px 0px 15px $color-blue-neon) drop-shadow(0px 0px 18px $color-blue-neon);
+    border-radius: 8.2rem;
+    box-shadow: 0px 0px 15px 0 rgba($color-blue-neon, .3), 0 0 18px 0 rgba($color-blue-neon, .3);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-text {
+      color: $color-white;
+      display: flex;
+      flex-direction: column;
+      margin-left: 17.1rem;
+      width: 58.4rem;
+
+      & p:first-child {
+        font-size: 3.6rem;
+        font-weight: 800;
+      }
+
+      & p:last-child {
+        font-size: 1.6rem;
+        font-weight: 400;
+        margin-top: 2%;
+      }
+    }
+
+    &-btns {
+      display: flex;
+      justify-content: space-between;
+      margin-right: 16.4rem;
+      width: 54rem;
+    }
+  }
 }
