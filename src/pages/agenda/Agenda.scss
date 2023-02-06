@@ -1,1 +1,105 @@
 @import '../../sass/variables.scss';
+
+.agenda {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10%;
+  width: 100%;
+
+  &-title {
+    color: $color-white;
+    font-size: 4rem;
+    font-weight: 300;
+    letter-spacing: $letter-spacing;
+    text-transform: uppercase;
+
+    display: flex;
+    align-self: flex-end;
+    margin-right: 13%;
+
+    & p:first-child {
+      color: $color-light-blue;
+      font-weight: 900;
+      margin-right: 4.2rem;
+    }
+  }
+
+  &-events {
+    margin: auto;
+    margin-top: 3%;
+    width: 90%;
+  }
+
+  &-event {
+    display: flex;
+    margin-bottom: 3%;
+
+    &-date {
+      background-color: $color-light-blue;
+      border-radius: 100px;
+      color: $color-white;
+      font-size: 3.2rem;
+      letter-spacing: $letter-spacing;
+      margin-right: 3%;
+      text-transform: uppercase;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 11rem;
+      width: 48rem;
+
+      & p {
+        font-weight: 900;
+
+        &:not(:last-child) {
+          margin-right: 3%;
+        }
+      }
+    }
+
+    &-infos {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      height: 11rem;
+      padding-left: 13rem;
+      width: 113.6rem;
+
+      border: 1px solid $color-light-blue;
+      border-radius: 8.2rem;
+      box-shadow: 0px 0px 15px 0 rgba($color-blue-neon, .3), 0 0 18px 0 rgba($color-blue-neon, .3);
+    }
+
+    &-name {
+      color: $color-light-blue;
+      display: flex;
+      font-size: 2rem;
+      font-weight: 900;
+      letter-spacing: $letter-spacing;
+      text-transform: uppercase;
+      text-align: center;
+      width: 100%;
+
+
+      & p:first-child {
+        padding-right: 2.5%;
+        border-right: 1px solid $color-light-blue;;
+      }
+
+      & p:last-child {
+        padding-left: 2.5%;
+      }
+    }
+
+    &-info {
+      color: $color-white;
+      font-size: 1.6rem;
+      letter-spacing: $letter-spacing;
+      margin-top: .5%;
+      width: 100%;
+
+    }
+  }
+}
