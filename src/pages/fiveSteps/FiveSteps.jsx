@@ -48,7 +48,7 @@ export default function FiveSteps() {
         </div>
       </section>
 
-      <section className='steps-info'>
+      <section className='steps-info neon-border'>
         <div className='steps-info-text'>
           <p>Converse com a gente!</p>
           <p>Saiba mais sobre nossa mentoria, projetos complementares, convites para eventos, dúvidas gerais e tudo mais que você precisar! Basta escolher o meio de contato!</p>
