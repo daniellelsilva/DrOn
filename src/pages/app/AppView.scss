@@ -64,5 +64,29 @@
         font-weight: 900;
       }
     }
+
+    &-tags {
+      display: flex;
+      flex-direction: column;
+      height: auto;
+      margin-top: 10%;
+    }
+
+    &-tag {
+      background-color: $color-white;
+      border-radius: 515px;
+      color: $color-light-blue;
+      font-size: 2.4rem;
+      font-weight: 900;
+      letter-spacing: $letter-spacing;
+      text-transform: uppercase;
+
+      height: 6.3rem;
+      width: 105%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 1.5% 0;
+    }
   }
 }
