@@ -1,7 +1,8 @@
 import React from 'react';
 import phone1 from '../../images/phone1.svg';
 import phone2 from '../../images/phone2.svg';
-import drOnApp from '../../images/DR.ONAPP.svg'
+import drOnApp from '../../images/DR.ONAPP.svg';
+import drOnLogo from '../../images/drOnLogo.svg';
 
 import './AppView.scss'
 
@@ -49,8 +50,8 @@ export default function AppView() {
 
       
 
-      <div>
-        LOGO E DOWNLOAD
+      <div className='app-download'>
+        <img src={drOnLogo} alt="Dr,On logo" className='app-download-logo'/>
       </div>
     </main>
     )
