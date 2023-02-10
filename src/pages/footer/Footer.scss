@@ -39,4 +39,20 @@
     font-size: 3rem;
   }
 
+  &-qr {
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 4%;
+    width: 51rem;
+  }
+
+  &-dr-logo {
+    width: 21.7rem;
+  }
+
+  &-dr-qr {
+    padding-left: 13%;
+
+  }
+
 }
