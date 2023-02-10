@@ -3,6 +3,8 @@ import phone1 from '../../images/phone1.svg';
 import phone2 from '../../images/phone2.svg';
 import drOnApp from '../../images/DR.ONAPP.svg';
 import drOnLogo from '../../images/drOnLogo.svg';
+import appleStore from '../../images/appleStore.svg';
+import googlePlay from '../../images/googlePlay.svg';
 
 import './AppView.scss'
 
@@ -52,6 +54,16 @@ export default function AppView() {
 
       <div className='app-download'>
         <img src={drOnLogo} alt="Dr,On logo" className='app-download-logo'/>
+
+        <div className='app-download-links'>
+          <div className='app-download-apple'>
+            <img src={appleStore} alt="apple store link" />
+          </div>
+
+          <div className='app-download-google'>
+            <img src={googlePlay} alt="google play link" />
+          </div>
+        </div>
       </div>
     </main>
     )

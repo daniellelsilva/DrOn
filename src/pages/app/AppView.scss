@@ -92,8 +92,32 @@
 
   &-download {
     position: relative;
-    height: 100%;
-    left: 20%;
+    left: 15%;
     top: 20%;
+    max-width: 100%;
+
+    &-logo {
+      margin: auto;
+    }
+
+    &-links {
+      display: flex;
+      margin-top: 3%;
+    }
+
+    &-apple, &-google {
+      background-color: $color-white;
+      border-radius: 18rem;
+      height: 11.3rem;
+      width: 40rem;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      &:not(:last-child) {
+        margin-right: 1.5%;
+      }
+    }
   }
 }

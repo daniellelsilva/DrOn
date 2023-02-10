@@ -1,0 +1,27 @@
+@import '../../sass/variables.scss';
+
+.footer {
+  background-color: $color-dark-blue;
+  height: 54.4rem;
+
+  &-icons {
+    display: flex;
+  }
+
+  &-icon-div {
+    background-color: $color-white;
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-icon {
+    color: $color-light-blue;
+    font-size: 3rem;
+  }
+
+}
