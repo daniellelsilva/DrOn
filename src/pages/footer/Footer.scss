@@ -3,9 +3,24 @@
 .footer {
   background-color: $color-dark-blue;
   height: 54.4rem;
+  
+  &-main {
+    border-bottom: 1px solid $color-light-blue;
+    height: 77%;
+    margin: auto;
+    padding: 7% 0 0 3%;
+    width: 83%;
+
+    display: flex;
+    justify-content: space-between;
+  }
 
   &-icons {
     display: flex;
+    justify-content: space-between;
+    padding-top: 22%;
+    padding-bottom: 4%;
+    width: 41.5rem;
   }
 
   &-icon-div {

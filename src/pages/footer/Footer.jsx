@@ -39,7 +39,8 @@ export default function Footer() {
         </div>
 
         <div className='footer-qr'>
-          logo e qrcode
+          <img src={logoFooter} alt="Dr.ON logo"/>
+          <img src={qrCode} alt="proxymed logo"/>
         </div>
       </main>
 
