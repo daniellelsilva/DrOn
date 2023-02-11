@@ -109,9 +109,10 @@ export default function Events() {
   const slide = () => (
     images.map((image) => (
       <Carousel.Slide key={image.id} className="slide">
-        <div className="slide-img">
+        {/* <div className="slide-img">
           <img src={image.src} alt={image.alt}/>
-        </div>
+        </div> */}
+        <div className={`slide-img slide-img-${image.id}`} />
         
         <div className="slide-info">
           <div className="slide-title">
