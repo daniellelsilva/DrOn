@@ -46,11 +46,12 @@ export default function Footer() {
 
       <section className='footer-section'>
         <div className='footer-rights'>
-          direitos reservados
+          <p>@PROXYMED, ALL RIGHTS RESERVED</p>
         </div>
 
         <div className='footer-terms'>
-          termos
+          <p>Terms and conditions</p>
+          <p>COOKIE POLICY</p>
         </div>
 
       </section>

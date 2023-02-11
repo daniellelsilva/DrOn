@@ -55,4 +55,25 @@
 
   }
 
+  &-section{
+    color: $color-white;
+    display: flex;
+    font-size: 1.6rem;
+    font-weight: 500;
+    justify-content: space-between;
+    margin: auto;
+    padding-top: 2.8%;
+    width: 83%;
+  }
+
+  &-terms {
+    display: flex;
+    text-transform: uppercase;
+    width: 51rem;
+
+    & p:first-child {
+      margin-right: 20%;
+    }
+  }
+
 }
