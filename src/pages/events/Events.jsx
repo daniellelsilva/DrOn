@@ -106,35 +106,35 @@ const images = [
 ]
 
 export default function Events() {
-  const slide = () => {
+  const slide = () => (
     images.map((image) => (
-      <div key={image.id}>
-        <div>
+      <Carousel.Slide key={image.id} className="slide">
+        <div className="slide-img">
           <img src={image.src} alt={image.alt}/>
         </div>
         
-        <div>
-          <div>
+        <div className="slide-info">
+          <div className="slide-title">
             <p>{image.eventName}</p>
             <p>{image.subject}</p>
           </div>
-          <p>{image.phrase}</p>
+          
+          <p className="slide-phrase">{image.phrase}</p>
         </div>
-      </div>
+      </Carousel.Slide>
     ))
-  }
+  )
+
   return (
     <main className='events'>
       <Carousel
         slideSize="70%"
-        height={230}
+        // height={230}
         slideGap="md"
         withIndicators
         loop
       >
-      <Carousel.Slide>1</Carousel.Slide>
-      <Carousel.Slide>2</Carousel.Slide>
-      <Carousel.Slide>3</Carousel.Slide>
+        {slide()}
       {/* ...other slides */}
     </Carousel>
     </main>
