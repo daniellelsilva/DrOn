@@ -13,7 +13,7 @@ import './Intro.scss';
 
 export default function Intro() {
   return (
-    <main>
+    <main className='intro'>
       <img src={Marcio1} alt="Proxymed ceo" className='intro-marcio-img'/>
       <img src={ProxyLogo} alt="Proxymed logo" className='intro-proxy-img'/>
 

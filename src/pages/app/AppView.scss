@@ -4,6 +4,7 @@
   height: 197.6rem;
   background: linear-gradient(216.47deg, #5405F3 17.62%, #3EA2FF 78.75%);
   margin-top: 9%;
+  position: relative;
 
   &-phone1, &-phone2 {
     position: relative;
@@ -91,7 +92,7 @@
   }
 
   &-download {
-    position: relative;
+    // position: relative;
     left: 15%;
     top: 20%;
     max-width: 100%;

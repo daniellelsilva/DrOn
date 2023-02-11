@@ -3,6 +3,8 @@
 .intro {
   color: $color-white;
   position: relative;
+  overflow: hidden;
+  max-width: 100%;
   
   &-marcio-img {
     height: 78.2rem;
