@@ -4,7 +4,7 @@
   padding-top: 20%;
   margin-top: 50%;
   color: red;
-  width: 80%;
+  max-width: 90%;
   margin: auto;
 
 }
@@ -12,7 +12,8 @@
 .slide {
   display: flex;
   flex-direction: column;
-  max-width: 100%;
+  height: 850px;
+  width: 100%;
 
   &-img {
     height: 66.1rem;
@@ -72,11 +73,32 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-top: 3%;
   }
 
   &-title {
+    color: $color-light-blue;
     display: flex;
+    font-size: 1.8rem;
+    font-weight: 900;
+    letter-spacing: $letter-spacing;
+    text-transform: uppercase;
+
+    & p:first-child {
+      padding-right: 2.7rem;
+      border-right: 1px solid $color-light-blue;
+    }
+
+    & p:last-child {
+      margin-left: 2.7rem;
+    }
   }
 
-  
+  &-phrase {
+    color: $color-white;
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: $letter-spacing;
+    margin-top: 2%;
+  }  
 }

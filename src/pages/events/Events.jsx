@@ -1,5 +1,6 @@
 import React from 'react';
 import { Carousel } from '@mantine/carousel';
+import { Icon } from '@iconify/react';
 import event1 from './Images/001.png';
 import event2 from './Images/002.png';
 import event3 from './Images/003.png';
@@ -109,9 +110,6 @@ export default function Events() {
   const slide = () => (
     images.map((image) => (
       <Carousel.Slide key={image.id} className="slide">
-        {/* <div className="slide-img">
-          <img src={image.src} alt={image.alt}/>
-        </div> */}
         <div className={`slide-img slide-img-${image.id}`} />
         
         <div className="slide-info">
@@ -130,13 +128,26 @@ export default function Events() {
     <main className='events'>
       <Carousel
         slideSize="70%"
-        // height={230}
-        slideGap="md"
+        align='center'
         withIndicators
         loop
+        // breakpoints={[{ maxWidth: 'sm', slideSize: '100%', slideGap: 2 }]}
+        slideGap="lg" 
+        controlsOffset="xl"
+        controlSize={50}
+        nextControlIcon={<Icon icon="ic:round-navigate-next" fontSize={45}/>}
+        previousControlIcon={<Icon icon="ic:round-navigate-next" fontSize={45} rotate={2}/>}
+        styles={{
+          control: {
+              backgroundColor: '#3848F1',
+              border: 'none',
+              color: '#FFFFFF',
+              height: '64px',
+              width: '64px',              
+          },
+        }}
       >
         {slide()}
-      {/* ...other slides */}
     </Carousel>
     </main>
   )
