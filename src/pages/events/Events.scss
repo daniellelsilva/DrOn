@@ -1,18 +1,37 @@
 @import '../../sass/variables.scss';
 
 .events {
-  padding-top: 20%;
-  margin-top: 50%;
-  color: red;
+  padding-top: 15%;
   max-width: 90%;
   margin: auto;
 
+  &-title {
+    font-size: 4rem;
+    letter-spacing: $letter-spacing;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    & p:first-child {
+      color: $color-light-blue;
+      font-weight: 900;
+      margin: 0 2% 4%;
+    }
+
+    & p:last-child {
+      color: $color-white;
+      font-weight: 300;
+    }
+  }
 }
 
 .slide {
   display: flex;
   flex-direction: column;
-  height: 850px;
+  height: 900px;
   width: 100%;
 
   &-img {
@@ -83,14 +102,25 @@
     font-weight: 900;
     letter-spacing: $letter-spacing;
     text-transform: uppercase;
+    max-width: 100%;
+    justify-content: space-between;
+    margin: auto;
+    // text-align: center;
 
     & p:first-child {
-      padding-right: 2.7rem;
-      border-right: 1px solid $color-light-blue;
+      width: 50%;
+      // padding-right: .5%;
+      // border-right: 1px solid $color-light-blue;
+    }
+
+    & p:nth-child(2) {
+      padding: 0 30px;
     }
 
     & p:last-child {
-      margin-left: 2.7rem;
+      width: 50%;
+
+      // padding-left: .5%;
     }
   }
 

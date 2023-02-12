@@ -115,6 +115,7 @@ export default function Events() {
         <div className="slide-info">
           <div className="slide-title">
             <p>{image.eventName}</p>
+            <p>|</p>
             <p>{image.subject}</p>
           </div>
           
@@ -126,6 +127,10 @@ export default function Events() {
 
   return (
     <main className='events'>
+      <section className='events-title'>
+        <p>Participação em eventos</p>
+        <p>Palestras</p>
+      </section>
       <Carousel
         slideSize="70%"
         align='center'
