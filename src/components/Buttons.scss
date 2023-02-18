@@ -1,7 +1,12 @@
 @import '../sass/variables.scss';
+@import '../sass/mixins.scss';
 
 .whats-btn, .email-btn {
   background-color: $color-light-blue;
   height: 4.9rem;
   width: 25.1rem;
+
+  @include screensize(desk-small) {
+    width: 46%;
+  }
 }

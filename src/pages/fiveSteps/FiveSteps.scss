@@ -15,6 +15,10 @@
     letter-spacing: $letter-spacing;
     text-transform: uppercase;
 
+    @include screensize(desk-small) {
+      font-size: 3.5rem;
+    }
+
     & p:first-child {
       color: $color-light-blue;
       font-weight: 900;
@@ -48,7 +52,10 @@
     width: 26.5rem;
 
     @include screensize(desktop) {
-      width: 27rem;
+      width: 28rem;
+    }
+    @include screensize(desk-small) {
+      width: 25rem;
     }
 
     &-icon {
@@ -61,6 +68,10 @@
       height: 10rem;
       width: 10rem;
       font-size: 5.5rem;
+
+      @include screensize(desk-small) {
+        font-size: 4rem;
+      }
     }
 
     &-1 {
@@ -91,12 +102,22 @@
     align-items: center;
     justify-content: space-between;
 
+    @include screensize(desktop) {
+      width: 90%;
+    }
+
     &-text {
       color: $color-white;
       display: flex;
       flex-direction: column;
       margin-left: 17.1rem;
       width: 58.4rem;
+      @include screensize(desk-small) {
+        width: 36%;
+      }
+      @include screensize(tab-big) {
+        margin-left: 10%;
+      }
 
       & p:first-child {
         font-size: 3.6rem;
@@ -115,6 +136,11 @@
       justify-content: space-between;
       margin-right: 16.4rem;
       width: 54rem;
+
+      @include screensize(tab-big) {
+        margin-right: 10%;
+        width: 35%;
+      }
     }
   }
 }
