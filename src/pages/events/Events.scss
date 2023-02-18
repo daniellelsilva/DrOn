@@ -36,8 +36,12 @@
 .slide {
   display: flex;
   flex-direction: column;
-  height: 850px;
+  height: 830px;
   width: 100%;
+
+  @include screensize(tab-land) {
+    height: 650px;
+  }
 
   &-img {
     height: 66.1rem;
