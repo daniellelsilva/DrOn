@@ -118,6 +118,10 @@
       @include screensize(tab-big) {
         margin-left: 10%;
       }
+      @include screensize(tab-land) {
+        margin-left: 7%;
+        width: 40%;
+      }
 
       & p:first-child {
         font-size: 3.6rem;
@@ -140,6 +144,10 @@
       @include screensize(tab-big) {
         margin-right: 10%;
         width: 35%;
+      }
+      @include screensize(tab-land) {
+        margin-right: 7%;
+        // width: 35%;
       }
     }
   }
