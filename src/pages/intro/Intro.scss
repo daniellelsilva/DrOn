@@ -24,6 +24,14 @@
       height: 60%;
       top: 20%;
     }
+    @include screensize(tab-land) {
+      height: 55%;
+      left: -5%;
+    }
+    @include screensize(tab-port) {
+      height: 50%;
+      left: -10%;
+    }
   }
 
   &-proxy-img {
@@ -49,6 +57,10 @@
 
     &-img {
       padding: 7.7rem 0 0 13.5rem;
+
+      @include screensize(tab-land) {
+      width: 30%;
+      }
     }
 
     &-btn {
@@ -102,6 +114,13 @@
       height: 15rem;
       width: 63%;
     }
+    @include screensize(tab-port) {
+      font-size: 3.5rem;
+      margin-left: 38%;
+
+      height: 10rem;
+      width: 60%;
+    }
   }
 
   &-quotation-marks {
@@ -119,6 +138,11 @@
     @include screensize(tab-big) {
       height: 55%;
       left: 33%;
+    }
+    @include screensize(tab-port) {
+      height: 50%;
+      left: 35%;
+      top: -30%;
     }
   }
 
@@ -140,7 +164,11 @@
     }
     @include screensize(tab-big) {
       margin-left: 40%;
-      margin-right: auto;
+    }
+    @include screensize(tab-port) {
+      font-size: 1.6rem;
+      margin-left: auto;
+      margin-right: 5%;
     }
 
     & p:first-child {
@@ -164,6 +192,10 @@
     margin-top: 6%;
     margin-left: 71rem;
     // margin-right: 29.3rem;
+
+    @include screensize(tab-land) {
+      margin-left: 50%;
+    }
     
     &-icon {
       background-color: $color-blue;
