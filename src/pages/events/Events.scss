@@ -1,9 +1,14 @@
 @import '../../sass/variables.scss';
+@import '../../sass/mixins.scss';
 
 .events {
   padding-top: 15%;
-  max-width: 90%;
-  margin: auto;
+  // width: 95%;
+  // margin: auto;
+
+  @include screensize(desktop) {
+    // width: 100%;
+  }
 
   &-title {
     font-size: 4rem;
@@ -31,7 +36,7 @@
 .slide {
   display: flex;
   flex-direction: column;
-  height: 900px;
+  height: 850px;
   width: 100%;
 
   &-img {
@@ -102,10 +107,10 @@
     font-weight: 900;
     letter-spacing: $letter-spacing;
     text-transform: uppercase;
-    max-width: 100%;
+    width: 100%;
     justify-content: space-between;
     margin: auto;
-    // text-align: center;
+    text-align: center;
 
     & p:first-child {
       width: 50%;

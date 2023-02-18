@@ -132,7 +132,7 @@ export default function Events() {
         <p>Palestras</p>
       </section>
       <Carousel
-        slideSize="70%"
+        slideSize="80%"
         align='center'
         withIndicators
         loop
@@ -148,7 +148,8 @@ export default function Events() {
               border: 'none',
               color: '#FFFFFF',
               height: '64px',
-              width: '64px',              
+              width: '64px',
+              marginTop: '-8%'             
           },
         }}
       >
