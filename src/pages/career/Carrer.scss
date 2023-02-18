@@ -10,12 +10,42 @@
   &-proxy-img {
     position: absolute;
     margin-left: -21%;
+
+    @include screensize(desktop) {
+      height: 100%;
+    }
+    @include screensize(desk-small) {
+      height: 95%;
+    }
+    @include screensize(tab-big) {
+      height: 90%;
+    }
+    
   }
 
   &-marcio-img {
     position: absolute;
     right: 0;
     top: -8%;
+
+    @include screensize(desktop) {
+      height: 120%;
+    }
+    @include screensize(desk-small) {
+      height: 115%;
+      top: -5%;
+      right: -2%;
+    }
+    @include screensize(tab-big) {
+      height: 110%;
+      top: -2%;
+      right: -3%;
+    }
+    @include screensize(tab-port) {
+      height: 100%;
+      top: -1%;
+      right: -5%;
+    }
   }
 
   &-main {
@@ -23,6 +53,16 @@
     flex-direction: column;
     margin-left: 15%;
     width: 100%;
+
+    @include screensize(desk-small) {
+      margin-left: 13%;
+    }
+    @include screensize(tab-big) {
+      margin-left: 10%;
+    }
+    @include screensize(tab-port) {
+      margin-left: 8%;
+    }
   }
 
   &-name {
@@ -33,19 +73,35 @@
     height: 12.8rem;
     text-transform: uppercase;
     text-align: start;
-    width: 110%;
+    width: 100%;
     
     display: flex;
     align-items: center;
 
+    @include screensize(tab-big) {
+      font-size: 3.3rem;
+    }
+    @include screensize(tab-land) {
+      font-size: 3rem;
+      width: 100%;
+    }
+
     & p:first-child {
       font-weight: 900;
       margin-left: 5%;
+
+      @include screensize(tab-land) {
+        margin-left: 3%;
+      }
     }
 
     & p:last-child {
       font-weight: 300;
       margin-left: 4.8rem;
+
+      @include screensize(tab-land) {
+        margin-left: 3%;
+      }
     }
   }
 
@@ -85,6 +141,13 @@
 
     &-text {
       max-width: 70rem;
+
+      @include screensize(desk-small) {
+        max-width: 45%;
+      }
+      @include screensize(tab-land) {
+        max-width: 42%;
+      }
     }
   }
 }
