@@ -1,9 +1,9 @@
 import React from 'react';
 import { Icon } from '@iconify/react';
-
-import './FiveSteps.scss';
 import WhatsAppBtn from '../../components/WhatsAppBtn';
 import EmailBtn from '../../components/EmailBtn';
+
+import './FiveSteps.scss';
 
 export default function FiveSteps() {
   return (

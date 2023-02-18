@@ -3,11 +3,7 @@ import Frame from '../../images/Frame.svg';
 import Marcio1 from '../../images/Marcio1.svg';
 import ProxyLogo from '../../images/Group.svg';
 import Aspas from '../../images/aspas.svg';
-import Place from '../../images/place.svg';
-import MapIcon from '../../images/map.svg';
-import People from '../../images/people.svg';
-import Plant from '../../images/plant.svg';
-import Star from '../../images/star.svg';
+import { Icon } from '@iconify/react';
 
 import './Intro.scss';
 
@@ -36,19 +32,29 @@ export default function Intro() {
 
       <section className='intro-icons'>
         <div className='intro-icons-icon'>
-          <img src={Place} alt="place icon"/>
+          {/* <img src={Place} alt="place icon"/> */}
+          <Icon icon="mdi:map-marker" />
+
         </div>
         <div className='intro-icons-icon'>
-          <img src={MapIcon} alt="map icon"/>
+          {/* <img src={MapIcon} alt="map icon"/> */}
+          <Icon icon="ri:treasure-map-fill" />
+
         </div>
         <div className='intro-icons-icon'>
-          <img src={People} alt="people icon"/>
+          {/* <img src={People} alt="people icon"/> */}
+          <Icon icon="mdi:account-multiple" />
+
         </div>
         <div className='intro-icons-icon'>
-          <img src={Plant} alt="plant icon"/>
+          {/* <img src={Plant} alt="plant icon"/> */}
+          <Icon icon="material-symbols:potted-plant" />
+
         </div>
         <div className='intro-icons-icon'>
-          <img src={Star} alt="star icon"/>
+          {/* <img src={Star} alt="star icon"/> */}
+          <Icon icon="material-symbols:star-rate-rounded" />
+
         </div>
       </section>
     </main>

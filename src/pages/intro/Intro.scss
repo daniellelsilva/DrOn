@@ -1,4 +1,5 @@
 @import '../../sass/variables.scss';
+@import '../../sass/mixins.scss';
 
 .intro {
   color: $color-white;
@@ -15,6 +16,14 @@
     left: 0;
     opacity: .49;
     z-index: -1;
+
+    @include screensize(desktop) {
+      height: 65%;
+    }
+    @include screensize(desk-small) {
+      height: 60%;
+      top: 20%;
+    }
   }
 
   &-proxy-img {
@@ -24,6 +33,13 @@
     right: -12%;
     top: -5%;
     z-index: -1;
+
+    @include screensize(desktop) {
+      height: 70%;
+    }
+    @include screensize(desk-small) {
+      height: 60%;
+    }
   }
 
   &-header {
@@ -61,7 +77,7 @@
     color: $color-white;
     font-size: 6rem;
     letter-spacing: $letter-spacing;
-    margin-right: 11.6rem;
+    // margin-right: 11.6rem;
     margin-left: 54.8rem;
     margin-top: 13%;
     text-transform: uppercase;
@@ -71,12 +87,39 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include screensize(desk-small) {
+      font-size: 5rem;
+      margin-left: 32%;
+
+      min-height: 15rem;
+      width: 65%;
+    }
+    @include screensize(tab-big) {
+      font-size: 4rem;
+      margin-left: 35%;
+
+      height: 15rem;
+      width: 63%;
+    }
   }
 
   &-quotation-marks {
     position: absolute;
     top: -38%;
     left: 27%;
+
+    @include screensize(desktop) {
+      height: 65%;
+    }
+    @include screensize(desk-small) {
+      height: 60%;
+      left: 30%;
+    }
+    @include screensize(tab-big) {
+      height: 55%;
+      left: 33%;
+    }
   }
 
   &-text {
@@ -90,6 +133,15 @@
     margin: 8.9rem 37.5rem 0 75.3rem;
     text-align: right;
     width: 79.2rem;
+
+    @include screensize(desk-small) {
+      margin-left: 45%;
+      margin-right: auto;
+    }
+    @include screensize(tab-big) {
+      margin-left: 40%;
+      margin-right: auto;
+    }
 
     & p:first-child {
       font-weight: 700;
@@ -108,15 +160,16 @@
 
   &-icons {
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
     margin-top: 6%;
     margin-left: 71rem;
-    margin-right: 29.3rem;
+    // margin-right: 29.3rem;
     
     &-icon {
       background-color: $color-blue;
       border-radius: 50%;
       display: flex;
+      font-size: 5rem;
       align-items: center;
       justify-content: center;
       height: 11.8rem;
@@ -124,7 +177,18 @@
 
       &:not(:last-child) {
         margin-right: 8.1rem;
+
+        @include screensize(tab-big) {
+          margin-right: 6%;
+        }
       }
+
+      @include screensize(tab-big) {
+        font-size: 4rem;
+        height: 9rem;
+        width: 9rem;
+      }
+      
     }
   }
 }

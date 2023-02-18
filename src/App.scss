@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 @import './sass/variables.scss';
-@import './sass/variables.scss';
+@import './sass/mixins.scss';
 
 
 * {
@@ -15,8 +15,19 @@
 
 
 html {
-  font-size: 62.5%;
+  font-size: 62.5%; //10px
   scroll-behavior: smooth;
+
+  @include screensize(desktop) {
+    font-size: 56.2%; //9px
+  }
+  @include screensize(tab-land) {
+    font-size: 43.7%; //7px
+  }@include screensize(tab-port) {
+    font-size: 37.5%; //6px
+  }@include screensize(phone) {
+    font-size: 25%; //4px
+  }
 
   background: rgb(6,19,40);
 // background: linear-gradient(41deg, rgba(6,19,40,1) 35%, rgba(25,39,114,1) 87%);
