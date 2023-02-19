@@ -68,10 +68,15 @@
         font-size: 2.5rem;
         width: 33rem;
       }
-      @include screensize(tab-big) {
+      @include screensize(tab-land) {
         font-size: 2rem;
         height: 9rem;
         width: 27rem;
+      }
+      @include screensize(tab-port) {
+        font-size: 1.8rem;
+        height: 7rem;
+        width: 23rem;
       }
 
       & p {
@@ -99,9 +104,13 @@
         padding-left: 8rem;
         width: 93rem;
       }
-      @include screensize(tab-port) {
+      @include screensize(tab-land) {
         height: 9rem;
         width: 90rem;
+      }
+      @include screensize(tab-port) {
+        padding-left: 5%;
+        width: 76rem;
       }
     }
 
@@ -116,7 +125,7 @@
       width: 100%;
 
       @include screensize(tab-port) {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
       }
 
 
@@ -136,7 +145,9 @@
       letter-spacing: $letter-spacing;
       margin-top: .5%;
       width: 100%;
-
+      @include screensize(tab-port) {
+        font-size: 1.5rem;
+      }
     }
   }
 
@@ -159,7 +170,7 @@
     }
     @include screensize(tab-port) {
       height: 11rem;
-      width: 116rem;
+      width: 98rem;
     }
 
     & p {

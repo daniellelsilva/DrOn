@@ -6,6 +6,14 @@
   background: linear-gradient(216.47deg, #5405F3 17.62%, #3EA2FF 78.75%);
   margin-top: 9%;
   position: relative;
+  // overflow-y: hidden;
+
+  @include screensize(desktop) {
+    height: 130vh;
+  }
+  @include screensize(tab-port) {
+    height: 100vh;
+  }
 
   &-phone1, &-phone2 {
     position: relative;
@@ -20,20 +28,20 @@
 
       @include screensize(desktop) {
         height: 70vh;
-        left: -3%;
+        // left: -3%;
       }
       @include screensize(desk-small) {
         height: 60vh;
         top: -10rem;
-        left: -5%;
+        // left: -5%;
       }
       @include screensize(tab-big) {
         height: 55vh;
-        left: -6%;
+        // left: -6%;
       }
       @include screensize(tab-land) {
         height: 50vh;
-        left: -8%;
+        // left: -8%;
       }
       @include screensize(tab-port) {
         display: none;
@@ -50,22 +58,22 @@
       top: 50rem;
 
       @include screensize(desktop) {
-        height: 90vh;
+        height: 100vh;
         top: 48rem;
       }
       @include screensize(desk-small) {
         height: 80vh;
-        right: -5%;
+        // right: -5%;
         top: 60rem;
       }
       @include screensize(tab-big) {
         height: 75vh;
-        right: -5%;
+        // right: -5%;
         top: 72rem;
       }
       @include screensize(tab-land) {
         height: 65vh;
-        right: -7%;
+        // right: -7%;
         top: 75rem;
       }
       @include screensize(tab-port) {
