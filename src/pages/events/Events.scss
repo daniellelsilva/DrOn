@@ -42,6 +42,9 @@
   @include screensize(tab-land) {
     height: 650px;
   }
+  @include screensize(tab-port) {
+    height: 600px;
+  }
 
   &-img {
     height: 66.1rem;

@@ -33,7 +33,6 @@ export default function Agenda() {
           </div>
         ))}
       </section>
-
       <section className='agenda-info neon-border'>
           <p>Dúvidas? Fale com a gente!</p>
 
@@ -42,6 +41,7 @@ export default function Agenda() {
             <EmailBtn/>
           </div>
       </section>
+
     </main>
   )
 }
