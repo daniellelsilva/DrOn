@@ -22,6 +22,22 @@
         height: 70vh;
         left: -3%;
       }
+      @include screensize(desk-small) {
+        height: 60vh;
+        top: -10rem;
+        left: -5%;
+      }
+      @include screensize(tab-big) {
+        height: 55vh;
+        left: -6%;
+      }
+      @include screensize(tab-land) {
+        height: 50vh;
+        left: -8%;
+      }
+      @include screensize(tab-port) {
+        display: none;
+      }
     }
   }
 
@@ -37,6 +53,24 @@
         height: 90vh;
         top: 48rem;
       }
+      @include screensize(desk-small) {
+        height: 80vh;
+        right: -5%;
+        top: 60rem;
+      }
+      @include screensize(tab-big) {
+        height: 75vh;
+        right: -5%;
+        top: 72rem;
+      }
+      @include screensize(tab-land) {
+        height: 65vh;
+        right: -7%;
+        top: 75rem;
+      }
+      @include screensize(tab-port) {
+        display: none;
+      }
     }
   }
 
@@ -44,6 +78,10 @@
     width: 38%;
     padding-top: 7%;
     margin-left: 40%;
+    @include screensize(tab-port) {
+      margin: auto;
+      width: 90%;
+    }
 
     &-1 {
       color: $color-light-gray;
@@ -99,6 +137,13 @@
       align-items: center;
       justify-content: center;
       margin: 1.5% 0;
+
+      @include screensize(tab-big) {
+        font-size: 2rem;
+      }
+      @include screensize(tab-port) {
+        width: 100%;
+      }  
     }
   }
 
@@ -109,16 +154,48 @@
     width: min-content;
     text-align: center;
 
+    @include screensize(desk-small) {
+      left: 10%;
+    }
+    @include screensize(tab-big) {
+      left: 5%;
+      top: 15%;
+      width: max-content;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    @include screensize(tab-land) {
+      left: -2%;
+      top: 10%;
+    }
+    @include screensize(tab-port) {
+      left: 0;
+      top: 15%;
+      width: 100%;
+    }
+
     &-logo {
       margin: auto;
       @include screensize(desktop) {
         width: 95%;
       }
+      @include screensize(desk-small) {
+        width: 90%;
+      }
+      @include screensize(tab-big) {
+        width: 80%;
+      }
+      @include screensize(tab-land) {
+        width: 70%;
+      } 
     }
 
     &-links {
       display: flex;
       margin-top: 8%;
+      text-align: center;
     }
 
     &-apple, &-google {
@@ -134,9 +211,20 @@
       @include screensize(desktop) {
         width: 38rem;
       }
+      @include screensize(tab-big) {
+        height: 10,5rem;
+        width: 35rem;
+
+        & img {
+          width: 50%;
+        }
+      }
       
       &:not(:last-child) {
         margin-right: 1.5%;
+        @include screensize(tab-big) {
+          margin-right: 2%;
+        }
       }
     }
   }
