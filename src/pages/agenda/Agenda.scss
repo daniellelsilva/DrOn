@@ -68,6 +68,11 @@
         font-size: 2.5rem;
         width: 33rem;
       }
+      @include screensize(tab-big) {
+        font-size: 2rem;
+        height: 9rem;
+        width: 27rem;
+      }
 
       & p {
         font-weight: 900;
@@ -94,6 +99,10 @@
         padding-left: 8rem;
         width: 93rem;
       }
+      @include screensize(tab-port) {
+        height: 9rem;
+        width: 90rem;
+      }
     }
 
     &-name {
@@ -105,6 +114,10 @@
       text-transform: uppercase;
       text-align: center;
       width: 100%;
+
+      @include screensize(tab-port) {
+        font-size: 1.7rem;
+      }
 
 
       & p:first-child {
@@ -144,12 +157,20 @@
       margin-top: 5%;
       width: 126rem;
     }
+    @include screensize(tab-port) {
+      height: 11rem;
+      width: 116rem;
+    }
 
     & p {
       color: $color-white;
       font-size: 3.6rem;
       font-weight: 800;
       margin-left: 10rem;
+
+      @include screensize(tab-port) {
+        font-size: 3rem;
+      }
     }
   }
 }
