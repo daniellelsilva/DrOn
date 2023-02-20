@@ -19,11 +19,21 @@ export default function FiveSteps() {
             <div className='steps-card-icon'>
               <Icon icon="mdi:map-marker" />
             </div>
+            
+            <div className='steps-card-text'>
+              <p>Primeiro encontro</p>
+              <p>Onde estou?</p>
+            </div>
           </div>
 
           <div className='steps-card steps-card-2'>
             <div className='steps-card-icon'>
               <Icon icon="ri:treasure-map-fill" />
+            </div>
+
+            <div className='steps-card-text'>
+              <p>Segundo encontro</p>
+              <p>Para onde vou?</p>
             </div>
           </div>
 
@@ -31,17 +41,32 @@ export default function FiveSteps() {
             <div className='steps-card-icon'>
               <Icon icon="mdi:account-multiple" />
             </div>
+
+            <div className='steps-card-text'>
+              <p>Terceiro encontro</p>
+              <p>Com quem eu vou?</p>
+            </div>    
           </div>
 
           <div className='steps-card steps-card-4'>
             <div className='steps-card-icon'>
               <Icon icon="material-symbols:potted-plant" />
             </div>
+
+            <div className='steps-card-text'>
+              <p>Quarto encontro</p>
+              <p>Seu plano</p>
+            </div>
           </div>
 
           <div className='steps-card steps-card-5'>
             <div className='steps-card-icon'>
               <Icon icon="material-symbols:star-rate-rounded" />
+            </div>
+
+            <div className='steps-card-text'>
+              <p>Quinto encontro</p>
+              <p>Overview</p>
             </div>  
           </div>
 

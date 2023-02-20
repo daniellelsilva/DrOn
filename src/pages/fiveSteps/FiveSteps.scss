@@ -46,8 +46,10 @@
   
   &-card {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    transition: background-image 0.7s ease-in-out;
     height: 100%;
     width: 26.5rem;
 
@@ -76,6 +78,12 @@
 
     &-1 {
       background-image: url('../../images/Rectangle1.svg');
+      transition: background-image 0.7s ease-in-out;
+
+      &:hover {
+        transition: background-image 0.7s ease-in-out;
+        background-image: linear-gradient(rgba(56, 72, 241, 0.7), rgba(56, 72, 241, 0.7)), url('../../images/Rectangle1.svg');
+      }
     }
     &-2 {
       background-image: url('../../images/Rectangle2.svg');
@@ -89,6 +97,53 @@
     &-5 {
       background-image: url('../../images/Rectangle5.svg');
     }
+
+    &-card {
+
+    }
+
+
+    &-icon {
+      color: $color-white;
+      background-color: $color-light-blue;
+      border-radius: 50%;
+      height: 5rem;
+      width: 5rem;
+      font-size: 2.5rem;
+
+      @include screensize(desk-small) {
+        font-size: 4rem;
+      }
+    }
+
+    &-text {
+      text-align: center;
+      text-transform: uppercase;
+      color: #BFD1FF;
+      font-size: 1.4rem;
+      font-weight: 500;
+      letter-spacing: $letter-spacing;
+
+      & p:first-child {
+        margin: auto;
+        padding-top: 8%;
+        text-align: center;
+        width: min-content;
+      }
+
+      & p:last-child {
+        color: $color-white;
+        font-size: 3.2rem;
+        font-weight: 700;
+        letter-spacing: $letter-spacing;
+        padding-top: 8%;
+
+      }
+    }
+
+    // &-text {
+    //   display: none;
+    // }
   }
 
   &-info {
