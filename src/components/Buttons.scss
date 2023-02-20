@@ -4,13 +4,26 @@
 .whats-btn, .email-btn {
   background-color: $color-light-blue;
   height: 4.9rem;
-  transition: all .4s;
+  transition: all .3s ease-out !important;
   width: 25.1rem;
+
+  &:hover {
+    // transition: transform .5s;
+    transform: translateY(-6px);
+    background-color: azure;
+  }
 
   @include screensize(desk-small) {
     width: 46%;
   }
 }
+
+// .whats-btn:hover{
+
+//     transform: translateY(-6px);
+//     background-color: azure !important;
+
+// }
 
 .MuiTooltip-arrow.css-kudwh-MuiTooltip-arrow {
   color: $color-white;
@@ -23,7 +36,7 @@
 }
 
 .btn-cyan {
-  transition: all .4s;
+  // transition: all .4s;
   background-color: aquamarine !important;
 }
 

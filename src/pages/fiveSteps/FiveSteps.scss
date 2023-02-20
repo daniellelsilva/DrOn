@@ -74,6 +74,7 @@
       width: 10rem;
       font-size: 5.5rem;
       transition: transform .30s;
+      animation: scaleEffect2 1s cubic-bezier(0.45, 0.05, 0.55, 0.95) both, bottomTopEffect 1s ease both;
 
       @include screensize(desk-small) {
         font-size: 4rem;
@@ -106,9 +107,7 @@
       background: rgba(56, 72, 241, 0.7);
       opacity: 0;
       z-index: -2;
-    }
-    &:hover::before {
-      opacity: 1;
+      animation: opacityEffect2 .5s cubic-bezier(0.45, 0.05, 0.55, 0.95) both
     }
 
     &-text {
@@ -143,9 +142,6 @@
     margin-top: 5%;
     width: 166.2rem;
     height: 16.4rem;
-
-    // filter: drop-shadow(0px 0px 15px $color-blue-neon) drop-shadow(0px 0px 18px $color-blue-neon);
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -205,13 +201,13 @@
   opacity: 0;
 }
 .steps-cards .steps-card:hover::before {
-  animation: opacityEffect .5s cubic-bezier(0.45, 0.05, 0.55, 0.95) both
+  animation: opacityEffect .5s cubic-bezier(0.45, 0.05, 0.55, 0.95) both;
 }
 .steps-cards .steps-card:hover .steps-card-text {
   opacity: 1;
   visibility: visible;
   display: block;
-  animation: slideEffect 1s ease both;
+  animation: slideEffect 2s ease both;
 
   .steps-card-icon {
     color: $color-white;
@@ -227,15 +223,8 @@
   }
 }
 .steps-cards .steps-card:hover .steps-card-icon {
-  // color: $color-white;
-  // background-color: $color-light-blue;
   border-radius: 50%;
-  // height: 5rem;
-  // width: 5rem;
-  // font-size: 2.5rem;
-  // transform: translateY(-20px);
-  // animation: scale-down-center 0.10s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  animation: scaleEffect 1s cubic-bezier(0.45, 0.05, 0.55, 0.95) both, slideEffect 3s ease both;
+  animation: scaleEffect 1s cubic-bezier(0.45, 0.05, 0.55, 0.95) both, slideEffect 1s ease both;
 
   @include screensize(desk-small) {
     font-size: 4rem;
@@ -255,6 +244,19 @@
     font-size: 2.5rem;
   }
 }
+@keyframes scaleEffect2 {
+  from {
+    height: 5rem;
+    width: 5rem;
+    font-size: 2.5rem;
+  }
+  to {
+    
+    height: 10rem;
+    width: 10rem;
+    font-size: 5.5rem;
+  }
+}
 
 @keyframes opacityEffect {
   from {
@@ -262,6 +264,14 @@
   }
   to {
     opacity: 1;
+  }
+}
+@keyframes opacityEffect2 {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
   }
 }
 
@@ -274,11 +284,20 @@
   }
 }
 
+
 @keyframes bottomTopEffect {
   from {
     transform: translateY(-30px)
   }
   to {
     transform: translateY(0) 
+  }
+}
+@keyframes topBottomEffect {
+  from {
+    transform: translateY(0)
+  }
+  to {
+    transform: translateY(-30px) 
   }
 }
