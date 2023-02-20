@@ -4,9 +4,34 @@
 .whats-btn, .email-btn {
   background-color: $color-light-blue;
   height: 4.9rem;
+  transition: all .4s;
   width: 25.1rem;
 
   @include screensize(desk-small) {
     width: 46%;
   }
+}
+
+.MuiTooltip-arrow.css-kudwh-MuiTooltip-arrow {
+  color: $color-white;
+}
+
+.MuiTooltip-tooltip.MuiTooltip-tooltipArrow.MuiTooltip-tooltipPlacementTop.css-1k51tf5-MuiTooltip-tooltip {
+  border-radius: 15px;
+  padding: 10%;
+  text-align: center;
+}
+
+.MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.whats-btn.btn-blue.css-myfgft-MuiButtonBase-root-MuiButton-root, .MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.email-btn.css-myfgft-MuiButtonBase-root-MuiButton-root{
+  transition: all .4s !important;
+
+}
+
+.btn-cyan {
+  transition: all .4s;
+  background-color: aquamarine !important;
+}
+
+.btn-blue {
+  background-color: $color-light-blue;
 }

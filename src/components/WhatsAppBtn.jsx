@@ -5,6 +5,8 @@ import './Buttons.scss'
 export default function WhatsAppBtn() {
   return (
     <Button
+      href='https://wa.me/5549991345099'
+      target='_blank'
       className='whats-btn'
       type='button'
       variant="contained"
