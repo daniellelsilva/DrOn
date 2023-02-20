@@ -52,6 +52,9 @@
     transition: background-image 0.7s ease-in-out;
     height: 100%;
     width: 26.5rem;
+    position: relative;
+    z-index: 30;
+    transition: all .10s;
 
     @include screensize(desktop) {
       width: 28rem;
@@ -78,12 +81,6 @@
 
     &-1 {
       background-image: url('../../images/Rectangle1.svg');
-      transition: background-image 0.7s ease-in-out;
-
-      &:hover {
-        transition: background-image 0.7s ease-in-out;
-        background-image: linear-gradient(rgba(56, 72, 241, 0.7), rgba(56, 72, 241, 0.7)), url('../../images/Rectangle1.svg');
-      }
     }
     &-2 {
       background-image: url('../../images/Rectangle2.svg');
@@ -98,22 +95,20 @@
       background-image: url('../../images/Rectangle5.svg');
     }
 
-    &-card {
-
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background: rgba(56, 72, 241, 0.7);
+      transition: 0.5s;
+      opacity: 0;
+      z-index: -2;
     }
-
-
-    &-icon {
-      color: $color-white;
-      background-color: $color-light-blue;
-      border-radius: 50%;
-      height: 5rem;
-      width: 5rem;
-      font-size: 2.5rem;
-
-      @include screensize(desk-small) {
-        font-size: 4rem;
-      }
+    &:hover::before {
+      opacity: 1;
     }
 
     &-text {
@@ -140,10 +135,6 @@
 
       }
     }
-
-    // &-text {
-    //   display: none;
-    // }
   }
 
   &-info {
@@ -205,5 +196,38 @@
         // width: 35%;
       }
     }
+  }
+}
+
+.steps-cards .steps-card .steps-card-text {
+  opacity: 0;
+}
+.steps-cards .steps-card:hover .steps-card-text {
+  opacity: 1;
+
+  .steps-card-icon {
+    color: $color-white;
+    background-color: $color-light-blue;
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
+    font-size: 2.5rem;
+
+    @include screensize(desk-small) {
+      font-size: 4rem;
+    }
+  }
+}
+.steps-cards .steps-card:hover .steps-card-icon {
+  color: $color-white;
+  background-color: $color-light-blue;
+  border-radius: 50%;
+  height: 5rem;
+  width: 5rem;
+  font-size: 2.5rem;
+
+  @include screensize(desk-small) {
+    font-size: 4rem;
+    
   }
 }
