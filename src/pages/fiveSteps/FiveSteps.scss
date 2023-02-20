@@ -73,6 +73,7 @@
       height: 10rem;
       width: 10rem;
       font-size: 5.5rem;
+      transition: transform .30s;
 
       @include screensize(desk-small) {
         font-size: 4rem;
@@ -103,7 +104,6 @@
       left: 0;
       bottom: 0;
       background: rgba(56, 72, 241, 0.7);
-      transition: 0.5s;
       opacity: 0;
       z-index: -2;
     }
@@ -118,6 +118,8 @@
       font-size: 1.4rem;
       font-weight: 500;
       letter-spacing: $letter-spacing;
+      visibility: hidden;
+      display: none;
 
       & p:first-child {
         margin: auto;
@@ -202,8 +204,14 @@
 .steps-cards .steps-card .steps-card-text {
   opacity: 0;
 }
+.steps-cards .steps-card:hover::before {
+  animation: opacityEffect .5s cubic-bezier(0.45, 0.05, 0.55, 0.95) both
+}
 .steps-cards .steps-card:hover .steps-card-text {
   opacity: 1;
+  visibility: visible;
+  display: block;
+  animation: slideEffect 1s ease both;
 
   .steps-card-icon {
     color: $color-white;
@@ -219,15 +227,58 @@
   }
 }
 .steps-cards .steps-card:hover .steps-card-icon {
-  color: $color-white;
-  background-color: $color-light-blue;
+  // color: $color-white;
+  // background-color: $color-light-blue;
   border-radius: 50%;
-  height: 5rem;
-  width: 5rem;
-  font-size: 2.5rem;
+  // height: 5rem;
+  // width: 5rem;
+  // font-size: 2.5rem;
+  // transform: translateY(-20px);
+  // animation: scale-down-center 0.10s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: scaleEffect 1s cubic-bezier(0.45, 0.05, 0.55, 0.95) both, slideEffect 3s ease both;
 
   @include screensize(desk-small) {
     font-size: 4rem;
     
+  }
+}
+
+@keyframes scaleEffect {
+  from {
+    height: 10rem;
+    width: 10rem;
+    font-size: 5.5rem;
+  }
+  to {
+    height: 5rem;
+    width: 5rem;
+    font-size: 2.5rem;
+  }
+}
+
+@keyframes opacityEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideEffect {
+  from {
+    transform: translateY(0)
+  }
+  to {
+    transform: translateY(-30px) 
+  }
+}
+
+@keyframes bottomTopEffect {
+  from {
+    transform: translateY(-30px)
+  }
+  to {
+    transform: translateY(0) 
   }
 }
