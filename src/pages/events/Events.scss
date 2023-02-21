@@ -36,7 +36,7 @@
 .slide {
   display: flex;
   flex-direction: column;
-  height: 830px;
+  height: 860px;
   width: 100%;
 
   @include screensize(tab-land) {

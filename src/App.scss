@@ -13,6 +13,13 @@
   font-weight: 500;
 }
 
+body {
+	background: linear-gradient(-45deg, rgb(24,38,112), rgb(6,19,39));
+	background-size: 1000% 400%;
+	animation: gradient 15s ease infinite;
+	// height: 100vh;
+}
+
 
 html {
   font-size: 62.5%; //10px
@@ -29,12 +36,24 @@ html {
     font-size: 25%; //4px
   }
 
-  background: rgb(6,19,40);
+  // background: rgb(6,19,40);
 // background: linear-gradient(41deg, rgba(6,19,40,1) 35%, rgba(25,39,114,1) 87%);
-  background-image:
-  radial-gradient(at 87% 65%, hsla(244,70%,9%,1) 0px, transparent 50%),
-  radial-gradient(at 30% 0%, hsla(257,66%,23%,1) 0px, transparent 50%);
+  // background-image:
+  // radial-gradient(at 87% 65%, hsla(244,70%,9%,1) 0px, transparent 50%),
+  // radial-gradient(at 30% 0%, hsla(257,66%,23%,1) 0px, transparent 50%);
 
   height: 100%;
   max-width: 100% ;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }

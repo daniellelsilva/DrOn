@@ -10,7 +10,7 @@ export default function EmailBtn() {
 
   const handleClick = () => {
     setOpen(true)
-    navigator.clipboard.writeText('EMAIL AQUI')
+    navigator.clipboard.writeText('marcio@doutoron.app')
   }
 
   const LightTooltip = styled(({ className, ...props }) => (
@@ -41,7 +41,6 @@ export default function EmailBtn() {
       >
         <Button
           onClick={handleClick}
-          // className='whats-btn'
           className={`email-btn ${open ? 'btn-cyan' : 'btn-blue'}`}
           type='button'
           variant="contained"

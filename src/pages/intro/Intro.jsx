@@ -6,6 +6,7 @@ import Aspas from '../../images/aspas.svg';
 import { Icon } from '@iconify/react';
 
 import './Intro.scss';
+import { Button } from '@mui/material';
 
 export default function Intro() {
   return (
@@ -15,7 +16,7 @@ export default function Intro() {
 
       <header className='intro-header'>
         <img src={Frame} alt="proxy logo" className='intro-header-img'/>
-        <button type='button' className='intro-header-btn'>Entre em contato</button>
+        <Button href='https://wa.me/5549991345099' target='_blank' type='button' className='intro-header-btn'>Entre em contato</Button>
       </header>
 
       <section className='intro-main'>
