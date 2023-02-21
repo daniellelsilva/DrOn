@@ -27,7 +27,7 @@ export default function Footer() {
     <footer className='footer'>
       <main className='footer-main'>
         <div className='footer-social'>
-          <img src={proxyLogoFooter} alt="proxymed logo"/>
+          <img className='footer-img' src={proxyLogoFooter} alt="proxymed logo"/>
 
           <div className='footer-icons'>
             {socialIcons.map((icon) => (

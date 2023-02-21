@@ -144,3 +144,17 @@
     margin-top: 2%;
   }  
 }
+
+.mantine-UnstyledButton-root.mantine-Carousel-control.mantine-3qclsy {
+  @include screensize(phone) {
+    height: 20px;
+    width: 20px;;
+  }
+}
+
+.mantine-oqtyjo.mantine-Carousel-indicators {
+  @include screensize(phone) {
+    display: none;
+  }
+}
+
