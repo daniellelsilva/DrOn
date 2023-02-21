@@ -36,7 +36,7 @@
 .slide {
   display: flex;
   flex-direction: column;
-  height: 860px;
+  height: 840px;
   width: 100%;
 
   @include screensize(tab-land) {
@@ -47,7 +47,7 @@
   }
 
   &-img {
-    height: 66.1rem;
+    height: 60vh;
     // width: 147.4rem;
 
     &-1 {
@@ -67,11 +67,11 @@
     &-4 {
       background-image: url('./Images/004.png');
       background-size: cover;
-      background-position: left 10%;
+      background-position: left 15%;
     }&-5 {
       background-image: url('./Images/005.png');
       background-size: cover;
-      background-position: center;
+      background-position: left 40%;
     }&-6 {
       background-image: url('./Images/006.png');
       background-size: cover;

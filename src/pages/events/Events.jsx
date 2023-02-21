@@ -134,11 +134,10 @@ export default function Events() {
       <Carousel
         slideSize="80%"
         align='center'
-        withIndicators
         loop
-        // breakpoints={[{ maxWidth: 'sm', slideSize: '100%', slideGap: 2 }]}
-        slideGap="lg" 
-        controlsOffset="xl"
+        slideGap="md"
+        withIndicators
+        // controlsOffset="xl"
         controlSize={50}
         nextControlIcon={<Icon icon="ic:round-navigate-next" fontSize={45}/>}
         previousControlIcon={<Icon icon="ic:round-navigate-next" fontSize={45} rotate={2}/>}

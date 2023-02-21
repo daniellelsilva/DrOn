@@ -14,7 +14,11 @@ export default function EmailBtn() {
   }
 
   const LightTooltip = styled(({ className, ...props }) => (
-    <Tooltip {...props} classes={{ popper: className }} />
+    <Tooltip
+      {...props}
+      leaveDelay={5000}
+      classes={{ popper: className }}
+    />
   ))(({ theme }) => ({
     [`& .${tooltipClasses.tooltip}`]: {
       backgroundColor: '#FFFFFF',
@@ -34,6 +38,7 @@ export default function EmailBtn() {
         transferência. Basta colar no campo
         de destinatário em seu email!"
         arrow
+        leaveDelay={5}
         placement='top'
         autoHideDuration={5000}
         onClose={() => setOpen(false)}
