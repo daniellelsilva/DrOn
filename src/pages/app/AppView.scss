@@ -9,7 +9,7 @@
   // overflow-y: hidden;
 
   @include screensize(desktop) {
-    height: 130vh;
+    // height: 130vh;
   }
   @include screensize(tab-port) {
     height: 100vh;
@@ -21,10 +21,12 @@
 
   &-phone1 {
     // height: 100%;
+    z-index: 11;
     &-img {
       height: auto;
       position: absolute;
       top: -15rem;
+      z-index: 11;
 
       @include screensize(desktop) {
         height: 70vh;
@@ -56,6 +58,7 @@
       position: absolute;
       right: 0;
       top: 50rem;
+      z-index: 13;
 
       @include screensize(desktop) {
         height: 100vh;
@@ -235,5 +238,46 @@
         }
       }
     }
+  }
+}
+
+.decorative-circles {
+  position: relative;
+  height: 100%;
+  top: -67%;
+  // background-color: antiquewhite;
+  max-width: 100%;
+}
+
+.decorative-circle {
+  position: absolute;
+
+  &-1 {
+    left: 0;
+    top: 40%;
+  }
+
+  &-2 {
+    top: 92%;
+    left: 50%;
+  }
+
+  &-3 {
+    top: 50%;
+    left: 50vh;
+  }
+
+  &-4 {
+    z-index: 10;
+  }
+
+  &-4, &-5 {
+    right: 0;
+    top: -10%;
+  }
+
+  &-5 {
+    top: -20%;
+    z-index: -2;
   }
 }

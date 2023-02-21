@@ -5,6 +5,11 @@ import drOnApp from '../../images/DR.ONAPP.svg';
 import drOnLogo from '../../images/drOnLogo.svg';
 import appleStore from '../../images/appleStore.svg';
 import googlePlay from '../../images/googlePlay.svg';
+import decorativeCircle1 from '../../images/circle1.svg';
+import decorativeCircle2 from '../../images/circle2.svg';
+import decorativeCircle3 from '../../images/circle3.svg';
+import decorativeCircle4 from '../../images/circle4.svg';
+import decorativeCircle5 from '../../images/circle5.svg';
 
 import './AppView.scss'
 
@@ -57,14 +62,34 @@ export default function AppView() {
 
         <div className='app-download-links'>
           <div className='app-download-apple'>
-            <img src={appleStore} alt="apple store link" />
+            <a
+              target="_blank"
+              href='https://apps.apple.com/br/app/dr-on/id1545991089'
+            >
+              <img src={appleStore} alt="apple store link" />
+            </a>
           </div>
 
           <div className='app-download-google'>
-            <img src={googlePlay} alt="google play link" />
+            <a
+              target="_blank"
+              href='https://play.google.com/store/apps/details?id=br.com.mobiup.dron'
+            >
+              <img src={googlePlay} alt="google play link" />
+            </a>
           </div>
         </div>
       </div>
+      
+      <div className='decorative-circles'>
+        <img className='decorative-circle decorative-circle-1' src={decorativeCircle1} alt="" />
+        <img className='decorative-circle decorative-circle-2' src={decorativeCircle2} alt="" />
+        <img className='decorative-circle decorative-circle-3' src={decorativeCircle3} alt="" />
+
+        <img className='decorative-circle decorative-circle-4' src={decorativeCircle4} alt="" />
+        <img className='decorative-circle decorative-circle-5' src={decorativeCircle5} alt="" />
+      </div>
+        
     </main>
     )
 }
