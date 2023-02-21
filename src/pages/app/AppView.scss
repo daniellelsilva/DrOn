@@ -6,14 +6,6 @@
   background: linear-gradient(216.47deg, #5405F3 17.62%, #3EA2FF 78.75%);
   margin-top: 9%;
   position: relative;
-  // overflow-y: hidden;
-
-  @include screensize(desktop) {
-    // height: 130vh;
-  }
-  @include screensize(tab-port) {
-    height: 100vh;
-  }
 
   &-phone1, &-phone2 {
     position: relative;
@@ -42,7 +34,7 @@
         // left: -6%;
       }
       @include screensize(tab-land) {
-        height: 50vh;
+        height: 40vh;
         // left: -8%;
       }
       @include screensize(tab-port) {
@@ -61,7 +53,7 @@
       z-index: 13;
 
       @include screensize(desktop) {
-        height: 100vh;
+        height: 80vh;
         top: 48rem;
       }
       @include screensize(desk-small) {
@@ -75,9 +67,9 @@
         top: 72rem;
       }
       @include screensize(tab-land) {
-        height: 65vh;
+        height: 50vh;
         // right: -7%;
-        top: 75rem;
+        top: 80rem;
       }
       @include screensize(tab-port) {
         display: none;
@@ -94,13 +86,18 @@
       width: 90%;
     }
 
+    & img {
+      max-width: 90%;
+    }
     &-1 {
       color: $color-light-gray;
       font-size: 3.2rem;
       font-weight: 300;
       letter-spacing: $letter-spacing;
       text-transform: uppercase;
-
+      @include screensize(phone) {
+        font-size: 3rem;
+      }
     }
 
     &-info {
@@ -127,10 +124,12 @@
     }
 
     &-tags {
+      position: relative;
       display: flex;
       flex-direction: column;
       height: auto;
       margin-top: 10%;
+      z-index: 30;
     }
 
     &-tag {
@@ -162,15 +161,15 @@
     position: relative;
     left: 15%;
     top: 20%;
-    width: min-content;
-    text-align: center;
+    // width: min-content;
+    // text-align: center;
 
     @include screensize(desk-small) {
       left: 10%;
     }
     @include screensize(tab-big) {
-      left: 5%;
-      top: 15%;
+      left: 1%;
+      top: 21%;
       width: max-content;
 
       display: flex;
@@ -185,6 +184,7 @@
       left: 0;
       top: 15%;
       width: 100%;
+      z-index: 20;
     }
 
     &-logo {
@@ -199,7 +199,7 @@
         width: 80%;
       }
       @include screensize(tab-land) {
-        width: 70%;
+        width: 60%;
       } 
     }
 
@@ -222,12 +222,12 @@
       @include screensize(desktop) {
         width: 38rem;
       }
-      @include screensize(tab-big) {
+      @include screensize(tab-land) {
         height: 10,5rem;
         width: 35rem;
 
         & img {
-          width: 50%;
+          width: 70%;
         }
       }
       
@@ -255,20 +255,51 @@
   &-1 {
     left: 0;
     top: 40%;
+    @include screensize(tab-land) {
+      top: 30%;
+    }
+    @include screensize(tab-port) {
+      top: 45%;
+    }
+    @include screensize(phone) {
+      top: 30%;
+    }
   }
 
   &-2 {
     top: 92%;
     left: 50%;
+
+    @include screensize(desktop) {
+      left: 45%;
+    }
+    @include screensize(tab-land) {
+      top: 85%;
+      left: 30%;
+    }
+    @include screensize(tab-port) {
+      top: 73%;
+      left: 60%;
+    }
+    @include screensize(phone) {
+      top: 65%;
+      left: 50%;
+    }
   }
 
   &-3 {
     top: 50%;
     left: 50vh;
+    @include screensize(desk-small) {
+      display: none;
+    }
   }
 
   &-4 {
     z-index: 10;
+    @include screensize(tab-big) {
+      display: none;
+    }
   }
 
   &-4, &-5 {
@@ -279,5 +310,8 @@
   &-5 {
     top: -20%;
     z-index: -2;
+    @include screensize(tab-port) {
+      display: none;
+    }
   }
 }
