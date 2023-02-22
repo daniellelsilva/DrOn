@@ -8,19 +8,24 @@ import './Footer.scss';
 export default function Footer() {
   const socialIcons = [
     {
-      name: "ri:facebook-fill"
+      name: "ri:facebook-fill",
+      link: 'https://www.facebook.com/doutoronapp',
     },
     {
-      name: "ph:instagram-logo"
+      name: "ph:instagram-logo",
+      link: 'https://www.instagram.com/doutoron.app/',
     },
     {
-      name: "ri:linkedin-box-fill"
+      name: "ri:linkedin-box-fill",
+      link: 'https://www.linkedin.com/company/dr-on/',
     },
     {
-      name: "ri:whatsapp-line"
+      name: "ri:whatsapp-line",
+      link: 'https://wa.me/5549991345099',
     },
     {
-      name: "material-symbols:mail-outline"
+      name: "material-symbols:mail-outline",
+      link: 'contato@doutoron.app',
     },
   ]
   return (
@@ -30,9 +35,14 @@ export default function Footer() {
           <img className='footer-img' src={proxyLogoFooter} alt="proxymed logo"/>
 
           <div className='footer-icons'>
-            {socialIcons.map((icon) => (
-              <div className='footer-icon-div'>
-                <Icon className='footer-icon' icon={icon.name} />
+            {socialIcons.map((icon, index) => (
+              <div key={index} className='footer-icon-div'>
+                <a
+                  href={icon.link}
+                  target="_blank"
+                >
+                  <Icon className='footer-icon' icon={icon.name} />
+                </a>
               </div>
             ))}
           </div>

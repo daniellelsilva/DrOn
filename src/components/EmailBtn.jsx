@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
-import { Button, Snackbar} from '@mui/material';
+import { Button} from '@mui/material';
 import { styled } from '@mui/material/styles';
-import Typography from '@mui/material/Typography';
 import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
 import './Buttons.scss';
 
@@ -10,7 +9,7 @@ export default function EmailBtn() {
 
   const handleClick = () => {
     setOpen(true)
-    navigator.clipboard.writeText('marcio@doutoron.app')
+    navigator.clipboard.writeText('contato@doutoron.app')
   }
 
   const LightTooltip = styled(({ className, ...props }) => (
