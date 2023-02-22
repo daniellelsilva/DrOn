@@ -50,7 +50,7 @@
       position: absolute;
       right: 0;
       top: 50rem;
-      z-index: 13;
+      z-index: 200;
 
       @include screensize(desktop) {
         height: 80vh;
@@ -159,10 +159,11 @@
 
   &-download {
     position: relative;
-    left: 15%;
+    left: 10%;
     top: 20%;
-    // width: min-content;
-    // text-align: center;
+    z-index: 10;
+    width: min-content;
+    text-align: center;
 
     @include screensize(desk-small) {
       left: 10%;
@@ -283,7 +284,7 @@
     }
     @include screensize(phone) {
       top: 65%;
-      left: 50%;
+      left: 40%;
     }
   }
 

@@ -7,6 +7,7 @@
   // justify-content: center;
   flex-direction: column;
   margin-top: 6%;
+  width: 100%;
 
   &-title {
     display: flex;
@@ -31,6 +32,9 @@
     }
   }
 
+  &-cards-section {
+    width: 90%;
+  }
   &-cards {
     height: 52.8rem;
     display: flex;
@@ -38,6 +42,7 @@
     margin-top: 3%;
     // margin-right: 29.3rem;
     // margin-left: 30rem;
+    width: 100%;
 
     @include screensize(desktop) {
       margin-top: 5%;
@@ -51,17 +56,20 @@
     justify-content: center;
     transition: background-image 0.7s ease-in-out;
     height: 100%;
-    width: 26.5rem;
+    // width: 26.5rem;
     position: relative;
     z-index: 30;
     transition: all .10s;
+    flex-grow: 1;
+    flex-basis: 0;
+    background-size: cover;
 
-    @include screensize(desktop) {
-      width: 28rem;
-    }
-    @include screensize(desk-small) {
-      width: 25rem;
-    }
+    // @include screensize(desktop) {
+    //   width: 28rem;
+    // }
+    // @include screensize(desk-small) {
+    //   width: 25rem;
+    // }
 
     &-icon {
       display: flex;
@@ -107,7 +115,7 @@
       background: rgba(56, 72, 241, 0.7);
       opacity: 0;
       z-index: -2;
-      animation: opacityEffect2 .5s cubic-bezier(0.45, 0.05, 0.55, 0.95) both
+      animation: opacityEffect2 .5s cubic-bezier(0.45, 0.05, 0.55, 0.95) both;
     }
 
     &-text {
@@ -202,6 +210,7 @@
 }
 .steps-cards .steps-card:hover::before {
   animation: opacityEffect .5s cubic-bezier(0.45, 0.05, 0.55, 0.95) both;
+  flex-grow: 1;
 }
 .steps-cards .steps-card:hover .steps-card-text {
   opacity: 1;

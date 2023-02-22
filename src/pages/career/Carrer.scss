@@ -35,17 +35,17 @@
     @include screensize(desk-small) {
       height: 115%;
       top: -5%;
-      right: -2%;
+      // right: -2%;
     }
     @include screensize(tab-big) {
       height: 110%;
       top: -2%;
-      right: -3%;
+      // right: -3%;
     }
     @include screensize(tab-port) {
       height: 100%;
       top: -1%;
-      right: -5%;
+      // right: -5%;
     }
   }
 
