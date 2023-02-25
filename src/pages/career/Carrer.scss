@@ -43,9 +43,7 @@
       // right: -3%;
     }
     @include screensize(tab-port) {
-      height: 100%;
-      top: -1%;
-      // right: -5%;
+      display: none;
     }
   }
 
@@ -109,7 +107,6 @@
     display: flex;
     flex-direction: column;
     margin-top: 6%;
-
   }
 
   &-step {
@@ -147,6 +144,9 @@
       }
       @include screensize(tab-land) {
         max-width: 42%;
+      }
+      @include screensize(tab-port) {
+        max-width: 90%;
       }
     }
   }
