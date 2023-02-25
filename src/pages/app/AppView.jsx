@@ -63,6 +63,7 @@ export default function AppView() {
         <div className='app-download-links'>
           <div className='app-download-apple'>
             <a
+              rel="noreferrer"
               target="_blank"
               href='https://apps.apple.com/br/app/dr-on/id1545991089'
             >
@@ -72,6 +73,7 @@ export default function AppView() {
 
           <div className='app-download-google'>
             <a
+              rel="noreferrer"
               target="_blank"
               href='https://play.google.com/store/apps/details?id=br.com.mobiup.dron'
             >

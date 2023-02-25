@@ -40,6 +40,7 @@ export default function Footer() {
                 <a
                   href={icon.link}
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <Icon className='footer-icon' icon={icon.name} />
                 </a>
