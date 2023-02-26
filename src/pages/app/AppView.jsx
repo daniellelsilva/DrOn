@@ -1,4 +1,6 @@
 import React from 'react';
+import { motion } from "framer-motion";
+
 import phone1 from '../../images/phone1.svg';
 import phone2 from '../../images/phone2.svg';
 import drOnApp from '../../images/DR.ONAPP.svg';
@@ -14,8 +16,40 @@ import decorativeCircle5 from '../../images/circle5.svg';
 import './AppView.scss'
 
 export default function AppView() {
+  const tagVariants = {
+    offscreen:{
+      opacity: 0,
+      x: 50
+    },
+    onscreen: index => ({
+      opacity: 1,
+      x: 0,
+      transition: { duration: .8, delay: index * .2 }
+    }),
+  }
+
+  const tagsText = [
+    {
+      text: 'Curadoria especializada'
+    },
+    {
+      text: 'Simpósios exclusivos'
+    },
+    {
+      text: 'Méticas de redes sociais'
+    },
+    {
+      text: 'Dr.Talks (podcats)'
+    },
+  ];
+
   return (
-    <main className='app'>
+    <motion.main
+      className='app'
+      // initial="offscreen"
+      // whileInView="onscreen"
+      // viewport={{ once: true, amount: 0.8 }}    
+    >
       <div className='app-phone1'>
         <img src={phone1} alt="demonstração do app" className='app-phone1-img'/>
       </div>
@@ -36,50 +70,48 @@ export default function AppView() {
           <p className='app-text-info-3'>Todo médico empreendedor deve conhecer!</p>
         </div>
         
-        <div className='app-text-tags'>
-          <div className='app-text-tag'>
-            <p>Curadoria especializada</p>
-          </div>
-
-          <div className='app-text-tag'>
-            <p>Simpósios exclusivos</p>
-          </div>
-
-          <div className='app-text-tag'>
-            <p>Méticas de redes sociais</p>
-          </div>
-
-          <div className='app-text-tag'>
-            <p>Dr.Talks (podcats)</p>
-          </div>
-        </div>
+        <motion.div
+          className='app-text-tags'
+          initial="offscreen"
+          whileInView="onscreen"
+          viewport={{ once: true, amount: 0.8 }}
+        >
+          {tagsText.map((tag, index) => (
+            <motion.div
+              className='app-text-tag'
+              variants={tagVariants}
+              custom={index}
+            >
+              <p>{tag.text}</p>
+            </motion.div>
+          ))}
+        </motion.div>
       </section>
-
-      
 
       <div className='app-download'>
         <img src={drOnLogo} alt="Dr,On logo" className='app-download-logo'/>
-
         <div className='app-download-links'>
-          <div className='app-download-apple'>
-            <a
-              rel="noreferrer"
-              target="_blank"
-              href='https://apps.apple.com/br/app/dr-on/id1545991089'
-            >
+          <a
+            rel="noreferrer"
+            target="_blank"
+            href='https://apps.apple.com/br/app/dr-on/id1545991089'
+            className='app-download-apple'
+          >
+            <div >
               <img src={appleStore} alt="apple store link" />
-            </a>
-          </div>
+            </div>
+          </a>
 
-          <div className='app-download-google'>
-            <a
-              rel="noreferrer"
-              target="_blank"
-              href='https://play.google.com/store/apps/details?id=br.com.mobiup.dron'
-            >
+          <a
+            rel="noreferrer"
+            target="_blank"
+            href='https://play.google.com/store/apps/details?id=br.com.mobiup.dron'
+            className='app-download-google'
+          >
+            <div >
               <img src={googlePlay} alt="google play link" />
-            </a>
-          </div>
+            </div>
+          </a>
         </div>
       </div>
       
@@ -92,6 +124,6 @@ export default function AppView() {
         <img className='decorative-circle decorative-circle-5' src={decorativeCircle5} alt="" />
       </div>
         
-    </main>
+    </motion.main>
     )
 }

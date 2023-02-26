@@ -1,6 +1,6 @@
 import React from 'react';
 import { Icon } from '@iconify/react';
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
 import WhatsAppBtn from '../../components/WhatsAppBtn';
 import EmailBtn from '../../components/EmailBtn';
 

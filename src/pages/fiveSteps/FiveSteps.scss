@@ -233,7 +233,7 @@
 }
 .steps-cards .steps-card:hover .steps-card-icon {
   border-radius: 50%;
-  animation: scaleEffect 1s cubic-bezier(0.45, 0.05, 0.55, 0.95) both, slideEffect 1s ease both;
+  animation: scaleEffect 1s both, slideEffect 1s ease both;
 
   @include screensize(desk-small) {
     font-size: 4rem;
