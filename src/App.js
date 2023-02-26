@@ -6,10 +6,11 @@ import Events from './pages/events/Events';
 import FiveSteps from './pages/fiveSteps/FiveSteps';
 import Footer from './pages/footer/Footer';
 import Intro from './pages/intro/Intro';
+import { motion } from "framer-motion"
 
 function App() {
   return (
-    <div className="App">
+    <motion.div className="App" viewport={{ once: true, amount: 0.8 }}>
       <Intro/>
       <FiveSteps/>
       <Carrer/>
@@ -17,7 +18,7 @@ function App() {
       <Agenda/>
       <AppView/>
       <Footer/>
-    </div>
+    </motion.div>
   );
 }
 

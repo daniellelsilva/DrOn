@@ -4,7 +4,7 @@ import Marcio1 from '../../images/Marcio1.svg';
 import ProxyLogo from '../../images/Group.svg';
 import Aspas from '../../images/aspas.svg';
 import { Icon } from '@iconify/react';
-import { motion, useScroll } from "framer-motion"
+import { motion } from "framer-motion"
 import { Button } from '@mui/material';
 
 import './Intro.scss';

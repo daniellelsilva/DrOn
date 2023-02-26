@@ -1,13 +1,30 @@
 import React from 'react';
 import { Icon } from '@iconify/react';
+import { motion } from "framer-motion"
 import WhatsAppBtn from '../../components/WhatsAppBtn';
 import EmailBtn from '../../components/EmailBtn';
 
 import './FiveSteps.scss';
 
 export default function FiveSteps() {
+  const variants = {
+    offscreen:{
+      opacity: 0,
+      y: 50
+    },
+    onscreen: i => ({
+      opacity: 1,
+      y: 0,
+      transition: { duration: .8, delay: i * .2 }
+    }),
+  }
   return (
-    <main className='steps'>
+    <motion.main
+      className='steps'
+      initial="offscreen"
+      whileInView="onscreen"
+      viewport={{ once: true, amount: 0.8 }}
+    >
       <section className='steps-title'>
         <p>Mentoria em Health Business</p>
         <p>5 passos</p>
@@ -15,7 +32,11 @@ export default function FiveSteps() {
 
       <section className='steps-cards-section'>
         <div className='steps-cards'>
-          <div className='steps-card steps-card-1'>
+          <motion.div
+            className='steps-card steps-card-1'
+            variants={variants}
+            custom={1}
+          >
             <div className='steps-card-icon'>
               <Icon icon="mdi:map-marker" />
             </div>
@@ -24,9 +45,13 @@ export default function FiveSteps() {
               <p>Primeiro encontro</p>
               <p>Onde estou?</p>
             </div>
-          </div>
+          </motion.div>
 
-          <div className='steps-card steps-card-2'>
+          <motion.div
+            className='steps-card steps-card-2'
+            variants={variants}
+            custom={2}
+          >
             <div className='steps-card-icon'>
               <Icon icon="ri:treasure-map-fill" />
             </div>
@@ -35,9 +60,13 @@ export default function FiveSteps() {
               <p>Segundo encontro</p>
               <p>Para onde vou?</p>
             </div>
-          </div>
+          </motion.div>
 
-          <div className='steps-card steps-card-3'>
+          <motion.div
+            className='steps-card steps-card-3'
+            variants={variants}
+            custom={3}
+          >
             <div className='steps-card-icon'>
               <Icon icon="mdi:account-multiple" />
             </div>
@@ -46,9 +75,13 @@ export default function FiveSteps() {
               <p>Terceiro encontro</p>
               <p>Com quem eu vou?</p>
             </div>    
-          </div>
+          </motion.div>
 
-          <div className='steps-card steps-card-4'>
+          <motion.div
+            className='steps-card steps-card-4'
+            variants={variants}
+            custom={4}
+          >
             <div className='steps-card-icon'>
               <Icon icon="material-symbols:potted-plant" />
             </div>
@@ -57,9 +90,13 @@ export default function FiveSteps() {
               <p>Quarto encontro</p>
               <p>Seu plano</p>
             </div>
-          </div>
+          </motion.div>
 
-          <div className='steps-card steps-card-5'>
+          <motion.div
+            className='steps-card steps-card-5'
+            variants={variants}
+            custom={5}
+          >
             <div className='steps-card-icon'>
               <Icon icon="material-symbols:star-rate-rounded" />
             </div>
@@ -68,7 +105,7 @@ export default function FiveSteps() {
               <p>Quinto encontro</p>
               <p>Overview</p>
             </div>  
-          </div>
+          </motion.div>
 
         </div>
       </section>
@@ -84,6 +121,6 @@ export default function FiveSteps() {
           <EmailBtn/>
         </div>
       </section>
-    </main>
+    </motion.main>
   )
 }
