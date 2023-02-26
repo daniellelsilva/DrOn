@@ -61,8 +61,8 @@ export default function Footer() {
         </div>
 
         <div className='footer-terms'>
-          <p>Terms and conditions</p>
-          <p>COOKIE POLICY</p>
+          {/* <p>Terms and conditions</p>
+          <p>COOKIE POLICY</p> */}
         </div>
 
       </section>
