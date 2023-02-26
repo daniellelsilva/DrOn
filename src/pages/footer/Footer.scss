@@ -44,6 +44,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all .4s;
+
+    &:hover {
+      transform: translateY(-3px);
+    }
   }
 
   &-icon {
