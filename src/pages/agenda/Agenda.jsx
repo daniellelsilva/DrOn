@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from "framer-motion";
 import AgendaObject from './AgendaObject';
 import WhatsAppBtn from '../../components/WhatsAppBtn';
 import EmailBtn from '../../components/EmailBtn';
@@ -6,30 +7,65 @@ import EmailBtn from '../../components/EmailBtn';
 import './Agenda.scss';
 
 export default function Agenda() {
+  const leftVariants = {
+    offscreen:{
+      opacity: 0,
+      x: -200
+    },
+    onscreen: index => ({
+      opacity: 1,
+      x: 0,
+      transition: { duration: .9, delay: index * .2 }
+    }),
+  }
+  const rightVariants = {
+    offscreen:{
+      opacity: 0,
+      x: 200
+    },
+    onscreen: index => ({
+      opacity: 1,
+      x: 0,
+      transition: { duration: .9, delay: index * .2 }
+    }),
+  }
   return (
-    <main className='agenda'>
+    <motion.main
+      className='agenda'
+      initial="offscreen"
+      whileInView="onscreen"
+      viewport={{ once: true, amount: 0.8 }}
+    >
       <div className='agenda-title'>
         <p>Agenda</p>
         <p>Próximos eventos</p>
       </div>
 
       <section className='agenda-events'>
-        {AgendaObject.map((agenda) => (
+        {AgendaObject.map((agenda, index) => (
           <div className='agenda-event'>
-            <div className='agenda-event-date'>
+            <motion.div
+              className='agenda-event-date'
+              variants={leftVariants}
+              custom={index}
+            >
               <p>{agenda.day}</p>
               <p>{agenda.month}</p>
               <p>{agenda.year}</p>
-            </div>  
+            </motion.div>  
           
-            <div className='agenda-event-infos neon-border'>
+            <motion.div
+              className='agenda-event-infos neon-border'
+              variants={rightVariants}
+              custom={index}
+            >
               <div className='agenda-event-name'>
                 <p>{agenda.event}</p>
                 <p>{agenda.eventName}</p>
               </div>
             
               <p className='agenda-event-info'>{agenda.info}</p>
-            </div>
+            </motion.div>
           </div>
         ))}
       </section>
@@ -42,6 +78,6 @@ export default function Agenda() {
           </div>
       </section>
 
-    </main>
+    </motion.main>
   )
 }
