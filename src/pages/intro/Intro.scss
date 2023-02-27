@@ -12,7 +12,7 @@
     width: 85.8rem;
     position: absolute;
     // top: 25rem;
-    top: 18%;
+    top: 20%;
     left: 0;
     opacity: .49;
     z-index: -1;
@@ -53,10 +53,13 @@
   &-header {
     display: flex;
     align-items: center;
+    height: 100%;
     justify-content: space-between;
+    // padding-bottom: 6%;
 
     &-img {
-      padding: 7.7rem 0 0 13.5rem;
+      height: 13rem;
+      padding: 7.7rem 0 0 13rem;
 
       @include screensize(tab-land) {
       width: 30%;

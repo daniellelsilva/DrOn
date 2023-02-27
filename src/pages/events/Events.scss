@@ -36,7 +36,6 @@
 .slide {
   display: flex;
   flex-direction: column;
-  height: 840px;
   width: 100%;
 
   @include screensize(tab-land) {
@@ -48,7 +47,6 @@
 
   &-img {
     height: 60vh;
-    // width: 147.4rem;
 
     &-1 {
       background-image: url('./Images/001.png');
@@ -121,8 +119,6 @@
 
     & p:first-child {
       width: 50%;
-      // padding-right: .5%;
-      // border-right: 1px solid $color-light-blue;
     }
 
     & p:nth-child(2) {

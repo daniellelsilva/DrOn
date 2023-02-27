@@ -6,7 +6,7 @@
   align-items: center;
   // justify-content: center;
   flex-direction: column;
-  margin-top: 6%;
+  margin-top: 12%;
   width: 100%;
 
   &-title {
@@ -14,6 +14,7 @@
 
     font-size: 4rem;
     letter-spacing: $letter-spacing;
+    padding-bottom: 2%;
     text-transform: uppercase;
 
     @include screensize(desk-small) {
@@ -63,13 +64,6 @@
     flex-grow: 1;
     flex-basis: 0;
     background-size: cover;
-
-    // @include screensize(desktop) {
-    //   width: 28rem;
-    // }
-    // @include screensize(desk-small) {
-    //   width: 25rem;
-    // }
 
     &-icon {
       display: flex;
@@ -147,7 +141,7 @@
   }
 
   &-info {
-    margin-top: 5%;
+    margin-top: 13%;
     width: 166.2rem;
     height: 16.4rem;
     display: flex;
