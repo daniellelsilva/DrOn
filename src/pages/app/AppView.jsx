@@ -74,7 +74,7 @@ export default function AppView() {
           className='app-text-tags'
           initial="offscreen"
           whileInView="onscreen"
-          viewport={{ once: true, amount: 0.8 }}
+          viewport={{ once: true}}
         >
           {tagsText.map((tag, index) => (
             <motion.div

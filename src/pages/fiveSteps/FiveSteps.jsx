@@ -10,7 +10,7 @@ export default function FiveSteps() {
   const variants = {
     offscreen:{
       opacity: 0,
-      y: 50
+      y: 100
     },
     onscreen: i => ({
       opacity: 1,
@@ -18,12 +18,19 @@ export default function FiveSteps() {
       transition: { duration: .8, delay: i * .2 }
     }),
   }
+
+  const teste = {
+    off: {
+      opacity: 0,
+  
+    }
+  }
   return (
     <motion.main
       className='steps'
       initial="offscreen"
       whileInView="onscreen"
-      viewport={{ once: true, amount: 0.8 }}
+      viewport={{ once: true }}
     >
       <section className='steps-title'>
         <p>Mentoria em Health Business</p>
