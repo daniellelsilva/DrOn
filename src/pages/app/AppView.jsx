@@ -16,18 +16,6 @@ import decorativeCircle5 from '../../images/circle5.svg';
 import './AppView.scss'
 
 export default function AppView() {
-  const tagVariants = {
-    offscreen:{
-      opacity: 0,
-      x: 50
-    },
-    onscreen: index => ({
-      opacity: 1,
-      x: 0,
-      transition: { duration: .8, delay: index * .2 }
-    }),
-  }
-
   const tagsText = [
     {
       text: 'Curadoria especializada'
@@ -43,20 +31,62 @@ export default function AppView() {
     },
   ];
 
+  const tagVariants = {
+    offscreen:{
+      opacity: 0,
+      x: 50
+    },
+    onscreen: index => ({
+      opacity: 1,
+      x: 0,
+      transition: { duration: .8, delay: index * .2 }
+    }),
+  }
+
+  const phoneVariants = {
+    intialScreen: index => ({
+      opacity: 0,
+      x: index === 1 ? -100 : 100
+    }),
+    finalScreen: index => ({
+      opacity: 1,
+      x: 0,
+      transition: { duration: .8, delay: index * .4}
+    }),
+  }
+
   return (
     <motion.main
       className='app'
-      // initial="offscreen"
-      // whileInView="onscreen"
-      // viewport={{ once: true, amount: 0.8 }}    
+      // initial="intialScreen"
+      // whileInView="finalScreen"
+      // viewport={{ once: true }}    
     >
-      <div className='app-phone1'>
-        <img src={phone1} alt="demonstração do app" className='app-phone1-img'/>
-      </div>
+      <motion.div
+        className='app-phone1'
+        initial="intialScreen"
+        whileInView="finalScreen"
+        variants={phoneVariants}
+        custom={ 1}
+        viewport={{once: true}}
+      >
+        <img
+          src={phone1}
+          alt="demonstração do app"
+          className='app-phone1-img'
+        />
+      </motion.div>
 
-      <div className='app-phone2'>
-        <img src={phone2} alt="demonstração do app" className='app-phone2-img'/>
-      </div>
+      <motion.div
+        className='app-phone2'
+        initial="intialScreen"
+        whileInView="finalScreen"
+        variants={phoneVariants}
+        custom={ 2 }
+        viewport={{once: true}}
+      >
+        <img  src={phone2} alt="demonstração do app" className='app-phone2-img'/>
+      </motion.div>
 
       <section className='app-text'>
         <img src={drOnApp} alt="Dr.On App logo"/>

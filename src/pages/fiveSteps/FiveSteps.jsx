@@ -19,18 +19,12 @@ export default function FiveSteps() {
     }),
   }
 
-  const teste = {
-    off: {
-      opacity: 0,
-  
-    }
-  }
   return (
     <motion.main
       className='steps'
       initial="offscreen"
       whileInView="onscreen"
-      viewport={{ once: true }}
+      viewport={{ once: true, amount: 0.4 }}
     >
       <section className='steps-title'>
         <p>Mentoria em Health Business</p>
