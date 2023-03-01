@@ -4,7 +4,6 @@
 .steps {
   display: flex;
   align-items: center;
-  // justify-content: center;
   flex-direction: column;
   margin-top: 12%;
   width: 100%;
@@ -41,8 +40,6 @@
     display: flex;
     flex-direction: row;
     margin-top: 3%;
-    // margin-right: 29.3rem;
-    // margin-left: 30rem;
     width: 100%;
 
     @include screensize(desktop) {
@@ -57,7 +54,6 @@
     justify-content: center;
     transition: background-image 0.7s ease-in-out;
     height: 100%;
-    // width: 26.5rem;
     position: relative;
     z-index: 30;
     transition: all .10s;
@@ -193,7 +189,6 @@
       }
       @include screensize(tab-land) {
         margin-right: 7%;
-        // width: 35%;
       }
     }
   }

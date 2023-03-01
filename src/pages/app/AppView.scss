@@ -9,10 +9,10 @@
 
   &-phone1, &-phone2 {
     position: relative;
+
   }
 
   &-phone1 {
-    // height: 100%;
     z-index: 11;
     &-img {
       height: auto;
@@ -22,20 +22,16 @@
 
       @include screensize(desktop) {
         height: 70vh;
-        // left: -3%;
       }
       @include screensize(desk-small) {
         height: 60vh;
         top: -10rem;
-        // left: -5%;
       }
       @include screensize(tab-big) {
         height: 55vh;
-        // left: -6%;
       }
       @include screensize(tab-land) {
         height: 40vh;
-        // left: -8%;
       }
       @include screensize(tab-port) {
         display: none;
@@ -44,9 +40,7 @@
   }
 
   &-phone2 {
-    // height: 100%;
     &-img {
-      // height: 80%;
       position: absolute;
       right: 0;
       top: 50rem;
@@ -58,17 +52,14 @@
       }
       @include screensize(desk-small) {
         height: 80vh;
-        // right: -5%;
         top: 60rem;
       }
       @include screensize(tab-big) {
         height: 75vh;
-        // right: -5%;
         top: 72rem;
       }
       @include screensize(tab-land) {
         height: 50vh;
-        // right: -7%;
         top: 80rem;
       }
       @include screensize(tab-port) {

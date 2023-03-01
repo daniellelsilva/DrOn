@@ -39,41 +39,51 @@ export default function AppView() {
     onscreen: index => ({
       opacity: 1,
       x: 0,
-      transition: { duration: .8, delay: index * .2 }
+      transition: { duration: 1, delay: index * .4 }
     }),
   }
 
   const phoneVariants = {
     intialScreen: index => ({
       opacity: 0,
-      x: index === 1 ? -100 : 100
+      x: index === 1 ? -100 : 100,
     }),
     finalScreen: index => ({
       opacity: 1,
       x: 0,
-      transition: { duration: .8, delay: index * .4}
+      transition: { duration: .6, delay: index * .3},
+    }),
+  }
+
+  const circleVariants = {
+    initialScreen: {
+      opacity: 0,
+      y: '30%',
+    },
+    finalScreen: index => ({
+      opacity: 1,
+      y: 0,
+      transition: { duration: .9, delay: index * .4},
     }),
   }
 
   return (
     <motion.main
       className='app'
-      // initial="intialScreen"
-      // whileInView="finalScreen"
-      // viewport={{ once: true }}    
     >
       <motion.div
         className='app-phone1'
         initial="intialScreen"
         whileInView="finalScreen"
         variants={phoneVariants}
-        custom={ 1}
+        custom={1}
         viewport={{once: true}}
+        
       >
-        <img
+        <motion.img
           src={phone1}
           alt="demonstração do app"
-          className='app-phone1-img'
+          className='app-phone1-img'          
         />
       </motion.div>
 
@@ -85,7 +95,9 @@ export default function AppView() {
         custom={ 2 }
         viewport={{once: true}}
       >
-        <img  src={phone2} alt="demonstração do app" className='app-phone2-img'/>
+        <motion.img
+          src={phone2}
+          alt="demonstração do app" className='app-phone2-img'/>
       </motion.div>
 
       <section className='app-text'>
@@ -145,15 +157,20 @@ export default function AppView() {
         </div>
       </div>
       
-      <div className='decorative-circles'>
-        <img className='decorative-circle decorative-circle-1' src={decorativeCircle1} alt="" />
-        <img className='decorative-circle decorative-circle-2' src={decorativeCircle2} alt="" />
-        <img className='decorative-circle decorative-circle-3' src={decorativeCircle3} alt="" />
+      <motion.div
+        className='decorative-circles'
+        initial="initialScreen"
+        whileInView="finalScreen"
+        variants={circleVariants}  
+        viewport={{once: true}}
+      >
+        <motion.img variants={circleVariants} custom={5} className='decorative-circle decorative-circle-1' src={decorativeCircle1} alt="" />
+        <motion.img variants={circleVariants} custom={6} className='decorative-circle decorative-circle-2' src={decorativeCircle2} alt="" />
+        <motion.img variants={circleVariants} custom={3} className='decorative-circle decorative-circle-3' src={decorativeCircle3} alt="" />
 
-        <img className='decorative-circle decorative-circle-4' src={decorativeCircle4} alt="" />
-        <img className='decorative-circle decorative-circle-5' src={decorativeCircle5} alt="" />
-      </div>
-        
+        <motion.img variants={circleVariants} custom={2} className='decorative-circle decorative-circle-4' src={decorativeCircle4} alt="" />
+        <motion.img variants={circleVariants} custom={2} className='decorative-circle decorative-circle-5' src={decorativeCircle5} alt="" />
+      </motion.div>  
     </motion.main>
     )
 }

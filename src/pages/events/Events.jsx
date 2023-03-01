@@ -136,8 +136,6 @@ export default function Events() {
         align='center'
         loop
         slideGap="md"
-        // withIndicators
-        // controlsOffset="xl"
         controlSize={50}
         nextControlIcon={<Icon icon="ic:round-navigate-next" fontSize={45}/>}
         previousControlIcon={<Icon icon="ic:round-navigate-next" fontSize={45} rotate={2}/>}

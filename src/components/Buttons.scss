@@ -8,7 +8,6 @@
   width: 25.1rem;
 
   &:hover {
-    // transition: transform .5s;
     transform: translateY(-6px);
     background-color: azure;
   }
@@ -17,13 +16,6 @@
     width: 46%;
   }
 }
-
-// .whats-btn:hover{
-
-//     transform: translateY(-6px);
-//     background-color: azure !important;
-
-// }
 
 .MuiTooltip-arrow.css-kudwh-MuiTooltip-arrow {
   color: $color-white;
@@ -36,7 +28,6 @@
 }
 
 .btn-cyan {
-  // transition: all .4s;
   background-color: aquamarine !important;
 }
 

@@ -3,7 +3,6 @@
 @import './sass/variables.scss';
 @import './sass/mixins.scss';
 
-
 * {
   margin: 0;
   padding: 0;
@@ -17,7 +16,7 @@ body {
 	background: radial-gradient(circle, rgb(24,38,112), rgb(6,19,39));
 	background-size: 1000% 400%;
 	animation: gradient 15s ease infinite;
-	// height: 100vh;
+  overflow-x: hidden;
 }
 
 

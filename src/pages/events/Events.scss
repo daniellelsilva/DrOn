@@ -3,12 +3,6 @@
 
 .events {
   padding-top: 15%;
-  // width: 95%;
-  // margin: auto;
-
-  @include screensize(desktop) {
-    // width: 100%;
-  }
 
   &-title {
     font-size: 4rem;
@@ -127,8 +121,6 @@
 
     & p:last-child {
       width: 50%;
-
-      // padding-left: .5%;
     }
   }
 

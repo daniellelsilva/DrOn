@@ -11,7 +11,6 @@
     height: 78.2rem;
     width: 85.8rem;
     position: absolute;
-    // top: 25rem;
     top: 20%;
     left: 0;
     opacity: .49;
@@ -55,7 +54,6 @@
     align-items: center;
     height: 100%;
     justify-content: space-between;
-    // padding-bottom: 6%;
 
     &-img {
       height: 13rem;
@@ -97,7 +95,6 @@
     color: $color-white;
     font-size: 6rem;
     letter-spacing: $letter-spacing;
-    // margin-right: 11.6rem;
     margin-left: 54.8rem;
     margin-top: 13%;
     text-transform: uppercase;
@@ -196,10 +193,8 @@
 
   &-icons {
     display: flex;
-    // justify-content: space-between;
     margin-top: 6%;
     margin-left: 71rem;
-    // margin-right: 29.3rem;
 
     @include screensize(tab-land) {
       margin-left: 50%;

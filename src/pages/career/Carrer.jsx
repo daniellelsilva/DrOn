@@ -5,7 +5,6 @@ import CarrerObject from './CarrerObject';
 import ProxyLogo from '../../images/Group.svg';
 import Marcio2 from '../../images/Marcio2.svg';
 
-
 import './Carrer.scss';
 
 export default function Carrer() {
@@ -21,18 +20,6 @@ export default function Carrer() {
     }),
   };
 
-  const rightVariants = {
-    offscreen:{
-      opacity: 0,
-      x: 200
-    },
-    onscreen: index => ({
-      opacity: 1,
-      x: 0,
-      transition: { duration: .9}
-    }),
-  };
-
   return (
     <motion.main
       className='carrer'
@@ -45,13 +32,19 @@ export default function Carrer() {
         src={Marcio2}
         alt="Proxymed ceo"
         className='carrer-marcio-img'
-        variants={rightVariants}
+        initial={{ opacity: 0, x: 400}}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ ease: "easeOut", duration: 1.5 }}
+        viewport={{ once: true }}
       />
 
       <div className='carrer-main'>
         <motion.section
           className='carrer-name'
-          variants={rightVariants}
+          initial={{ opacity: 0, x: 200}}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ ease: "easeOut", duration: 2, delay: .5 }}
+          viewport={{ once: true }}
         >
           <p>MÁRCIO L L SOUZA</p>
           <p>Carreira</p>
