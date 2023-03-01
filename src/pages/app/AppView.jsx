@@ -63,7 +63,7 @@ export default function AppView() {
     finalScreen: index => ({
       opacity: 1,
       y: 0,
-      transition: { duration: .9, delay: index * .4},
+      transition: { duration: .9, delay: index * .3},
     }),
   }
 
@@ -168,8 +168,8 @@ export default function AppView() {
         <motion.img variants={circleVariants} custom={6} className='decorative-circle decorative-circle-2' src={decorativeCircle2} alt="" />
         <motion.img variants={circleVariants} custom={3} className='decorative-circle decorative-circle-3' src={decorativeCircle3} alt="" />
 
-        <motion.img variants={circleVariants} custom={2} className='decorative-circle decorative-circle-4' src={decorativeCircle4} alt="" />
-        <motion.img variants={circleVariants} custom={2} className='decorative-circle decorative-circle-5' src={decorativeCircle5} alt="" />
+        <motion.img variants={circleVariants} custom={1} className='decorative-circle decorative-circle-4' src={decorativeCircle4} alt="" />
+        <motion.img variants={circleVariants} custom={1} className='decorative-circle decorative-circle-5' src={decorativeCircle5} alt="" />
       </motion.div>  
     </motion.main>
     )
