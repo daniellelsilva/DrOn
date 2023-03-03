@@ -7,6 +7,9 @@ import drOnApp from '../../images/DR.ONAPP.svg';
 import drOnLogo from '../../images/drOnLogo.svg';
 import appleStore from '../../images/appleStore.svg';
 import googlePlay from '../../images/googlePlay.svg';
+import DrVector from '../../images/VectorAppView.svg';
+import DrText from '../../images/TextAppView.svg';
+
 import decorativeCircle1 from '../../images/circle1.svg';
 import decorativeCircle2 from '../../images/circle2.svg';
 import decorativeCircle3 from '../../images/circle3.svg';
@@ -70,7 +73,15 @@ export default function AppView() {
   return (
     <motion.main
       className='app'
-    >
+    > 
+      <motion.div className='app-intro'>
+        <img src={DrVector} alt=""/>
+        <div className='app-intro-div'>
+          <p>Saiba mais</p>
+          <img src={DrText} alt=""/>
+        </div>
+
+      </motion.div>
       <motion.div
         className='app-phone1'
         initial="intialScreen"

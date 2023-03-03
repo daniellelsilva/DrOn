@@ -8,10 +8,6 @@ const CarrerObject = [
     subtitle: 'Mentoria exclusiva, customizada, baseada na realidade do médico e do mercado onde está inserido.'
   },
   {
-    title:'SÓCIO-PROPRIETÁRIO Digital Doctor',
-    subtitle: 'Consultoria em transformação digital de clínicas e consultórios médicos'
-  },
-  {
     title:'PALESTRANTE Marketing médico',
     subtitle: 'Vários congressos em todo o Brasil'
   },
@@ -20,7 +16,7 @@ const CarrerObject = [
     subtitle: ''
   },
   {
-    title:'Criador do método',
+    title:'Criador do método:',
     subtitle: 'Transforme sua secretária em gestora de relacionamento com pacientes'
   },
 ]

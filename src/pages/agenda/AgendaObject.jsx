@@ -1,14 +1,6 @@
 const AgendaObject = [
   {
     day:'',
-    month: 'MAR',
-    year:'2023',
-    event: 'sbot rj',
-    eventName: 'Dr.On Day',
-    info: 'Dia todo dedicado a conteúdos agregadores para médicos.'
-  },
-  {
-    day:'',
     month: 'MAI',
     year: '2023',
     event: 'CBRH',
@@ -25,11 +17,11 @@ const AgendaObject = [
   },
   {
     day:'',
-    month: 'AGO',
+    month: 'SET',
     year: '2023',
-    event: 'MARKETING MÉDICO BH',
-    eventName: 'DR.ON DAY BH',
-    info: 'Palestra marketing médico e estratégias na saúde BH'
+    event: 'BELO HORIZONTE MG',
+    eventName: 'TRÊS PALESTRAS IMPERDÍVEIS',
+    info: 'Marketing médico | Dr.On®Day | Mesa redonda sobre Health Business '
   },
 ]
 
