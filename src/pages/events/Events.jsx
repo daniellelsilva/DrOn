@@ -117,7 +117,7 @@ export default function Events() {
             <div className='slide-title-div slide-title-div-1'>
               <p>{image.eventName}</p>
             </div>
-            <p>|</p>
+
             <div className='slide-title-div slide-title-div-2'>
               <p>{image.subject}</p>
             </div>
