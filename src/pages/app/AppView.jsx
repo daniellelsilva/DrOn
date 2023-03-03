@@ -75,7 +75,7 @@ export default function AppView() {
       className='app'
     > 
       <motion.div className='app-intro'>
-        <img src={DrVector} alt=""/>
+        <img src={DrVector} alt="" className='app-intro-logo'/>
         <div className='app-intro-div'>
           <p>Saiba mais</p>
           <img src={DrText} alt=""/>

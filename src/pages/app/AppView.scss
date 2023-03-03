@@ -18,10 +18,36 @@
     top: -10%;
     left: 15%;
 
+    @include screensize(desk-small) {
+      top: -9%;
+    }
+    @include screensize(tab-land) {
+      top: -6%;
+    }
+    @include screensize(tab-port) {
+      display: none;
+    }
+
+    &-logo {
+      @include screensize(desktop) {
+        height: 30vh;
+      }
+      @include screensize(desk-small) {
+        height: 20vh;
+      }
+      @include screensize(tab-land) {
+        height: 10vh;
+      }
+    }
+
     &-div {
       display: flex;
       flex-direction: column;
       margin: 4% 0 0 10%;
+
+      @include screensize(tab-land) {
+        margin: 2% 0 0 10%;
+      }
 
       & p {
         color: $color-light-blue;
@@ -30,6 +56,15 @@
         letter-spacing: $letter-spacing;
         margin-bottom: 2%;
         text-transform: uppercase;
+      }
+
+      & img {
+        @include screensize(desktop) {
+          height: 6vh;
+        }
+        @include screensize(tab-land) {
+          height: 4vh;
+        }
       }
     }
   }
