@@ -21,7 +21,7 @@ export default function Intro() {
         src={Marcio1}
         alt="Proxymed ceo"
         className='intro-marcio-img'
-        animate={{ x: [-100, 0], opacity: [0, 1] }}
+        animate={{ x: [-100, 0], opacity: [0, .49] }}
         transition={{ ease: "easeOut", duration: 2 }}
       />
       <motion.img
