@@ -159,9 +159,9 @@
     letter-spacing: $letter-spacing;
     line-height: 2.3rem;
 
-    margin: 8.9rem 37.5rem 0 75.3rem;
+    margin: 8.9rem 37.5rem 0 70rem;
     text-align: right;
-    width: 79.2rem;
+    width: 55%;
 
     @include screensize(desk-small) {
       margin-left: 45%;
