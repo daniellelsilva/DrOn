@@ -42,19 +42,31 @@ export default function AppView() {
     onscreen: index => ({
       opacity: 1,
       x: 0,
-      transition: { duration: 1, delay: index * .4 }
+      transition: { duration: 1, delay: index * .6 }
     }),
   }
 
   const phoneVariants = {
     intialScreen: index => ({
       opacity: 0,
-      x: index === 1 ? -100 : 100,
+      x: index === 1 ? -200 : 100,
     }),
     finalScreen: index => ({
       opacity: 1,
       x: 0,
-      transition: { duration: .6, delay: index * .3},
+      transition: { duration: 2, delay: index * .8},
+    }),
+  }
+
+  const introVariants = {
+    offscreen:{
+      opacity: 0,
+      x: 50
+    },
+    onscreen: index => ({
+      opacity: 1,
+      x: 0,
+      transition: { duration: 1, delay: index * .4 }
     }),
   }
 
@@ -74,12 +86,25 @@ export default function AppView() {
     <motion.main
       className='app'
     > 
-      <motion.div className='app-intro'>
-        <img src={DrVector} alt="" className='app-intro-logo'/>
-        <div className='app-intro-div'>
+      <motion.div
+        className='app-intro'
+        viewport={{once: true}}
+      >
+        <motion.img
+          src={DrVector}
+          alt=""
+          className='app-intro-logo'
+          animate={{x: [-100, 0], opacity: [0, 1]}}
+          transition={{ ease: "easeOut", duration: 2 }}
+        />
+        <motion.div
+          className='app-intro-div'
+          animate={{x: [200, 0], opacity: [0, 1]}}
+          transition={{ ease: "easeOut", duration: 2 }}
+        >
           <p>Saiba mais</p>
           <img src={DrText} alt=""/>
-        </div>
+        </motion.div>
 
       </motion.div>
       <motion.div
@@ -89,7 +114,6 @@ export default function AppView() {
         variants={phoneVariants}
         custom={1}
         viewport={{once: true}}
-        
       >
         <motion.img
           src={phone1}
