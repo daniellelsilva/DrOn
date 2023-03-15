@@ -19,6 +19,9 @@
     @include screensize(desk-small) {
       font-size: 3.5rem;
     }
+    @include screensize(phone) {
+      flex-direction: column;
+    }
 
     & p:first-child {
       color: $color-light-blue;
@@ -29,6 +32,12 @@
       color: $color-white;
       font-weight: 300;
       margin-left: 4.2rem;
+
+      @include screensize(phone) {
+        align-self: flex-end;
+        flex-direction: column;
+        margin-top: 2%;
+      }
     }
   }
 

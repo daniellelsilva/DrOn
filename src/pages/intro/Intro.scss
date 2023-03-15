@@ -49,6 +49,10 @@
     @include screensize(desk-small) {
       height: 60%;
     }
+    @include screensize(phone) {
+      height: 90%;
+      right: 0;
+    }
   }
 
   &-header {
@@ -81,7 +85,7 @@
       width: 30rem;
 
       @include screensize(phone) {
-        margin-right: -9rem;
+        margin-right: 3%;
       }
 
       &:hover {
@@ -133,7 +137,7 @@
       width: 60%;
     }
     @include screensize(phone) {
-      margin-left: 30%;
+      margin-left: 25%;
       width: 80%;
     }
     
@@ -189,8 +193,8 @@
       margin-left: auto;
       margin-right: 5%;
     }
-    @include screensize(tab-port) {
-      margin-right: 0;
+    @include screensize(phone) {
+      margin-right: 3%;
       width: 80%;
     }
 
