@@ -39,11 +39,18 @@
     @include screensize(tab-big) {
       margin-top: 5%;
     }
+    @include screensize(phone) {
+      margin-top: 8%;
+    }
   }
 
   &-event {
     display: flex;
     margin-bottom: 3%;
+
+    @include screensize(phone) {
+      margin-bottom: 5%;
+    }
 
     &-date {
       background-color: $color-light-blue;

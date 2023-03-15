@@ -154,6 +154,10 @@
       font-weight: 500;
       letter-spacing: $letter-spacing;
 
+      @include screensize(phone) {
+        font-size: 2rem;
+      }
+
       & span {
         color: $color-blue-cyan;
       }
