@@ -177,12 +177,20 @@
       & p:first-child {
         font-size: 3.6rem;
         font-weight: 800;
+
+        @include screensize(phone) {
+          font-size: 3rem;
+        }
       }
 
       & p:last-child {
         font-size: 1.6rem;
         font-weight: 400;
         margin-top: 2%;
+
+        @include screensize(phone) {
+          font-size: 1.3rem;
+        }
       }
     }
 
