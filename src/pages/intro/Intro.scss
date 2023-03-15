@@ -30,6 +30,9 @@
       height: 50%;
       left: -10%;
     }
+    @include screensize(phone) {
+      display: none;
+    }
   }
 
   &-proxy-img {
@@ -76,6 +79,10 @@
       height: 3.6rem;
       margin: 9.5rem 11.6rem 0 0;
       width: 30rem;
+
+      @include screensize(phone) {
+        margin-right: -9rem;
+      }
 
       &:hover {
         transform: translateY(-6px);
@@ -125,6 +132,11 @@
       height: 10rem;
       width: 60%;
     }
+    @include screensize(phone) {
+      margin-left: 30%;
+      width: 80%;
+    }
+    
   }
 
   &-quotation-marks {
@@ -147,6 +159,9 @@
       height: 50%;
       left: 35%;
       top: -30%;
+    }
+    @include screensize(phone) {
+      left: 23%;
     }
   }
 
@@ -174,6 +189,10 @@
       margin-left: auto;
       margin-right: 5%;
     }
+    @include screensize(tab-port) {
+      margin-right: 0;
+      width: 80%;
+    }
 
     & p:first-child {
       font-weight: 700;
@@ -187,42 +206,6 @@
 
     & p:last-child {
       margin-top: 2.3rem;
-    }
-  }
-
-  &-icons {
-    display: flex;
-    margin-top: 6%;
-    margin-left: 71rem;
-
-    @include screensize(tab-land) {
-      margin-left: 50%;
-    }
-    
-    &-icon {
-      background-color: $color-blue;
-      border-radius: 50%;
-      display: flex;
-      font-size: 5rem;
-      align-items: center;
-      justify-content: center;
-      height: 11.8rem;
-      width: 11.8rem;
-
-      &:not(:last-child) {
-        margin-right: 8.1rem;
-
-        @include screensize(tab-big) {
-          margin-right: 6%;
-        }
-      }
-
-      @include screensize(tab-big) {
-        font-size: 4rem;
-        height: 9rem;
-        width: 9rem;
-      }
-      
     }
   }
 }
