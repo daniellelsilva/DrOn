@@ -167,11 +167,18 @@
         justify-content: flex-end;
         padding-right: 40px;
         text-align: end;
+
+        @include screensize(phone) {
+          padding-right: 20px;
+        }
       }
       &-2 {
         justify-content: flex-start;
         margin-left: 40px;
         text-align: start;
+        @include screensize(phone) {
+          margin-left: 20px;
+        }
       }
     }
 
