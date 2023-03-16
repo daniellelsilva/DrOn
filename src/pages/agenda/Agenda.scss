@@ -33,7 +33,7 @@
     display: flex;
     flex-direction: column;
     margin-top: 3%;
-    width: 90%;
+    width: 95%;
     align-items: center;
 
     @include screensize(tab-big) {
@@ -49,6 +49,7 @@
     align-items: center;
     height: fit-content;
     margin-bottom: 3%;
+    width: 100%;
 
     @include screensize(phone) {
       margin-bottom: 5%;
@@ -67,24 +68,20 @@
       align-items: center;
       justify-content: center;
       height: 11rem;
-      width: 48rem;
-      
-      @include screensize(desk-small) {
-        width: 40rem;
-      }
+      width: 25%;
+    
       @include screensize(tab-big) {
         font-size: 2.5rem;
-        width: 33rem;
       }
       @include screensize(tab-land) {
         font-size: 2rem;
         height: 9rem;
-        width: 27rem;
       }
       @include screensize(tab-port) {
         font-size: 1.8rem;
-        height: 7rem;
-        width: 23rem;
+      }
+      @include screensize(phone) {
+        font-size: 1.4rem;
       }
 
       & p {
@@ -103,22 +100,19 @@
       justify-content: center;
       height: 11rem;
       padding-left: 13rem;
-      width: 113.6rem;
+      width: 70%;
 
-      @include screensize(desk-small) {
-        width: 105rem;
-      }
       @include screensize(tab-big) {
         padding-left: 8rem;
-        width: 93rem;
       }
       @include screensize(tab-land) {
         height: 9rem;
-        width: 90rem;
       }
       @include screensize(tab-port) {
         padding-left: 5%;
-        width: 76rem;
+      }
+      @include screensize(phone) {
+        font-size: 1.4rem;
       }
     }
 
