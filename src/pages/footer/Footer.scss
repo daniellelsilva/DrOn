@@ -14,6 +14,10 @@
 
     display: flex;
     justify-content: space-between;
+
+    @include screensize(phone) {
+      align-items: center;
+    }
   }
 
   &-img {
