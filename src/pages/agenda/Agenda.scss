@@ -198,6 +198,9 @@
       @include screensize(tab-port) {
         font-size: 3rem;
       }
+      @include screensize(phone) {
+        font-size: 2.5rem;
+      }
     }
   }
 }
