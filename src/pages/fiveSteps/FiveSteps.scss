@@ -20,6 +20,7 @@
       font-size: 3.5rem;
     }
     @include screensize(phone) {
+      font-size: 3.2rem;
       flex-direction: column;
     }
 
@@ -43,6 +44,10 @@
 
   &-cards-section {
     width: 90%;
+
+    @include screensize(phone) {
+      width: 95%;
+    }
   }
   &-cards {
     height: 52.8rem;
@@ -132,6 +137,11 @@
         padding-top: 8%;
         text-align: center;
         width: min-content;
+
+        @include screensize(phone) {
+          font-size: 1.5rem;
+          padding-top: 10%;
+        }
       }
 
       & p:last-child {
@@ -140,7 +150,10 @@
         font-weight: 700;
         letter-spacing: $letter-spacing;
         padding-top: 8%;
-
+        @include screensize(phone) {
+          font-size: 2rem;
+          padding-top: 10%;
+        }
       }
     }
   }
@@ -247,7 +260,6 @@
 
   @include screensize(desk-small) {
     font-size: 4rem;
-    
   }
 }
 
