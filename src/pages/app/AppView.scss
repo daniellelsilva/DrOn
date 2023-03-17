@@ -281,18 +281,40 @@
         width: 38rem;
       }
       @include screensize(tab-land) {
-        height: 10,5rem;
-        width: 35rem;
-
-        & img {
-          width: 70%;
-        }
+        display: none;
       }
       
       &:not(:last-child) {
         margin-right: 1.5%;
         @include screensize(tab-big) {
           margin-right: 2%;
+        }
+      }
+    }
+
+    &-onelink {
+      display: none;
+
+      @include screensize(tab-land) {
+        background-color: $color-white;
+        border-radius: 18rem;
+        height: 11.3rem;
+        text-decoration: none;
+        width: 50rem;
+  
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all .4s;
+
+        & p {
+          color: $color-purple;
+        font-size: 2.5rem;
+        font-weight: 900;
+        letter-spacing: $letter-spacing;
+
+        text-transform: uppercase;
+        // width: 90%;
         }
       }
     }
@@ -339,8 +361,8 @@
       left: 60%;
     }
     @include screensize(phone) {
-      top: 65%;
-      left: 30%;
+      top: 70%;
+      left: 20%;
     }
   }
 

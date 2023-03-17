@@ -189,6 +189,17 @@ export default function AppView() {
               <img src={googlePlay} alt="google play link" />
             </div>
           </a>
+
+          <a
+            rel="noreferrer"
+            target="_blank"
+            href='https://apps.apple.com/br/app/dr-on/id1545991089'
+            className='app-download-onelink'
+          >
+            <div>
+              <p>Faça o download</p>
+            </div>
+          </a>
         </div>
       </div>
       
