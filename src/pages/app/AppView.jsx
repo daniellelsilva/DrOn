@@ -193,7 +193,7 @@ export default function AppView() {
           <a
             rel="noreferrer"
             target="_blank"
-            href='https://apps.apple.com/br/app/dr-on/id1545991089'
+            href='http://onelink.to/dronapp'
             className='app-download-onelink'
           >
             <div>
