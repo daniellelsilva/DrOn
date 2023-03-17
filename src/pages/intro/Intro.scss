@@ -68,6 +68,10 @@
       @include screensize(tab-land) {
       width: 30%;
       }
+      @include screensize(phone) {
+        padding-left: 3%;
+        width: 25%;
+        }
     }
 
     &-btn, .MuiButtonBase-root.MuiButton-root.MuiButton-text.MuiButton-textPrimary.MuiButton-sizeMedium.MuiButton-textSizeMedium.MuiButton-root.MuiButton-text.MuiButton-textPrimary.MuiButton-sizeMedium.MuiButton-textSizeMedium.intro-header-btn.css-1e6y48t-MuiButtonBase-root-MuiButton-root, .css-1ujsas3
@@ -86,7 +90,9 @@
       width: 30rem;
 
       @include screensize(phone) {
+        font-size: 1.2rem;
         margin-right: 3%;
+        width: 23rem;
       }
 
       &:hover {
@@ -195,8 +201,9 @@
       margin-right: 5%;
     }
     @include screensize(phone) {
+      font-size: 1.7rem;
       margin-right: 3%;
-      width: 80%;
+      width: 85%;
     }
 
     & p:first-child {
