@@ -37,6 +37,9 @@
 
 #whats-btn {
   margin-right: 5%;
+  @include screensize(phone) {
+    margin-right: 3%;
+  }
 }
 
 .MuiTooltip-arrow.css-kudwh-MuiTooltip-arrow {
