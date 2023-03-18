@@ -72,7 +72,7 @@ export default function Agenda() {
         ))}
       </section>
       <section className='agenda-info neon-border'>
-          <p>Dúvidas? Fale com a gente!</p>
+          <p className='agenda-info-p'>Dúvidas? Fale com a gente!</p>
 
           <div className='steps-info-btns'>
             <WhatsAppBtn/>

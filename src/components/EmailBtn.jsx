@@ -15,7 +15,7 @@ export default function EmailBtn() {
   const LightTooltip = styled(({ className, ...props }) => (
     <Tooltip
       {...props}
-      leaveDelay={5000}
+      leaveDelay={3000}
       classes={{ popper: className }}
     />
   ))(({ theme }) => ({
@@ -46,17 +46,13 @@ export default function EmailBtn() {
         <Button
           onClick={handleClick}
           className={`email-btn ${open ? 'btn-cyan' : 'btn-blue'}`}
+          id='email-btn'
           type='button'
           variant="contained"
-          sx={{
-            fontSize: '2rem',
-            fontWeight: 700,
-            borderRadius: '9.7rem',
-            textTransform: 'none'
-          }}
         >
-          {open === true ? 'Email copiado!' : 'Email'}
-          {/* Email */}
+          <p>
+            {open === true ? 'Email copiado!' : 'Email'}
+          </p>
         </Button>
       </LightTooltip>
     </>

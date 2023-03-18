@@ -1,11 +1,26 @@
 @import '../sass/variables.scss';
 @import '../sass/mixins.scss';
 
-.whats-btn, .email-btn {
+#whats-btn, #email-btn {
   background-color: $color-light-blue;
+  border-radius: 97px;
+  font-weight: 700;
   height: 4.9rem;
+  text-transform: none;
   transition: all .3s ease-out !important;
-  width: 25.1rem;
+  // width: 25.1rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & p {
+    font-size: 2rem;
+
+    @include screensize(phone) {
+      font-size: 1.5rem;
+    }
+  }
 
   &:hover {
     transform: translateY(-6px);
@@ -15,6 +30,13 @@
   @include screensize(desk-small) {
     width: 46%;
   }
+  @include screensize(phone) {
+    width: 45%;
+  }
+}
+
+#whats-btn {
+  margin-right: 5%;
 }
 
 .MuiTooltip-arrow.css-kudwh-MuiTooltip-arrow {
