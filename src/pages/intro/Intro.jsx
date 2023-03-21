@@ -11,7 +11,7 @@ import './Intro.scss';
 export default function Intro() {
 
   return (
-    <motion.main
+    <motion.section
       className='intro'
       initial="offscreen"
       whileInView="onscreen"
@@ -52,6 +52,6 @@ export default function Intro() {
           <p>Tanto profissional quanto pessoal.</p>
         </div>
       </motion.section>
-    </motion.main>
+    </motion.section>
     )
 }
