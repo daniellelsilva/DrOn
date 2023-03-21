@@ -20,7 +20,7 @@ export default function FiveSteps() {
   }
 
   return (
-    <motion.main
+    <motion.section
       className='steps'
       initial="offscreen"
       whileInView="onscreen"
@@ -122,6 +122,6 @@ export default function FiveSteps() {
           <EmailBtn/>
         </div>
       </section>
-    </motion.main>
+    </motion.section>
   )
 }
