@@ -74,7 +74,7 @@ export default function Agenda() {
       <section className='agenda-info neon-border'>
           <p className='agenda-info-p'>Dúvidas? Fale com a gente!</p>
 
-          <div className='steps-info-btns'>
+          <div className='agenda-info-btns'>
             <WhatsAppBtn/>
             <EmailBtn/>
           </div>

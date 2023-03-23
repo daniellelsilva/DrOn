@@ -14,14 +14,6 @@
   justify-content: center;
   align-items: center;
 
-  & p {
-    font-size: 2rem;
-
-    @include screensize(phone) {
-      font-size: 1.8rem;
-    }
-  }
-
   &:hover {
     transform: translateY(-6px);
     background-color: azure;
@@ -31,19 +23,49 @@
     width: 46%;
   }
   @include screensize(phone) {
-    width: 45%;
+    display: none;
   }
 }
 
 #whats-btn {
   margin-right: 5%;
+}
+
+#whats-btn-text, #email-btn-text {
+  font-size: 2rem;
+}
+
+#whats-btn-phone-size, #email-btn-phone-size {
+  display: none;
+
   @include screensize(phone) {
-    margin-right: 3%;
+    // border-radius: 100%;
+    color: $color-white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    background-color: $color-light-blue;
+    // padding: 15%;
+    // height: min-content;
   }
+}
+
+#whats-btn-phone-size {
+  margin-right: 18%;
+}
+
+#email-btn-icon-cyan {
+  background-color: $color-blue-cyan;
+  font-size: 4rem;
 }
 
 .MuiTooltip-arrow.css-kudwh-MuiTooltip-arrow {
   color: $color-white;
+
+  @include screensize(phone) {
+    left: -12px !important;
+  }
 }
 
 .MuiTooltip-tooltip.MuiTooltip-tooltipArrow.MuiTooltip-tooltipPlacementTop.css-1k51tf5-MuiTooltip-tooltip {
@@ -52,9 +74,10 @@
   text-align: center;
 
   @include screensize(phone) {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     padding: 8%;
     margin-left: 30%;
+    margin-bottom: 0;
     width: 50%;
   }
 }
@@ -63,8 +86,12 @@
 }
 
 .btn-cyan {
-  background-color: aquamarine !important;
+  background-color: $color-blue-cyan!important;
   font-size: 1.3rem !important;
+
+  // @include screensize(phone) {
+  //   background-color: transparent !important;
+  // }
 }
 
 .btn-blue {

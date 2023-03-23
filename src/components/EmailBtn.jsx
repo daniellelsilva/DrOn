@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
-import { Button} from '@mui/material';
+import { Button, IconButton} from '@mui/material';
+import { Icon } from '@iconify/react';
+
 import { styled } from '@mui/material/styles';
 import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
 import './Buttons.scss';
@@ -43,17 +45,32 @@ export default function EmailBtn() {
         onClose={() => setOpen(false)}
         open={open}
       >
-        <Button
-          onClick={handleClick}
-          className={`email-btn ${open ? 'btn-cyan' : 'btn-blue'}`}
-          id='email-btn'
-          type='button'
-          variant="contained"
-        >
-          <p>
-            {open === true ? 'Email copiado!' : 'Email'}
-          </p>
-        </Button>
+        <div>
+
+          <Button
+            onClick={handleClick}
+            className={`email-btn ${open ? 'btn-cyan' : 'btn-blue'}`}
+            id='email-btn'
+            type='button'
+            variant="contained"
+          >
+            <p id='email-btn-text'>
+              {open === true ? 'Email copiado!' : 'Email'}
+            </p>
+            
+            <Icon icon="ic:outline-email" id={open ? 'email-btn-icon-cyan' : 'email-btn-icon'} />
+          </Button>
+
+          <IconButton
+            onClick={handleClick}
+            className={`email-btn ${open ? 'btn-cyan' : 'btn-blue'}`}
+            id='email-btn-phone-size'
+            type='button'
+            variant="contained"
+          >
+            <Icon icon="ic:outline-email" id={open ? 'email-btn-icon-cyan' : 'email-btn-icon'} />
+          </IconButton>
+        </div>
       </LightTooltip>
     </>
   )
