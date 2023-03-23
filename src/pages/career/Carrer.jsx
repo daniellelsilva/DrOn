@@ -56,6 +56,7 @@ export default function Carrer() {
               className='carrer-step'
               variants={leftVariants}
               custom={index}
+              key={index}
             >
               <div className='carrer-step-icon'>
                 <Icon icon="material-symbols:star-rate-rounded" />

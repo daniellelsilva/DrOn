@@ -45,7 +45,7 @@ export default function Agenda() {
 
       <section className='agenda-events'>
         {AgendaObject.map((agenda, index) => (
-          <div className='agenda-event'>
+          <div className='agenda-event' key={index}>
             <motion.div
               className='agenda-event-date'
               variants={leftVariants}

@@ -58,18 +58,6 @@ export default function AppView() {
     }),
   }
 
-  const introVariants = {
-    offscreen:{
-      opacity: 0,
-      x: 50
-    },
-    onscreen: index => ({
-      opacity: 1,
-      x: 0,
-      transition: { duration: 1, delay: index * .4 }
-    }),
-  }
-
   const circleVariants = {
     initialScreen: {
       opacity: 0,
@@ -158,6 +146,7 @@ export default function AppView() {
               className='app-text-tag'
               variants={tagVariants}
               custom={index}
+              key={index}
             >
               <p>{tag.text}</p>
             </motion.div>
