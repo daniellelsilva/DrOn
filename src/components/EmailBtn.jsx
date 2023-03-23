@@ -41,7 +41,7 @@ export default function EmailBtn() {
         arrow
         leaveDelay={5}
         placement='top'
-        autohideduration={5000}
+        autohideduration={3000}
         onClose={() => setOpen(false)}
         open={open}
       >

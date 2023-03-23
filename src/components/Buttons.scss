@@ -28,7 +28,7 @@
 }
 
 #whats-btn {
-  margin-right: 5%;
+  margin-right: 8%;
 }
 
 #whats-btn-text, #email-btn-text {
@@ -74,7 +74,7 @@
   text-align: center;
 
   @include screensize(phone) {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     padding: 8%;
     margin-left: 30%;
     margin-bottom: 0;
