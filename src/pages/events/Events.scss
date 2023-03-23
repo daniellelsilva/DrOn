@@ -161,10 +161,20 @@
     margin: auto;
     text-align: center;
 
+    @include screensize(phone) {
+      flex-direction: column;
+    }
+
     &-div {
       display: flex;
       width: 50%;
       // text-align: end;
+
+      @include screensize(phone) {
+        font-size: 2rem;
+        margin: auto;
+        width: 90%;
+      }
 
       &-1 {
         border-right: 1px solid $color-light-blue;
@@ -173,7 +183,11 @@
         text-align: end;
 
         @include screensize(phone) {
-          padding-right: 20px;
+          border: none;
+          justify-content: flex-start;
+          padding-right: 0;
+          padding-bottom: 2%;
+          text-align: start;
         }
       }
       &-2 {
@@ -181,7 +195,8 @@
         margin-left: 40px;
         text-align: start;
         @include screensize(phone) {
-          margin-left: 20px;
+          margin-left: 0;
+          margin: auto;
         }
       }
     }
@@ -204,8 +219,12 @@
     margin-top: 2%;
 
     @include screensize(phone) {
-      font-size: 1.5rem;
+      font-size: 1.9rem;
+      margin: auto;
       margin-top: 3%;
+      // text-align: start;
+      align-self: flex-start;
+      width: 90%;
     }
   }  
 }
