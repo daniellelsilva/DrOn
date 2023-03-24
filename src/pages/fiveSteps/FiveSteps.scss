@@ -171,7 +171,7 @@
     }
     @include screensize(phone) {
       border-radius: 100px !important;
-      height: 21rem;
+      height: 15rem;
       width: 93%;
     }
 
@@ -192,7 +192,7 @@
         width: 40%;
       }
       @include screensize(phone) {
-        margin-left: 0;
+        margin-left: 5%;
         width: 60%;
       }
 
@@ -212,6 +212,7 @@
 
         @include screensize(phone) {
           font-size: 2.3rem;
+          display: none;
         }
       }
     }
@@ -230,8 +231,8 @@
       //   margin-right: 7%;
       // }
       @include screensize(phone) {
-        // margin-left: 2%;
-        width: 21%;
+        margin-right: 5%;
+        width: 23%;
       }
     }
   }
