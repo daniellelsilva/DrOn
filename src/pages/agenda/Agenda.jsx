@@ -28,7 +28,7 @@ export default function Agenda() {
     onscreen: index => ({
       opacity: 1,
       x: 0,
-      transition: { duration: .9, delay: index * .2 }
+      transition: { duration: .5, delay: index * .1 }
     }),
   }
   return (
