@@ -42,7 +42,7 @@ export default function AppView() {
     onscreen: index => ({
       opacity: 1,
       x: 0,
-      transition: { duration: 1, delay: index * .6 }
+      transition: { duration: .9, delay: index * .3 }
     }),
   }
 
@@ -54,7 +54,7 @@ export default function AppView() {
     finalScreen: index => ({
       opacity: 1,
       x: 0,
-      transition: { duration: 2, delay: index * .8},
+      transition: { duration: 1, delay: index * .4},
     }),
   }
 
@@ -66,7 +66,7 @@ export default function AppView() {
     finalScreen: index => ({
       opacity: 1,
       y: 0,
-      transition: { duration: .9, delay: index * .3},
+      transition: { duration: .9, delay: index * .2},
     }),
   }
 
