@@ -65,6 +65,7 @@
 
   @include screensize(phone) {
     color: $color-white;
+    background-color: $color-white;
     left: -12px !important;
   }
 }

@@ -37,10 +37,12 @@ export default function AppView() {
   const tagVariants = {
     offscreen:{
       opacity: 0,
+      display: 'none',
       x: 50
     },
     onscreen: index => ({
       opacity: 1,
+      display: 'flex',
       x: 0,
       transition: { duration: .9, delay: index * .3 }
     }),
