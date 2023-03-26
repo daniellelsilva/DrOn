@@ -17,8 +17,6 @@ export default function WhatsAppBtn() {
         <p id='whats-btn-text'>
           WhatsApp
         </p>
-        {/* <Icon icon="ic:baseline-whatsapp" id='whats-btn-icon' /> */}
-        <Icon icon="ic:outline-whatsapp" id='whats-btn-icon' />
       </Button>
 
       <IconButton

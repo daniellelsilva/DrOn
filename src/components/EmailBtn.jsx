@@ -57,8 +57,6 @@ export default function EmailBtn() {
             <p id='email-btn-text'>
               {open === true ? 'Email copiado!' : 'Email'}
             </p>
-            
-            <Icon icon="ic:outline-email" id={open ? 'email-btn-icon-cyan' : 'email-btn-icon'} />
           </Button>
 
           <IconButton
