@@ -185,7 +185,7 @@
       width: 50%;
 
       @include screensize(desk-small) {
-        width: 36%;
+        width: 60%;
       }
       @include screensize(tab-big) {
         // margin-left: 10%;
@@ -213,7 +213,7 @@
         font-weight: 400;
         margin-top: 2%;
 
-        @include screensize(phone) {
+        @include screensize(tab-port) {
           font-size: 2.3rem;
           display: none;
         }
@@ -226,10 +226,10 @@
       // margin-right: 16.4rem;
       width: 40%;
 
-      // @include screensize(tab-big) {
-      //   margin-right: 10%;
-      //   // width: 35%;
-      // }
+      @include screensize(desk-small) {
+        // margin-right: 10%;
+        width: 35%;
+      }
       // @include screensize(tab-land) {
       //   margin-right: 7%;
       // }

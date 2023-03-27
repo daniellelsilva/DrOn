@@ -45,8 +45,7 @@ export default function EmailBtn() {
         onClose={() => setOpen(false)}
         open={open}
       >
-        <div>
-
+        <>
           <Button
             onClick={handleClick}
             className={`email-btn ${open ? 'btn-cyan' : 'btn-blue'}`}
@@ -68,7 +67,7 @@ export default function EmailBtn() {
           >
             <Icon icon="ic:outline-email" id={open ? 'email-btn-icon-cyan' : 'email-btn-icon'} />
           </IconButton>
-        </div>
+        </>
       </LightTooltip>
     </>
   )

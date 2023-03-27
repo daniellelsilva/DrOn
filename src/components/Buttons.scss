@@ -20,7 +20,7 @@
   }
 
   @include screensize(desk-small) {
-    width: 46%;
+    width: 40%;
   }
   @include screensize(phone) {
     display: none;

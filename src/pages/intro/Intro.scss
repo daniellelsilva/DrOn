@@ -44,10 +44,11 @@
     }
     @include screensize(desk-small) {
       height: 60%;
+      right: 0;
+
     }
     @include screensize(phone) {
       height: 90%;
-      right: 0;
     }
   }
 
