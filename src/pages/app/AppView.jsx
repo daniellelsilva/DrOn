@@ -44,7 +44,7 @@ export default function AppView() {
       opacity: 1,
       display: 'flex',
       x: 0,
-      transition: { duration: .9, delay: index * .3 }
+      transition: { duration: .7, delay: index * .3 }
     }),
   }
 
@@ -56,19 +56,19 @@ export default function AppView() {
     finalScreen: index => ({
       opacity: 1,
       x: 0,
-      transition: { duration: 1, delay: index * .4},
+      transition: { duration: .7, delay: index * .2},
     }),
   }
 
   const circleVariants = {
     initialScreen: {
       opacity: 0,
-      y: '30%',
+      y: 200,
     },
     finalScreen: index => ({
       opacity: 1,
       y: 0,
-      transition: { duration: .9, delay: index * .2},
+      transition: { duration: .8, delay: index * .2},
     }),
   }
 

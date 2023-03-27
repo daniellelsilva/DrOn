@@ -15,20 +15,16 @@
     opacity: .49;
     z-index: -1;
 
-    @include screensize(desktop) {
-      height: 65%;
-    }
     @include screensize(desk-small) {
-      height: 60%;
-      top: 20%;
+      height: 70%;
+      top: 25%;
     }
     @include screensize(tab-land) {
-      height: 55%;
+      height: 60%;
       left: -5%;
     }
     @include screensize(tab-port) {
-      height: 50%;
-      left: -10%;
+      left: -15%;
     }
     @include screensize(phone) {
       display: none;
