@@ -7,31 +7,37 @@ import EmailBtn from '../../components/EmailBtn';
 import './Agenda.scss';
 
 export default function Agenda() {
-  const leftVariants = {
-    offscreen:{
-      opacity: 0,
-      display: 'none',
-      x: -200
-    },
-    onscreen: index => ({
-      opacity: 1,
-      display: 'flex',
-      x: 0,
-      transition: { duration: .9, delay: index * .2 }
-    }),
-  }
-  const rightVariants = {
-    offscreen:{
-      opacity: 0,
-      display: 'none',
-      x: 200
-    },
-    onscreen: index => ({
-      opacity: 1,
-      display: 'flex',
-      x: 0,
-      transition: { duration: .5, delay: index * .1 }
-    }),
+  let leftVariants = {};
+  let rightVariants = {};
+  const isMobile = window.innerWidth < 600;
+
+  if (!isMobile) {
+    leftVariants = {
+      offscreen:{
+        opacity: 0,
+        display: 'none',
+        x: -200
+      },
+      onscreen: index => ({
+        opacity: 1,
+        display: 'flex',
+        x: 0,
+        transition: { duration: .9, delay: index * .2 }
+      }),
+    }
+    rightVariants = {
+      offscreen:{
+        opacity: 0,
+        display: 'none',
+        x: 200
+      },
+      onscreen: index => ({
+        opacity: 1,
+        display: 'flex',
+        x: 0,
+        transition: { duration: .5, delay: index * .1 }
+      }),
+    }
   }
   return (
     <motion.main
