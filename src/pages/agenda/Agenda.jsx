@@ -9,7 +9,7 @@ import './Agenda.scss';
 export default function Agenda() {
   let leftVariants = {};
   let rightVariants = {};
-  const isMobile = window.innerWidth < 600;
+  const isMobile = window.innerWidth < 700;
 
   if (!isMobile) {
     leftVariants = {
