@@ -40,7 +40,7 @@ export default function Agenda() {
     }
   }
   return (
-    <motion.main
+    <motion.section
       className='agenda'
       initial="offscreen"
       whileInView="onscreen"
@@ -88,6 +88,6 @@ export default function Agenda() {
           </div>
       </section>
 
-    </motion.main>
+    </motion.section>
   )
 }
