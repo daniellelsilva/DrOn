@@ -30,7 +30,7 @@ export default function Footer() {
   ]
   return (
     <footer className='footer'>
-      <main className='footer-main'>
+      <section className='footer-main'>
         <div className='footer-social'>
           <img className='footer-img' src={proxyLogoFooter} alt="proxymed logo"/>
 
@@ -53,7 +53,7 @@ export default function Footer() {
           <img src={logoFooter} alt="Dr.On logo" className='footer-dr-logo'/>
           <img src={qrCode} alt="proxymed logo" className='footer-dr-qr'/>
         </div>
-      </main>
+      </section>
 
       <section className='footer-section'>
         <div className='footer-rights'>
