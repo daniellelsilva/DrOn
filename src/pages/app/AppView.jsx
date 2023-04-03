@@ -73,7 +73,7 @@ export default function AppView() {
   }
 
   return (
-    <motion.main
+    <motion.section
       className='app'
     > 
       <motion.div
@@ -208,6 +208,6 @@ export default function AppView() {
         <motion.img variants={circleVariants} custom={1} className='decorative-circle decorative-circle-4' src={decorativeCircle4} alt="" />
         <motion.img variants={circleVariants} custom={1} className='decorative-circle decorative-circle-5' src={decorativeCircle5} alt="" />
       </motion.div>  
-    </motion.main>
+    </motion.section>
     )
 }
