@@ -60,16 +60,23 @@ export default function AppView() {
     }),
   }
 
-  const circleVariants = {
-    initialScreen: {
-      opacity: 0,
-      y: 200,
-    },
-    finalScreen: index => ({
-      opacity: 1,
-      y: 0,
-      transition: { duration: .8, delay: index * .2},
-    }),
+  const isMobile = window.innerWidth < 700;
+  let circleVariants = {};
+
+  if (!isMobile) {
+    circleVariants = {
+      initialScreen: {
+        opacity: 0,
+        display: 'none',
+        y: 200,
+      },
+      finalScreen: index => ({
+        opacity: 1,
+        display: 'flex',
+        y: 0,
+        transition: { duration: .8, delay: index * .2},
+      }),
+    }
   }
 
   return (
