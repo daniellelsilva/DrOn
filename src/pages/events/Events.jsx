@@ -130,7 +130,7 @@ export default function Events() {
   )
 
   return (
-    <main className='events'>
+    <section className='events'>
       <section className='events-title'>
         <p>Participação em eventos</p>
         <p>Palestras</p>
@@ -156,6 +156,6 @@ export default function Events() {
       >
         {slide()}
     </Carousel>
-    </main>
+    </section>
   )
 }
