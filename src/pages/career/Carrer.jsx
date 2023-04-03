@@ -21,7 +21,7 @@ export default function Carrer() {
   };
 
   return (
-    <motion.main
+    <motion.section
       className='carrer'
       initial="offscreen"
       whileInView="onscreen"
@@ -70,6 +70,6 @@ export default function Carrer() {
           ))}
         </section>
       </div>
-    </motion.main>
+    </motion.section>
   )
 }
