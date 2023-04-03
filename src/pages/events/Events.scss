@@ -161,7 +161,7 @@
     margin: auto;
     text-align: center;
 
-    @include screensize(phone) {
+    @include screensize(tab-port) {
       flex-direction: column;
     }
 
@@ -170,10 +170,14 @@
       width: 50%;
       // text-align: end;
 
-      @include screensize(phone) {
+      @include screensize(tab-port) {
         font-size: 2rem;
         margin: auto;
         width: 90%;
+      }
+      @include screensize(phone) {
+        flex-direction: column;
+        font-size: 2.5rem;
       }
 
       &-1 {
@@ -182,7 +186,7 @@
         padding-right: 40px;
         text-align: end;
 
-        @include screensize(phone) {
+        @include screensize(tab-port) {
           border: none;
           justify-content: flex-start;
           padding-right: 0;
@@ -194,7 +198,7 @@
         justify-content: flex-start;
         margin-left: 40px;
         text-align: start;
-        @include screensize(phone) {
+        @include screensize(tab-port) {
           margin-left: 0;
           margin: auto;
         }
@@ -218,7 +222,7 @@
     letter-spacing: $letter-spacing;
     margin-top: 2%;
 
-    @include screensize(phone) {
+    @include screensize(tab-port) {
       font-size: 1.9rem;
       margin: auto;
       margin-top: 3%;
@@ -226,11 +230,14 @@
       align-self: flex-start;
       width: 90%;
     }
+    @include screensize(phone) {
+      font-size: 2.5rem;
+    }
   }  
 }
 
 .mantine-UnstyledButton-root.mantine-Carousel-control.mantine-3qclsy {
-  @include screensize(phone) {
+  @include screensize(tab-port) {
     height: 20px;
     width: 20px;;
   }
@@ -238,7 +245,7 @@
 
 .mantine-oqtyjo.mantine-Carousel-indicators, .mantine-UnstyledButton-root.mantine-Carousel-control.mantine-3qclsy
 {
-  @include screensize(phone) {
+  @include screensize(tab-port) {
     display: none !important;
   }
 }
