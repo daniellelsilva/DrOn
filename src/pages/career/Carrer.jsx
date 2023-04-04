@@ -1,5 +1,5 @@
 import { Icon } from '@iconify/react';
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import React from 'react';
 import CarrerObject from './CarrerObject';
 import ProxyLogo from '../../images/Group.svg';
@@ -21,14 +21,14 @@ export default function Carrer() {
   };
 
   return (
-    <motion.section
+    <m.section
       className='carrer'
       initial="offscreen"
       whileInView="onscreen"
       viewport={{ once: true }}
     >
       <img src={ProxyLogo} alt="Proxymed logo" className='carrer-proxy-img'/>
-      <motion.img
+      <m.img
         src={Marcio2}
         alt="Proxymed ceo"
         className='carrer-marcio-img'
@@ -39,7 +39,7 @@ export default function Carrer() {
       />
 
       <div className='carrer-main'>
-        <motion.section
+        <m.section
           className='carrer-name'
           initial={{ opacity: 0, x: 200}}
           animate={{ opacity: 1, x: 0 }}
@@ -48,11 +48,11 @@ export default function Carrer() {
         >
           <p>MÁRCIO L L SOUZA</p>
           <p>Carreira</p>
-        </motion.section>
+        </m.section>
 
         <section className='carrer-steps'>
           {CarrerObject.map((item, index) => (
-            <motion.div
+            <m.div
               className='carrer-step'
               variants={leftVariants}
               custom={index}
@@ -66,10 +66,10 @@ export default function Carrer() {
                 <p>{item.title}</p>
                 <p>{item.subtitle}</p>
               </div>
-            </motion.div>
+            </m.div>
           ))}
         </section>
       </div>
-    </motion.section>
+    </m.section>
   )
 }
