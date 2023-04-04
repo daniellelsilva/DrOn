@@ -1,6 +1,6 @@
 import React from 'react';
 import { Icon } from '@iconify/react';
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import WhatsAppBtn from '../../components/WhatsAppBtn';
 import EmailBtn from '../../components/EmailBtn';
 
@@ -20,7 +20,7 @@ export default function FiveSteps() {
   }
 
   return (
-    <motion.section
+    <m.section
       className='steps'
       initial="offscreen"
       whileInView="onscreen"
@@ -33,7 +33,7 @@ export default function FiveSteps() {
 
       <section className='steps-cards-section'>
         <div className='steps-cards'>
-          <motion.div
+          <m.div
             className='steps-card steps-card-1'
             variants={variants}
             custom={1}
@@ -46,9 +46,9 @@ export default function FiveSteps() {
               <p>Primeiro encontro</p>
               <p>Onde estou?</p>
             </div>
-          </motion.div>
+          </m.div>
 
-          <motion.div
+          <m.div
             className='steps-card steps-card-2'
             variants={variants}
             custom={2}
@@ -61,9 +61,9 @@ export default function FiveSteps() {
               <p>Segundo encontro</p>
               <p>Para onde vou?</p>
             </div>
-          </motion.div>
+          </m.div>
 
-          <motion.div
+          <m.div
             className='steps-card steps-card-3'
             variants={variants}
             custom={3}
@@ -76,9 +76,9 @@ export default function FiveSteps() {
               <p>Terceiro encontro</p>
               <p>Com quem eu vou?</p>
             </div>    
-          </motion.div>
+          </m.div>
 
-          <motion.div
+          <m.div
             className='steps-card steps-card-4'
             variants={variants}
             custom={4}
@@ -91,9 +91,9 @@ export default function FiveSteps() {
               <p>Quarto encontro</p>
               <p>Seu plano</p>
             </div>
-          </motion.div>
+          </m.div>
 
-          <motion.div
+          <m.div
             className='steps-card steps-card-5'
             variants={variants}
             custom={5}
@@ -106,7 +106,7 @@ export default function FiveSteps() {
               <p>Quinto encontro</p>
               <p>Overview</p>
             </div>  
-          </motion.div>
+          </m.div>
 
         </div>
       </section>
@@ -122,6 +122,6 @@ export default function FiveSteps() {
           <EmailBtn/>
         </div>
       </section>
-    </motion.section>
+    </m.section>
   )
 }
