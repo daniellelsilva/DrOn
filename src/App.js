@@ -6,11 +6,11 @@ import Events from './pages/events/Events';
 import FiveSteps from './pages/fiveSteps/FiveSteps';
 import Footer from './pages/footer/Footer';
 import Intro from './pages/intro/Intro';
-import { motion } from "framer-motion"
+import { LazyMotion, domAnimation} from "framer-motion"
 
 function App() {
   return (
-    <motion.div className="App" viewport={{ once: true, amount: 0.8 }}>
+    <LazyMotion className="App" features={domAnimation}>
       <Intro/>
       <FiveSteps/>
       <Carrer/>
@@ -18,7 +18,7 @@ function App() {
       <Agenda/>
       <AppView/>
       <Footer/>
-    </motion.div>
+    </LazyMotion>
   );
 }
 

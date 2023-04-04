@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 
 import phone1 from '../../images/phone1.svg';
 import phone2 from '../../images/phone2.svg';
@@ -80,31 +80,31 @@ export default function AppView() {
   }
 
   return (
-    <motion.section
+    <m.section
       className='app'
     > 
-      <motion.div
+      <m.div
         className='app-intro'
         viewport={{once: true}}
       >
-        <motion.img
+        <m.img
           src={DrVector}
           alt=""
           className='app-intro-logo'
           animate={{x: [-100, 0], opacity: [0, 1]}}
           transition={{ ease: "easeOut", duration: 2 }}
         />
-        <motion.div
+        <m.div
           className='app-intro-div'
           animate={{x: [200, 0], opacity: [0, 1]}}
           transition={{ ease: "easeOut", duration: 2 }}
         >
           <p>Saiba mais</p>
           <img src={DrText} alt=""/>
-        </motion.div>
+        </m.div>
 
-      </motion.div>
-      <motion.div
+      </m.div>
+      <m.div
         className='app-phone1'
         initial="intialScreen"
         whileInView="finalScreen"
@@ -112,14 +112,14 @@ export default function AppView() {
         custom={1}
         viewport={{once: true}}
       >
-        <motion.img
+        <m.img
           src={phone1}
           alt="demonstração do app"
           className='app-phone1-img'          
         />
-      </motion.div>
+      </m.div>
 
-      <motion.div
+      <m.div
         className='app-phone2'
         initial="intialScreen"
         whileInView="finalScreen"
@@ -127,10 +127,10 @@ export default function AppView() {
         custom={ 2 }
         viewport={{once: true}}
       >
-        <motion.img
+        <m.img
           src={phone2}
           alt="demonstração do app" className='app-phone2-img'/>
-      </motion.div>
+      </m.div>
 
       <section className='app-text'>
         <img src={drOnApp} alt="Dr.On App logo"/>
@@ -144,23 +144,23 @@ export default function AppView() {
           <p className='app-text-info-3'>Todo médico empreendedor deve conhecer!</p>
         </div>
         
-        <motion.div
+        <m.div
           className='app-text-tags'
           initial="offscreen"
           whileInView="onscreen"
           viewport={{ once: true}}
         >
           {tagsText.map((tag, index) => (
-            <motion.div
+            <m.div
               className='app-text-tag'
               variants={tagVariants}
               custom={index}
               key={index}
             >
               <p>{tag.text}</p>
-            </motion.div>
+            </m.div>
           ))}
-        </motion.div>
+        </m.div>
       </section>
 
       <div className='app-download'>
@@ -201,20 +201,20 @@ export default function AppView() {
         </div>
       </div>
       
-      <motion.div
+      <m.div
         className='decorative-circles'
         initial="initialScreen"
         whileInView="finalScreen"
         variants={circleVariants}  
         viewport={{once: true}}
       >
-        <motion.img variants={circleVariants} custom={5} className='decorative-circle decorative-circle-1' src={decorativeCircle1} alt="" />
-        <motion.img variants={circleVariants} custom={6} className='decorative-circle decorative-circle-2' src={decorativeCircle2} alt="" />
-        <motion.img variants={circleVariants} custom={3} className='decorative-circle decorative-circle-3' src={decorativeCircle3} alt="" />
+        <m.img variants={circleVariants} custom={5} className='decorative-circle decorative-circle-1' src={decorativeCircle1} alt="" />
+        <m.img variants={circleVariants} custom={6} className='decorative-circle decorative-circle-2' src={decorativeCircle2} alt="" />
+        <m.img variants={circleVariants} custom={3} className='decorative-circle decorative-circle-3' src={decorativeCircle3} alt="" />
 
-        <motion.img variants={circleVariants} custom={1} className='decorative-circle decorative-circle-4' src={decorativeCircle4} alt="" />
-        <motion.img variants={circleVariants} custom={1} className='decorative-circle decorative-circle-5' src={decorativeCircle5} alt="" />
-      </motion.div>  
-    </motion.section>
+        <m.img variants={circleVariants} custom={1} className='decorative-circle decorative-circle-4' src={decorativeCircle4} alt="" />
+        <m.img variants={circleVariants} custom={1} className='decorative-circle decorative-circle-5' src={decorativeCircle5} alt="" />
+      </m.div>  
+    </m.section>
     )
 }

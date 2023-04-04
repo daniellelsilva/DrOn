@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from "framer-motion";
+import { useReducedMotion, m } from "framer-motion"
 import AgendaObject from './AgendaObject';
 import WhatsAppBtn from '../../components/WhatsAppBtn';
 import EmailBtn from '../../components/EmailBtn';
@@ -7,6 +7,7 @@ import EmailBtn from '../../components/EmailBtn';
 import './Agenda.scss';
 
 export default function Agenda() {
+  const prefersReducedMotion = useReducedMotion()
   let leftVariants = {};
   let rightVariants = {};
   const isMobile = window.innerWidth < 900;
@@ -40,7 +41,7 @@ export default function Agenda() {
     }
   }
   return (
-    <motion.section
+    <m.section
       className='agenda'
       initial="offscreen"
       whileInView="onscreen"
@@ -57,7 +58,7 @@ export default function Agenda() {
             className={`agenda-event ${isMobile ? 'neon-border' : 'no-border'}`}
             key={index}
           >
-            <motion.div
+            <m.div
               className='agenda-event-date'
               variants={leftVariants}
               custom={index}
@@ -65,9 +66,9 @@ export default function Agenda() {
               <p>{agenda.day}</p>
               <p>{agenda.month}</p>
               <p>{agenda.year}</p>
-            </motion.div>  
+            </m.div>  
           
-            <motion.div
+            <m.div
               className={`agenda-event-infos ${!isMobile ? 'neon-border' : 'no-border'}`}
               variants={rightVariants}
               custom={index}
@@ -78,7 +79,7 @@ export default function Agenda() {
               </div>
             
               <p className='agenda-event-info'>{agenda.info}</p>
-            </motion.div>
+            </m.div>
           </div>
         ))}
       </section>
@@ -91,6 +92,6 @@ export default function Agenda() {
           </div>
       </section>
 
-    </motion.section>
+    </m.section>
   )
 }
