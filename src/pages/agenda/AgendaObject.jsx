@@ -13,7 +13,7 @@ const AgendaObject = [
     year: '2023',
     event: 'MANDIC - SÃO LEOPOLDO RS',
     eventName: 'INOVAÇÃO E ESTRATÉGIA',
-    info: 'Inovação e estratégia com os alunos do Grupo São Leopoldo Mandic'
+    info: 'Inovação e estratégia com os alunos do Grupo São Leopoldo Mandic.'
   },
   {
     day:'',
@@ -21,7 +21,7 @@ const AgendaObject = [
     year: '2023',
     event: 'BELO HORIZONTE MG',
     eventName: 'TRÊS PALESTRAS IMPERDÍVEIS',
-    info: 'Marketing médico | Dr.On®Day | Mesa redonda sobre Health Business '
+    info: 'Marketing médico | Dr.On®Day | Mesa redonda sobre Health Business.'
   },
 ]
 
