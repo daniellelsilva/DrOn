@@ -9,7 +9,7 @@ import './Agenda.scss';
 export default function Agenda() {
   let leftVariants = {};
   let rightVariants = {};
-  const isMobile = window.innerWidth < 700;
+  const isMobile = window.innerWidth < 900;
 
   if (!isMobile) {
     leftVariants = {
@@ -53,7 +53,10 @@ export default function Agenda() {
 
       <section className='agenda-events'>
         {AgendaObject.map((agenda, index) => (
-          <div className='agenda-event' key={index}>
+          <div
+            className={`agenda-event ${isMobile ? 'neon-border' : 'no-border'}`}
+            key={index}
+          >
             <motion.div
               className='agenda-event-date'
               variants={leftVariants}
@@ -65,7 +68,7 @@ export default function Agenda() {
             </motion.div>  
           
             <motion.div
-              className='agenda-event-infos neon-border'
+              className={`agenda-event-infos ${!isMobile ? 'neon-border' : 'no-border'}`}
               variants={rightVariants}
               custom={index}
             >

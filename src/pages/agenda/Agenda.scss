@@ -19,24 +19,28 @@
     align-self: flex-end;
     margin-right: 13%;
 
-    @include screensize(phone) {
+    @include screensize(tab-port) {
       flex-direction: column;
       margin-right: 0;
       margin: auto;
-      width: 90%;
+      width: 95%;
+    }
+    @include screensize(phone) {
+      width: 80%;
+      font-size: 4.3rem;
     }
 
     & p:first-child {
       color: $color-light-blue;
       font-weight: 900;
       margin-right: 4.2rem;
-      @include screensize(phone) {
+      @include screensize(tab-port) {
         text-align: start;
       }
     }
     & p:last-child {
       font-weight: 300;
-      @include screensize(phone) {
+      @include screensize(tab-port) {
         text-align: end;
       }
     }
@@ -52,9 +56,9 @@
     @include screensize(tab-big) {
       margin-top: 5%;
     }
-    @include screensize(phone) {
+    @include screensize(tab-port) {
       margin-top: 8%;
-      width: 98%;
+      width: 95%;
     }
   }
 
@@ -66,8 +70,14 @@
     margin-bottom: 4%;
     width: 100%;
 
-    @include screensize(phone) {
+    @include screensize(tab-port) {
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
+      margin: auto;
       margin-bottom: 5%;
+      padding: 2% 2% 2% 5%;
+      width: 100%;
     }
 
     &-date {
@@ -93,11 +103,15 @@
         height: 9rem;
       }
       @include screensize(tab-port) {
-        font-size: 1.8rem;
+        background-color: transparent;
+        height: auto;
+        justify-content: flex-start;
+        font-size: 2rem;
+        padding-bottom: 1%;
+        width: 30%;
       }
       @include screensize(phone) {
-        font-size: 1.7rem;
-        width: 23%;
+        font-size: 2.5rem;
       }
 
       & p {
@@ -125,11 +139,14 @@
         height: 9rem;
       }
       @include screensize(tab-port) {
-        padding-left: 5%;
+        min-height: auto;
+        height: auto;
+        justify-content: flex-start;
+        padding-left: 0;
+        width: 100%;
       }
       @include screensize(phone) {
         font-size: 1.4rem;
-        width: 75%;
       }
     }
 
@@ -144,9 +161,11 @@
       width: 100%;
 
       @include screensize(tab-port) {
-        font-size: 1.5rem;
+        font-size: 2rem;
       }
-
+      @include screensize(phone) {
+        font-size: 2.5rem;
+      }
 
       & p:first-child {
         padding-right: 2.5%;
@@ -165,7 +184,10 @@
       margin-top: .5%;
       width: 100%;
       @include screensize(tab-port) {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
+      }
+      @include screensize(phone) {
+        font-size: 2.3rem;
       }
     }
   }
