@@ -97,6 +97,10 @@
         transform: translateY(-6px);
       }
     }
+    &-btn-2 {
+      background-color: $color-light-blue !important;
+      border: none !important;
+    }
   }
 
   &-main-title {
