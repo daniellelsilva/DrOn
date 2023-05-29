@@ -1,17 +1,17 @@
 import React from 'react';
 import { Carousel } from '@mantine/carousel';
 import { Icon } from '@iconify/react';
-import event1 from './Images/001.png';
-import event2 from './Images/002.png';
-import event3 from './Images/003.png';
-import event4 from './Images/004.png';
-import event5 from './Images/005.png';
-import event6 from './Images/006.png';
-import event7 from './Images/007.png';
-import event8 from './Images/008.jpeg';
-import event9 from './Images/009.jpeg';
-import event10 from './Images/010.jpeg';
-import event11 from './Images/011.jpeg';
+import event1 from './Images/001.webp';
+import event2 from './Images/002.webp';
+import event3 from './Images/003.webp';
+import event4 from './Images/004.webp';
+import event5 from './Images/005.webp';
+import event6 from './Images/006.webp';
+import event7 from './Images/007.webp';
+import event8 from './Images/008.webp';
+import event9 from './Images/009.webp';
+import event10 from './Images/010.webp';
+import event11 from './Images/011.webp';
 
 import './Events.scss';
 
