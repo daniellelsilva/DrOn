@@ -47,6 +47,7 @@
 
     @include screensize(phone) {
       width: 95%;
+      height: 200rem;
     }
   }
   &-cards {
@@ -58,6 +59,10 @@
 
     @include screensize(desktop) {
       margin-top: 5%;
+    }
+    @include screensize(phone) {
+      flex-direction: column;
+      height: 100%;
     }
   }
   
@@ -75,6 +80,10 @@
     flex-basis: 0;
     background-size: cover;
 
+    @include screensize(phone) {
+      height: 100%;
+    }
+
     &-icon {
       display: flex;
       align-items: center;
@@ -91,6 +100,11 @@
       @include screensize(desk-small) {
         font-size: 4rem;
       }
+      @include screensize(phone) {
+        height: 30rem;
+        width: 30rem;
+      }
+      
     }
 
     &-1 {
@@ -131,6 +145,7 @@
       letter-spacing: $letter-spacing;
       visibility: hidden;
       display: none;
+      // background-color: red;
 
       & p:first-child {
         margin: auto;
