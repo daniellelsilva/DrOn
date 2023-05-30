@@ -71,6 +71,14 @@
         }
     }
 
+    &-div {
+      @include screensize(tab-port) {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 2%;
+      }
+    }
+
     &-btn, .MuiButtonBase-root.MuiButton-root.MuiButton-text.MuiButton-textPrimary.MuiButton-sizeMedium.MuiButton-textSizeMedium.MuiButton-root.MuiButton-text.MuiButton-textPrimary.MuiButton-sizeMedium.MuiButton-textSizeMedium.intro-header-btn.css-1e6y48t-MuiButtonBase-root-MuiButton-root, .css-1ujsas3
     {
       background-color: transparent;
@@ -85,6 +93,12 @@
       height: 3.6rem;
       margin: 9.5rem 11.6rem 0 0;
       width: 30rem;
+
+      &:not(.intro-header-btn-2) {
+        @include screensize(tab-port) {
+          display: none;
+        }
+      }
 
       @include screensize(phone) {
         font-size: 1.5rem;

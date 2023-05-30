@@ -34,7 +34,7 @@ export default function Intro() {
 
       <header className='intro-header'>
         <img src={Frame} alt="proxy logo" className='intro-header-img'/>
-        <div>
+        <div className='intro-header-div'>
           <Button href='https://forms.gle/91f9kJ9JwcJoY2pu7' target='_blank' type='button' className='intro-header-btn intro-header-btn-2'>Iniciar a mentoria</Button>
           <Button href='https://wa.me/5549991345099' target='_blank' type='button' className='intro-header-btn'>Entre em contato</Button>
         </div>
