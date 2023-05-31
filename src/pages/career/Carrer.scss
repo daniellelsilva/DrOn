@@ -135,6 +135,10 @@
       width: 5rem;
       font-size: 3rem;
       margin-right: 3.2rem;
+
+      @include screensize(tab-port) {
+        display: none;
+      }
     }
 
     &-text {

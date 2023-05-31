@@ -82,7 +82,6 @@
 
     @include screensize(tab-port) {
       height: 100%;
-      background-size: cover;
       background-position: center;
     }
 
@@ -93,20 +92,9 @@
       background-color: $color-white;
       color: $color-light-blue;
       border-radius: 50%;
-      height: 10rem;
-      // width: 10rem;
       font-size: 5.5rem;
       transition: transform .30s;
       animation: scaleEffect2 1s cubic-bezier(0.45, 0.05, 0.55, 0.95) both, bottomTopEffect 1s ease both;
-
-      @include screensize(desk-small) {
-        font-size: 4rem;
-      }
-      @include screensize(tab-port) {
-        height: 30rem;
-        // width: 30rem;
-        font-size: 7rem;
-      }
       
     }
 
