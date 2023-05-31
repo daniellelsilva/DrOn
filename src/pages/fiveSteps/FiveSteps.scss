@@ -45,9 +45,9 @@
   &-cards-section {
     width: 90%;
 
-    @include screensize(phone) {
+    @include screensize(tab-port) {
       width: 95%;
-      height: 200rem;
+      height: 250rem;
     }
   }
   &-cards {
@@ -60,7 +60,7 @@
     @include screensize(desktop) {
       margin-top: 5%;
     }
-    @include screensize(phone) {
+    @include screensize(tab-port) {
       flex-direction: column;
       height: 100%;
     }
@@ -80,8 +80,10 @@
     flex-basis: 0;
     background-size: cover;
 
-    @include screensize(phone) {
+    @include screensize(tab-port) {
       height: 100%;
+      background-size: cover;
+      background-position: center;
     }
 
     &-icon {
@@ -92,7 +94,7 @@
       color: $color-light-blue;
       border-radius: 50%;
       height: 10rem;
-      width: 10rem;
+      // width: 10rem;
       font-size: 5.5rem;
       transition: transform .30s;
       animation: scaleEffect2 1s cubic-bezier(0.45, 0.05, 0.55, 0.95) both, bottomTopEffect 1s ease both;
@@ -100,9 +102,10 @@
       @include screensize(desk-small) {
         font-size: 4rem;
       }
-      @include screensize(phone) {
+      @include screensize(tab-port) {
         height: 30rem;
-        width: 30rem;
+        // width: 30rem;
+        font-size: 7rem;
       }
       
     }
@@ -153,9 +156,10 @@
         text-align: center;
         width: min-content;
 
-        @include screensize(phone) {
-          font-size: 1.5rem;
+        @include screensize(tab-port) {
+          font-size: 4rem;
           padding-top: 10%;
+          width: 100%;
         }
       }
 
@@ -165,8 +169,8 @@
         font-weight: 700;
         letter-spacing: $letter-spacing;
         padding-top: 8%;
-        @include screensize(phone) {
-          font-size: 2rem;
+        @include screensize(tab-port) {
+          font-size: 5rem;
           padding-top: 10%;
         }
       }
@@ -218,7 +222,7 @@
         font-size: 3.6rem;
         font-weight: 800;
 
-        @include screensize(phone) {
+        @include screensize(tab-port) {
           font-size: 2.8rem;
         }
       }
@@ -285,10 +289,6 @@
 .steps-cards .steps-card:hover .steps-card-icon {
   border-radius: 50%;
   animation: scaleEffect 1s both, slideEffect 1s ease both;
-
-  @include screensize(desk-small) {
-    font-size: 4rem;
-  }
 }
 
 @keyframes scaleEffect {
@@ -303,6 +303,22 @@
     font-size: 2.5rem;
   }
 }
+
+@include screensize(tab-port) {
+  @keyframes scaleEffect {
+    from {
+      height: 10rem;
+      width: 10rem;
+      font-size: 5.5rem;
+    }
+    to {
+      height: 8rem;
+      width: 8rem;
+      font-size: 4rem;
+    }
+  }
+}
+
 @keyframes scaleEffect2 {
   from {
     height: 5rem;
@@ -310,10 +326,24 @@
     font-size: 2.5rem;
   }
   to {
-    
     height: 10rem;
     width: 10rem;
     font-size: 5.5rem;
+  }
+}
+
+@include screensize(tab-port) {
+  @keyframes scaleEffect2 {
+    from {
+      height: 8rem;
+      width: 8rem;
+      font-size: 4rem;
+    }
+    to {
+      height: 10rem;
+      width: 10rem;
+      font-size: 5.5rem;
+    }
   }
 }
 
