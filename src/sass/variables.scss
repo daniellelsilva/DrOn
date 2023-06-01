@@ -1,3 +1,4 @@
+@import './mixins.scss';
 $color-white:#FFFFFF;
 $color-light-gray: #F5F5F5;
 $color-black: #0E1B48;
@@ -17,6 +18,17 @@ $letter-spacing: .25em;
   border: 1px solid $color-light-blue;
   border-radius: 8.2rem;
   box-shadow: 0px 0px 15px 0 rgba($color-blue-neon, .3), 0 0 18px 0 rgba($color-blue-neon, .3);
+
+  &:not(.agenda-info, .steps-info) {
+    @include screensize(tab-port) {
+      border: none;
+      border-bottom: 1px solid $color-light-blue;
+      border-radius: 0;
+      box-shadow: none;
+      padding-bottom: 8%;
+    }
+  }
+
 }
 
 .no-border {
