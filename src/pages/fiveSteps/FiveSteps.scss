@@ -146,7 +146,12 @@
 
         @include screensize(tab-port) {
           font-size: 4rem;
-          padding-top: 10%;
+          padding-top: 8%;
+          width: 100%;
+        }
+        @include screensize(tab-port) {
+          font-size: 3rem;
+          padding-top: 8%;
           width: 100%;
         }
       }
@@ -159,7 +164,12 @@
         padding-top: 8%;
         @include screensize(tab-port) {
           font-size: 5rem;
-          padding-top: 10%;
+          padding-top: 6%;
+        }
+        @include screensize(tab-port) {
+          font-size: 4rem;
+          padding-top: 8%;
+          width: 100%;
         }
       }
     }
