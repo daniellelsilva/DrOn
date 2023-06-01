@@ -157,7 +157,7 @@
       font-weight: 500;
       letter-spacing: $letter-spacing;
 
-      @include screensize(phone) {
+      @include screensize(tab-port) {
         font-size: 2.3rem;
       }
 
