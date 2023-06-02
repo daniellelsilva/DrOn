@@ -153,12 +153,12 @@
 
     &-info {
       color: $color-white;
-      font-size: 1.6rem;
+      font-size: 2rem;
       font-weight: 500;
       letter-spacing: $letter-spacing;
 
       @include screensize(tab-port) {
-        font-size: 2.3rem;
+        font-size: 2.5rem;
       }
 
       & span {
@@ -204,13 +204,13 @@
       margin: 1.5% 0;
 
       @include screensize(tab-big) {
-        font-size: 2rem;
+        font-size: 2.3rem;
       }
       @include screensize(tab-port) {
         width: 100%;
       }  
       @include screensize(phone) {
-        font-size: 2.3rem;
+        font-size: 2.5rem;
       }
     }
   }
