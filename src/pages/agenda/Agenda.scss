@@ -106,7 +106,7 @@
         background-color: transparent;
         height: auto;
         justify-content: flex-start;
-        font-size: 2rem;
+        font-size: 2.5rem;
         padding-bottom: 1%;
         width: 30%;
       }
@@ -161,19 +161,26 @@
       width: 100%;
 
       @include screensize(tab-port) {
-        font-size: 2rem;
-      }
-      @include screensize(phone) {
         font-size: 2.5rem;
+        flex-direction: column;
+        text-align: left;
       }
 
       & p:first-child {
         padding-right: 2.5%;
-        border-right: 1px solid $color-light-blue;;
+        border-right: 1px solid $color-light-blue;
+        @include screensize(tab-port) {
+          border: none;
+          padding: 1%;
+        }
       }
 
       & p:last-child {
         padding-left: 2.5%;
+        @include screensize(tab-port) {
+          padding: 0;
+          padding: 1%;
+        }
       }
     }
 
@@ -184,10 +191,8 @@
       margin-top: .5%;
       width: 100%;
       @include screensize(tab-port) {
-        font-size: 1.8rem;
-      }
-      @include screensize(phone) {
-        font-size: 2.3rem;
+        font-size: 2.5rem;
+        padding-left: 1%;
       }
     }
   }
@@ -222,7 +227,6 @@
         font-size: 3rem;
       }
       @include screensize(phone) {
-        font-size: 2.8rem;
         margin-left: 10%;
       }
     }

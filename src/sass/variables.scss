@@ -22,10 +22,18 @@ $letter-spacing: .25em;
   &:not(.agenda-info, .steps-info) {
     @include screensize(tab-port) {
       border: none;
-      border-bottom: 1px solid $color-light-blue;
-      border-radius: 0;
+      // border-bottom: 1px solid $color-light-blue;
+      // border-radius: 0;
       box-shadow: none;
-      padding-bottom: 8%;
+      // padding-bottom: 8%;
+      &::after {
+        content: "";
+        border: 1px solid $color-light-blue;
+        text-align: center;
+        align-self: center;
+        margin-top: 10%;
+        width: 50%;
+      }
     }
   }
 
