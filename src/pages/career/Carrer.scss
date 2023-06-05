@@ -152,6 +152,7 @@
       }
       @include screensize(tab-port) {
         max-width: 90%;
+        font-size: 2rem;
       }
       @include screensize(phone) {
         font-size: 2rem;

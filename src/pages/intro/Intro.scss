@@ -19,12 +19,17 @@
       height: 70%;
       top: 25%;
     }
+    @include screensize(tab-big) {
+      height: 70%;
+      left: -10%;
+    }
     @include screensize(tab-land) {
-      height: 60%;
-      left: -5%;
+      height: 70%;
+      left: -10%;
     }
     @include screensize(tab-port) {
       left: -15%;
+      height: 80%;
     }
     @include screensize(phone) {
       display: none;
@@ -68,10 +73,14 @@
       @include screensize(phone) {
         padding-left: 3%;
         width: 25%;
-        }
+      }
     }
 
     &-div {
+      @include screensize(tab-big) {
+        display: flex;
+        justify-content: flex-end;
+      }
       @include screensize(tab-port) {
         display: flex;
         justify-content: flex-end;
@@ -94,6 +103,15 @@
       margin: 9.5rem 11.6rem 0 0;
       width: 30rem;
 
+      @include screensize(desk-small) {
+        margin: 9.5rem 8rem 0 0;
+      }
+      @include screensize(tab-big) {
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 9.5rem 6rem 0 0;
+        width: 25rem;
+      }
       &:not(.intro-header-btn-2) {
         @include screensize(tab-port) {
           display: none;
@@ -212,7 +230,8 @@
       margin-left: 40%;
     }
     @include screensize(tab-port) {
-      font-size: 1.6rem;
+      font-size: 1.9rem;
+      width: 60%;
       margin-left: auto;
       margin-right: 5%;
     }

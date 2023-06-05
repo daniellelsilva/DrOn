@@ -201,7 +201,7 @@ export default function AppView() {
         </div>
       </div>
       
-      <m.div
+      {/* <m.div
         className='decorative-circles'
         initial="initialScreen"
         whileInView="finalScreen"
@@ -214,7 +214,7 @@ export default function AppView() {
 
         <m.img variants={circleVariants} custom={1} className='decorative-circle decorative-circle-4' src={decorativeCircle4} alt="" />
         <m.img variants={circleVariants} custom={1} className='decorative-circle decorative-circle-5' src={decorativeCircle5} alt="" />
-      </m.div>  
+      </m.div>   */}
     </m.section>
     )
 }

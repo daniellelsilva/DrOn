@@ -7,6 +7,13 @@
   margin-top: 20%;
   position: relative;
 
+  @include screensize(tab-big) {
+    height: 190rem;
+  }
+  @include screensize(tab-port) {
+    // height: 195rem;
+  }
+
   &-phone1, &-phone2 {
     position: relative;
 
@@ -19,10 +26,10 @@
     left: 15%;
 
     @include screensize(desk-small) {
-      top: -9%;
+      top: -8%;
     }
     @include screensize(tab-land) {
-      top: -6%;
+      // top: -6%;
     }
     @include screensize(tab-port) {
       display: none;
@@ -32,11 +39,14 @@
       @include screensize(desktop) {
         height: 30vh;
       }
+      @include screensize(desk-medium) {
+        height: 25vh;
+      }
       @include screensize(desk-small) {
         height: 20vh;
       }
       @include screensize(tab-land) {
-        height: 10vh;
+        height: 18vh;
       }
     }
 
@@ -65,9 +75,6 @@
         @include screensize(desk-small) {
           width: 85%;
         }
-        @include screensize(tab-land) {
-          height: 4vh;
-        }
       }
     }
   }
@@ -81,19 +88,15 @@
       z-index: 11;
 
       @include screensize(desktop) {
-        height: 70vh;
+        height: 100vh;
       }
-      @include screensize(desk-small) {
-        height: 60vh;
-        top: -10rem;
+      @include screensize(desk-medium) {
+        height: 80vh;
       }
       @include screensize(tab-big) {
-        height: 52vh;
+        height: 66vh;
       }
       @include screensize(tab-land) {
-        height: 40vh;
-      }
-      @include screensize(tab-port) {
         display: none;
       }
     }
@@ -107,20 +110,24 @@
       z-index: 200;
 
       @include screensize(desktop) {
-        height: 80vh;
-        top: 48rem;
+        height: 100vh;
+        top: 40rem;
       }
-      @include screensize(desk-small) {
+      @include screensize(desk-medium) {
         height: 80vh;
         top: 60rem;
       }
+      @include screensize(desk-small) {
+        height: 70vh;
+        top: 60rem;
+      }
       @include screensize(tab-big) {
-        height: 75vh;
-        top: 72rem;
+        height: 64vh;
+        top: 75rem;
       }
       @include screensize(tab-land) {
-        height: 50vh;
-        top: 80rem;
+        height: 60vh;
+        // top: 80rem;
       }
       @include screensize(tab-port) {
         display: none;
@@ -132,6 +139,16 @@
     width: 38%;
     padding-top: 7%;
     margin-left: 40%;
+    @include screensize(tab-big) {
+      width: 50%;
+      margin-left: 40%;
+    }
+    @include screensize(tab-land) {
+      margin-left: 30%;
+      width: 55%;
+      position: relative;
+      z-index: 18;
+    }
     @include screensize(tab-port) {
       margin: auto;
       width: 90%;
@@ -204,12 +221,15 @@
       margin: 1.5% 0;
 
       @include screensize(tab-big) {
-        font-size: 2.3rem;
+        font-size: 2rem;
+        width: 100%;
       }
       @include screensize(tab-port) {
-        width: 100%;
+        width: 60%;
+        align-self: center;
       }  
       @include screensize(phone) {
+        width: 100%;
         font-size: 2.5rem;
       }
     }
@@ -224,11 +244,12 @@
     text-align: center;
 
     @include screensize(desk-small) {
+      top: 15%;
       left: 10%;
     }
     @include screensize(tab-big) {
       left: 1%;
-      top: 21%;
+      // top: 21%;
       width: max-content;
 
       display: flex;
@@ -237,11 +258,11 @@
     }
     @include screensize(tab-land) {
       left: -2%;
-      top: 10%;
+      // top: 10%;
     }
     @include screensize(tab-port) {
       left: 0;
-      top: 15%;
+      top: 10%;
       width: 100%;
       z-index: 20;
     }
@@ -252,20 +273,25 @@
         width: 95%;
       }
       @include screensize(desk-small) {
-        width: 90%;
-      }
-      @include screensize(tab-big) {
         width: 80%;
       }
+      @include screensize(tab-big) {
+        width: 75%;
+      }
       @include screensize(tab-land) {
-        width: 60%;
+        width: 55%;
+      } 
+      @include screensize(tab-port) {
+        width: 50%;
       } 
     }
 
     &-links {
       display: flex;
+      justify-content: center;
       margin-top: 8%;
       text-align: center;
+      width: 100%;
     }
 
     &-apple, &-google {
@@ -285,6 +311,10 @@
 
       @include screensize(desktop) {
         width: 38rem;
+      }
+      @include screensize(tab-big) {
+        width: 30rem;
+        height: 10rem;
       }
       @include screensize(tab-land) {
         display: none;
@@ -306,7 +336,7 @@
         border-radius: 18rem;
         height: 11.3rem;
         text-decoration: none;
-        width: 50rem;
+        width: 50%;
   
         display: flex;
         align-items: center;
@@ -315,11 +345,11 @@
 
         & p {
           color: $color-purple;
-        font-size: 2.5rem;
-        font-weight: 900;
-        letter-spacing: $letter-spacing;
+          font-size: 2.5rem;
+          font-weight: 900;
+          letter-spacing: $letter-spacing;
 
-        text-transform: uppercase;
+          text-transform: uppercase;
         // width: 90%;
         }
       }
