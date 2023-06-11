@@ -67,7 +67,8 @@ export default function AppView() {
     circleVariants = {
       initialScreen: {
         opacity: 0,
-        display: 'none',
+        visibility: 'hidden',
+        // display: 'none',
         y: 200,
       },
       finalScreen: index => ({
@@ -75,6 +76,7 @@ export default function AppView() {
         display: 'flex',
         y: 0,
         transition: { duration: .8, delay: index * .2},
+        visibility: 'visible'
       }),
     }
   }
@@ -201,7 +203,7 @@ export default function AppView() {
         </div>
       </div>
       
-      {/* <m.div
+      <m.div
         className='decorative-circles'
         initial="initialScreen"
         whileInView="finalScreen"
@@ -214,7 +216,7 @@ export default function AppView() {
 
         <m.img variants={circleVariants} custom={1} className='decorative-circle decorative-circle-4' src={decorativeCircle4} alt="" />
         <m.img variants={circleVariants} custom={1} className='decorative-circle decorative-circle-5' src={decorativeCircle5} alt="" />
-      </m.div>   */}
+      </m.div>  
     </m.section>
     )
 }
