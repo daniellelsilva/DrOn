@@ -33,13 +33,16 @@
     @include screensize(desktop) {
       height: 120%;
     }
-    @include screensize(desk-small) {
+    @include screensize(desk-medium) {
       height: 115%;
-      top: -5%;
+      top: -1%;
+    }
+    @include screensize(desk-small) {
+      height: 110%;
     }
     @include screensize(tab-big) {
-      height: 110%;
-      top: -2%;
+      height: 100%;
+      top: 0;
     }
     @include screensize(tab-port) {
       display: none;
@@ -78,11 +81,14 @@
     position: relative;
     z-index: -1;
 
-    @include screensize(tab-big) {
+    @include screensize(desk-small) {
       font-size: 3.3rem;
     }
+    @include screensize(tab-big) {
+      font-size: 2.9rem;
+    }
     @include screensize(tab-land) {
-      font-size: 3rem;
+      font-size: 3.1rem;
     }
 
     & p:first-child {
@@ -149,6 +155,7 @@
       }
       @include screensize(tab-land) {
         max-width: 42%;
+        font-size: 2rem;
       }
       @include screensize(tab-port) {
         max-width: 90%;
