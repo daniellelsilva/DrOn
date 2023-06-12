@@ -397,23 +397,23 @@
       left: 60%;
     }
     @include screensize(phone) {
-      top: 70%;
-      left: 20%;
+      display: none !important;
     }
   }
 
   &-3 {
     top: 50%;
-    left: 50vh;
+    left: auto;
+    right: 0;
     @include screensize(desk-small) {
-      display: none;
+      display: none !important;
     }
   }
 
   &-4 {
     z-index: 10;
     @include screensize(tab-big) {
-      display: none;
+      display: none !important;
     }
   }
 
@@ -426,7 +426,7 @@
     top: -20%;
     z-index: -2;
     @include screensize(tab-port) {
-      display: none;
+      display: none !important;
     }
   }
 }
