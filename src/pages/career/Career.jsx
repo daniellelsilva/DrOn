@@ -1,13 +1,13 @@
 import { Icon } from '@iconify/react';
 import { m } from "framer-motion";
 import React from 'react';
-import CarrerObject from './CarrerObject';
+import CareerObject from './CareerObject';
 import ProxyLogo from '../../images/Group.svg';
 import Marcio2 from '../../images/Marcio2.svg';
 
-import './Carrer.scss';
+import './Career.scss';
 
-export default function Carrer() {
+export default function Career() {
   const leftVariants = {
     offscreen:{
       opacity: 0,
@@ -22,25 +22,25 @@ export default function Carrer() {
 
   return (
     <m.section
-      className='carrer'
+      className='career'
       initial="offscreen"
       whileInView="onscreen"
       viewport={{ once: true }}
     >
-      <img src={ProxyLogo} alt="Proxymed logo" className='carrer-proxy-img'/>
+      <img src={ProxyLogo} alt="Proxymed logo" className='career-proxy-img'/>
       <m.img
         src={Marcio2}
         alt="Proxymed ceo"
-        className='carrer-marcio-img'
+        className='career-marcio-img'
         initial={{ opacity: 0, x: 400}}
         animate={{ opacity: 1, x: 0 }}
         transition={{ ease: "easeOut", duration: 1.5 }}
         viewport={{ once: true }}
       />
 
-      <div className='carrer-main'>
+      <div className='career-main'>
         <m.section
-          className='carrer-name'
+          className='career-name'
           initial={{ opacity: 0, x: 200}}
           animate={{ opacity: 1, x: 0 }}
           transition={{ ease: "easeOut", duration: 2, delay: .5 }}
@@ -50,19 +50,19 @@ export default function Carrer() {
           <p>Carreira</p>
         </m.section>
 
-        <section className='carrer-steps'>
-          {CarrerObject.map((item, index) => (
+        <section className='career-steps'>
+          {CareerObject.map((item, index) => (
             <m.div
-              className='carrer-step'
+              className='career-step'
               variants={leftVariants}
               custom={index}
               key={index}
             >
-              <div className='carrer-step-icon'>
+              <div className='career-step-icon'>
                 <Icon icon="material-symbols:star-rate-rounded" />
               </div>
 
-              <div className='carrer-step-text'>
+              <div className='career-step-text'>
                 <p>{item.title}</p>
                 <p>{item.subtitle}</p>
               </div>

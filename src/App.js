@@ -1,7 +1,7 @@
 import './App.scss';
 import Agenda from './pages/agenda/Agenda';
 import AppView from './pages/app/AppView';
-import Carrer from './pages/career/Carrer';
+import Career from './pages/career/Career';
 import Events from './pages/events/Events';
 import FiveSteps from './pages/fiveSteps/FiveSteps';
 import Footer from './pages/footer/Footer';
@@ -13,7 +13,7 @@ function App() {
     <LazyMotion className="App" features={domAnimation}>
       <Intro/>
       <FiveSteps/>
-      <Carrer/>
+      <Career/>
       <Events/>
       <Agenda/>
       <AppView/>

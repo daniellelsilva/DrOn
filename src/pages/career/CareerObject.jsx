@@ -1,4 +1,4 @@
-const CarrerObject = [
+const CareerObject = [
   {
     title:'CEO IDEALIZADOR Dr.On® App',
     subtitle: 'Health EdTech'
@@ -21,4 +21,4 @@ const CarrerObject = [
   },
 ]
 
-export default CarrerObject;
+export default CareerObject;
