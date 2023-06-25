@@ -88,7 +88,7 @@
       z-index: 11;
 
       @include screensize(desktop) {
-        height: 100vh;
+        height: 85vh;
       }
       @include screensize(desk-medium) {
         height: 80vh;
@@ -110,7 +110,7 @@
       z-index: 200;
 
       @include screensize(desktop) {
-        height: 100vh;
+        height: 85vh;
         top: 40rem;
       }
       @include screensize(desk-medium) {
