@@ -1,5 +1,5 @@
 import React from 'react';
-import { useReducedMotion, m } from "framer-motion"
+import { m } from "framer-motion"
 import AgendaObject from './AgendaObject';
 import WhatsAppBtn from '../../components/WhatsAppBtn';
 import EmailBtn from '../../components/EmailBtn';
@@ -7,7 +7,6 @@ import EmailBtn from '../../components/EmailBtn';
 import './Agenda.scss';
 
 export default function Agenda() {
-  const prefersReducedMotion = useReducedMotion()
   let leftVariants = {};
   let rightVariants = {};
   const isMobile = window.innerWidth < 900;
