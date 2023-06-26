@@ -16,7 +16,6 @@ body {
 	background: radial-gradient(circle, rgb(24,38,112), rgb(6,19,39));
 	background-size: 1000% 400%;
 	animation: gradient 15s ease infinite;
-  overflow-x: hidden !important;
 }
 
 
@@ -38,7 +37,6 @@ html {
   font-size: 62.5%; //10px
   scroll-behavior: smooth;
   overflow-x: hidden;
-
 
   @include screensize(desktop) {
     font-size: 56.2%; //9px
