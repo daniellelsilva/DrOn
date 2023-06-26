@@ -37,6 +37,8 @@ body::-webkit-scrollbar-thumb {
 html {
   font-size: 62.5%; //10px
   scroll-behavior: smooth;
+  overflow-x: hidden;
+
 
   @include screensize(desktop) {
     font-size: 56.2%; //9px
