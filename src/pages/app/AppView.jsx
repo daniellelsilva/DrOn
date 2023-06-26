@@ -51,7 +51,7 @@ export default function AppView() {
   const phoneVariants = {
     intialScreen: index => ({
       opacity: 0,
-      x: index === 1 ? -200 : 100,
+      x: index === 1 ? -200 : 0,
     }),
     finalScreen: index => ({
       opacity: 1,
