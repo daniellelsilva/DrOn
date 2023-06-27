@@ -202,6 +202,10 @@
       height: auto;
       margin-top: 10%;
       z-index: 30;
+
+      max-width: 100%;
+      overflow-y: auto;
+      overflow-x: hidden;
     }
 
     &-tag {
