@@ -2,8 +2,8 @@ import { Icon } from '@iconify/react';
 import { m } from "framer-motion";
 import React from 'react';
 import CareerObject from './CareerObject';
-import ProxyLogo from '../../images/Group.svg';
-import Marcio2 from '../../images/Marcio2.svg';
+import ProxyLogo from '../../images/Group.webp';
+import Marcio2 from '../../images/Marcio2.webp';
 
 import './Career.scss';
 

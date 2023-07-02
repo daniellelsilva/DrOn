@@ -1,8 +1,8 @@
 import React from 'react';
-import Frame from '../../images/Frame.svg';
-import Marcio1 from '../../images/Marcio1.svg';
-import ProxyLogo from '../../images/Group.svg';
-import Aspas from '../../images/aspas.svg';
+import Frame from '../../images/Frame.webp';
+import Marcio1 from '../../images/Marcio1.webp';
+import ProxyLogo from '../../images/Group.webp';
+import Aspas from '../../images/aspas.webp';
 import { m } from "framer-motion";
 import { Button } from '@mui/material';
 

@@ -1,20 +1,20 @@
 import React from 'react';
 import { m } from "framer-motion";
 
-import phone1 from '../../images/phone1.svg';
-import phone2 from '../../images/phone2.svg';
-import drOnApp from '../../images/DR.ONAPP.svg';
-import drOnLogo from '../../images/drOnLogo.svg';
-import appleStore from '../../images/appleStore.svg';
-import googlePlay from '../../images/googlePlay.svg';
-import DrVector from '../../images/VectorAppView.svg';
-import DrText from '../../images/TextAppView.svg';
+import phone1 from '../../images/phone1.webp';
+import phone2 from '../../images/phone2.webp';
+import drOnApp from '../../images/DR.ONAPP.webp';
+import drOnLogo from '../../images/drOnLogo.webp';
+import appleStore from '../../images/appleStore.webp';
+import googlePlay from '../../images/googlePlay.webp';
+import DrVector from '../../images/VectorAppView.webp';
+import DrText from '../../images/TextAppView.webp';
 
-import decorativeCircle1 from '../../images/circle1.svg';
-import decorativeCircle2 from '../../images/circle2.svg';
-import decorativeCircle3 from '../../images/circle3.svg';
-import decorativeCircle4 from '../../images/circle4.svg';
-import decorativeCircle5 from '../../images/circle5.svg';
+import decorativeCircle1 from '../../images/circle1.webp';
+import decorativeCircle2 from '../../images/circle2.webp';
+import decorativeCircle3 from '../../images/circle3.webp';
+import decorativeCircle4 from '../../images/circle4.webp';
+import decorativeCircle5 from '../../images/circle5.webp';
 
 import './AppView.scss'
 
