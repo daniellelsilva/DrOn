@@ -1,8 +1,8 @@
 import React from 'react';
 import { Icon } from '@iconify/react';
-import proxyLogoFooter from '../../images/proxyFooter.webp';
-import logoFooter from '../../images/logoFooter.webp';
-import qrCode from '../../images/qrCode.webp';
+import proxyLogoFooter from '../../images/proxyFooter.svg';
+import logoFooter from '../../images/logoFooter.svg';
+import qrCode from '../../images/qrCode.svg';
 import './Footer.scss';
 
 export default function Footer() {

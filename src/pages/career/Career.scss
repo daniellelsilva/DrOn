@@ -127,6 +127,8 @@
     display: flex;
     align-items: center;
 
+    overflow: hidden;
+
     &:not(:last-child) {
       margin-bottom: 3%;
     }
