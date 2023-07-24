@@ -57,6 +57,7 @@ export default function Agenda() {
             className={`agenda-event ${isMobile ? 'neon-border' : 'no-border'}`}
             key={index}
           >
+            {console.log('agenda', agenda)}
             <m.div
               className='agenda-event-date'
               variants={leftVariants}
