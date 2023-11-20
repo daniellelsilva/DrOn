@@ -210,32 +210,6 @@
     
   }
 
-  &-quotation-marks {
-    position: absolute;
-    top: -38%;
-    left: 27%;
-
-    @include screensize(desktop) {
-      height: 65%;
-    }
-    @include screensize(desk-small) {
-      height: 60%;
-      left: 30%;
-    }
-    @include screensize(tab-big) {
-      height: 55%;
-      left: 33%;
-    }
-    @include screensize(tab-port) {
-      height: 50%;
-      left: 35%;
-      top: -30%;
-    }
-    @include screensize(phone) {
-      left: 23%;
-    }
-  }
-
   &-text {
     color: $color-white;
     display: flex;
@@ -245,7 +219,7 @@
     line-height: 2.3rem;
 
     margin: 8.9rem 37.5rem 0 70rem;
-    text-align: right;
+    text-align: left;
     width: 55%;
 
     @include screensize(desk-small) {
@@ -269,13 +243,17 @@
       width: 95%;
     }
 
+    & p {
+      align-self: flex-end;
+      width: 80%;
+    }
+
     & p:first-child {
       font-weight: 700;
       margin-bottom: 2.3rem;
     }
 
     & p:nth-child(2) {
-      align-self: flex-end;
       width: 80%;
     }
 
