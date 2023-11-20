@@ -2,7 +2,6 @@ import React from 'react';
 import Frame from '../../images/Frame.svg';
 import Marcio1 from '../../images/Marcio1.svg';
 import ProxyLogo from '../../images/Group.svg';
-import Aspas from '../../images/aspas.svg';
 import { m } from "framer-motion";
 import { Button } from '@mui/material';
 
@@ -46,8 +45,10 @@ export default function Intro() {
         transition={{ ease: "easeOut", duration: 2 }}
       >
         <div className='intro-main-title'>
-          <img src={Aspas} alt="aspas" className='intro-quotation-marks'/>
-          <p className='intro-title'>Medicina de futuro</p>
+          <div className="intro-title">
+            <p className='intro-title-p intro-title-p-1'>Empreendedorismo</p>
+            <p className='intro-title-p intro-title-p-2'>Médico</p>
+          </div>
         </div>
         <div className='intro-text'>
           <p>SERVIÇO DE MENTORIA EM HEALTH BUSINESS</p>

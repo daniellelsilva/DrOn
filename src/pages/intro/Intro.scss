@@ -145,22 +145,40 @@
     position: relative;
     height: 100%;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+
   }
 
   &-title {
     background-color: $color-light-blue;
+    border-radius: 1410px 0 0 1410px ;
     color: $color-white;
-    font-size: 6rem;
-    letter-spacing: $letter-spacing;
-    margin-left: 54.8rem;
     margin-top: 13%;
     text-transform: uppercase;
 
-    height: 18.4rem;
-    width: 125.6rem;
+    height: 26.5rem;
+    width: 155rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    padding: 5% 20%;
+    align-self: flex-end;
+
+    &-p-1 {
+      color: #FFF;
+      font-size: 4.9rem;
+      font-weight: 500;
+      letter-spacing: 1.24rem;
+    }
+
+    &-p-2 {
+      font-size: 12.1rem;
+      font-weight: 900;
+      letter-spacing: 4.6rem;
+      line-height: 98.3%;
+    }
 
     @include screensize(desk-medium) {
       font-size: 5rem;
