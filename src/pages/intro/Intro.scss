@@ -31,7 +31,7 @@
     }
     @include screensize(tab-port) {
       left: -10%;
-      height: 80%;
+      height: 70%;
     }
     @include screensize(phone) {
       display: none;
@@ -167,7 +167,6 @@
     align-self: flex-end;
 
     &-p-1 {
-      color: #FFF;
       font-size: 4.9rem;
       font-weight: 500;
       letter-spacing: 1.24rem;
@@ -181,31 +180,78 @@
     }
 
     @include screensize(desk-medium) {
-      font-size: 5rem;
       margin-left: auto;
-      min-height: 15rem;
+      min-height: 14rem;
+      padding: 3% 17%;
       width: 65%;
+
+      &-p-1 {
+        font-size: 4rem;
+        letter-spacing: 1.32rem;
+      }
+  
+      &-p-2 {
+        font-size: 10rem;
+      }
     }
     @include screensize(desk-small) {
       font-size: 5rem;
       min-height: 15rem;
+      height: 23rem;
+      padding: 0% 13%;
       width: 65%;
+
+      &-p-1 {
+        font-size: 3rem;
+        letter-spacing: 1.5rem;
+      }
+  
+      &-p-2 {
+        font-size: 8rem;
+      }
     }
     @include screensize(tab-big) {
       font-size: 4rem;
-      height: 15rem;
-      width: 63%;
+      height: 20rem;
+      width: 70%;
+
+      &-p-1 {
+        font-size: 2.6rem;
+        letter-spacing: 1.5rem;
+      }
+  
+      &-p-2 {
+        font-size: 7rem;
+      }
     }
     @include screensize(tab-port) {
-      font-size: 3.5rem;
-      // margin-left: 38%;
+      height: 18rem;
+      width: 63%;
 
-      height: 10rem;
-      width: 60%;
+      &-p-1 {
+        font-size: 2.2rem;
+        letter-spacing: 1.5rem;
+      }
+  
+      &-p-2 {
+        font-size: 6rem;
+      }
     }
     @include screensize(phone) {
       // margin-left: 20%;
-      width: 80%;
+      height: 20rem;
+      padding: 0% 10%;
+      width: 90%;
+
+      &-p-1 {
+        font-size: 2.5rem;
+        letter-spacing: 1.5rem;
+      }
+  
+      &-p-2 {
+        font-size: 6.5rem;
+        padding-top: 1%;
+      }
     }
     
   }
