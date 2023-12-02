@@ -24,7 +24,7 @@ export default function FiveSteps() {
       className='steps'
       initial="offscreen"
       whileInView="onscreen"
-      viewport={{ once: true, amount: 0.1 }}
+      viewport={{ once: true }}
     >
       <section className='steps-title'>
         <p>Mentoria em Health Business</p>
