@@ -27,7 +27,7 @@ export default function AppView() {
       text: 'Simpósios exclusivos'
     },
     {
-      text: 'Méticas de redes sociais'
+      text: 'Métricas de redes sociais'
     },
     {
       text: 'Dr.Talks (podcats)'
