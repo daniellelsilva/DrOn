@@ -17,7 +17,7 @@ function App() {
       <FiveSteps/>
       <Career/>
       <Events/>
-      <Agenda/>
+      {/* <Agenda/> */}
       <AppView/>
       <Footer/>
     </LazyMotion>
